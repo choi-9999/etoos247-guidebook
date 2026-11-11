@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1794377933751;
+window.ETOOS_CHAPTERS_VERSION = 1794384629086;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -7651,8 +7651,7 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "image104.png",
-          "image105.png"
+          "upload_d4df08f3bc0f.jpg"
         ],
         "bold": false
       },
@@ -7734,7 +7733,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "① 홈페이지 관리자 메인 페이지 안내",
+        "text": "① 대시보드",
         "images": [],
         "bold": false
       },
@@ -7750,7 +7749,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "➊ 상단 메뉴",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -7780,7 +7780,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "➋ 대시보드",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -7840,31 +7841,33 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(가) 전체 학생",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
-        "text": "전체 학생 :　재원생, 졸업생, 예비생, 퇴원생, 휴학생, 제적생 카테고리별로 확인",
+        "text": "- 전체 학생 : 재원생, 졸업생, 예비생, 퇴원생, 휴학생, 제적생 카테고리별로 확인\n- 반별, 학년별, 성별별로 검색 및 SMS 전송 기능 활용 가능\n- 학생 이름 선택 시 개인의 정보와 출결, 상·벌점, 입결 및 지원이력, 나만의 시간표, 상담내역, 종합리포트 결제내역 등 \n학생의 MY247 APP과 연동된 정보 확인 가능\n",
         "images": [
           "image109.png"
         ],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "반별, 학년별, 성별별로 검색 및 SMS 전송 기능 활용 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "학생 이름 선택 시 개인의 정보와 출결, 상·벌점, 입결 및 지원이력, 나만의 시간표, 상담내역, 종합리포트 결제내역 등 학생의 MY247 APP과 연동된 정보 확인 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "상/벌점 부여 및 조회",
+        "text": "- 상/벌점 부여 및 조회: 상/벌점 항목에서 '기타'를 선택하여 부여 사유를 직접 수기 입력할 수 있음",
         "images": [
           "image110.png"
         ],
@@ -7872,13 +7875,13 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "상/벌점 항목에서 '기타'를 선택하여 부여 사유를 직접 수기 입력할 수 있음",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "나만의 시간표 조회 및 수정",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -7892,13 +7895,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "인강명 수기 입력: 시간표 일정 추가 시, 유형이 '인강'일 경우 인강명을 수기로 입력할 수 있음.",
+        "text": "- 나만의 시간표 조회 및 수정\n- 인강명 수기 입력: 시간표 일정 추가 시, 유형이 '인강'일 경우 인강명을 수기로 입력할 수 있음.",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "상담내역 등록 및 수정",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -7912,25 +7916,20 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "상담 내용 작성 중에도 선택 과목을 자유롭게 수정 가능",
+        "text": "- 상담내역 등록 및 수정\n- 상담 내용 작성 중에도 선택 과목을 자유롭게 수정 가능\n- 과목별 입력창은 2,000자 제한으로 증가하여 더욱 상세한 상담 내용 작성이 가능\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "과목별 입력창은 2,000자 제한으로 증가하여 더욱 상세한 상담 내용 작성이 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "모든 상담 내용을 한 번에 펼쳐서 확인할 수 있는 '모두 열기' 버튼",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "종합리포트",
+        "text": "- 모든 상담 내용을 한 번에 펼쳐서 확인할 수 있는 '모두 열기' 버튼",
         "images": [
           "image113.png"
         ],
@@ -7947,29 +7946,45 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "탭별 세부 기능: 진단 탭(LMAT 결과), 학습 탭(매리트, 순공추이), 입시 탭(모의고사 및 수능 성적), 종합 탭(담당 선생님 작성 리포트 내용) 등 종합적인 정보를 확인할 수 있음",
-        "images": [
-          "image116.png"
-        ],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "종합리포트 총평 템플릿 기능: 리포트 작성 편의성을 위해 선택한 평가 항목에 최적화된 기본 템플릿을 자동 제공합니다. (경로: LMS > 학생선택 > 종합리포트 > 총평 > 템플릿 생성 / 생성 후 세부 내용 수정 가능) * 공통 평가 템플릿: 작성 월에 해당하는 기본 템플릿 생성 * 생활 평가 템플릿: 생활태도, 출결, 학습태도 항목 평가 결과에 적합한 템플릿 생성 * 국영수 과목 템플릿: 성취도, 커리큘럼, 달성도, 보완점 평가 결과에 적합한 템플릿 생성 * 선택 과목 템플릿: 선택과목 클릭 후 템플릿 생성 가능 (※ 단, 한국사 및 제2외국어/한문은 템플릿 미지원)",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "학생관리 메모 기능",
-        "images": [
-          "image117.png"
-        ],
-        "bold": true
+        "text": "종합리포트",
+        "images": [],
+        "bold": false,
+        "style": "callout"
       },
       {
         "type": "p",
-        "text": "- LMS 또는 ERP에서 학생에 관한 주요 내용을 메모 가능 (메모 입력 경로: LMS > 학생정보 > 메모 > 저장 또는 ERP > 회원정보 관리 > 메모 > 저장)",
+        "text": "탭별 세부 기능: \n진단 탭(LMAT 결과), 학습 탭(매리트, 순공추이), 입시 탭(모의고사 및 수능 성적), 종합 탭(담당 선생님 작성 리포트 내용) 등 \n종합적인 정보를 확인할 수 있음",
+        "images": [
+          "image116.png"
+        ],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "종합리포트 총평 템플릿 기능: 리포트 작성 편의성을 위해 선택한 평가 항목에 최적화된 기본 템플릿을 자동 제공합니다. \n(경로: LMS > 학생선택 > 종합리포트 > 총평 > 템플릿 생성 / 생성 후 세부 내용 수정 가능) \n* 공통 평가 템플릿: 작성 월에 해당하는 기본 템플릿 생성 \n* 생활 평가 템플릿: 생활태도, 출결, 학습태도 항목 평가 결과에 적합한 템플릿 생성 \n* 국영수 과목 템플릿: 성취도, 커리큘럼, 달성도, 보완점 평가 결과에 적합한 템플릿 생성 \n* 선택 과목 템플릿: 선택과목 클릭 후 템플릿 생성 가능 (※ 단, 한국사 및 제2외국어/한문은 템플릿 미지원)",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "- 학생관리 메모 기능\n- LMS 또는 ERP에서 학생에 관한 주요 내용을 메모 가능 \n(메모 입력 경로: LMS > 학생정보 > 메모 > 저장 또는 ERP > 회원정보 관리 > 메모 > 저장)",
+        "images": [
+          "image117.png"
+        ],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -7977,7 +7992,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(나) 재원생 인증 관리",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -7989,13 +8005,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "현재 재원생 인증 요청 진행 중인 학생과, 완료 된 학생 목록 조회 가능",
+        "text": "- 현재 재원생 인증 요청 진행 중인 학생과, 완료 된 학생 목록 조회 가능\n- 승인버튼 클릭 시 재원생 인증 최종완료\n",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "승인버튼 클릭 시 재원생 인증 최종완료",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8003,7 +8020,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(다) 반 운영 현황",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8015,7 +8033,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "반 현황 및 담임선생님, 반별 등록인원 확인 가능",
+        "text": "- 반 현황 및 담임선생님, 반별 등록인원 확인 가능",
         "images": [],
         "bold": false
       },
@@ -8023,7 +8041,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(라) 전체 학생(구)",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8035,25 +8054,20 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "리뉴얼 전 LMS의 전체 학생 화면",
+        "text": "- 리뉴얼 전 LMS의 전체 학생 화면\n- 이름 검색 / SMS 전송 기능 활용 가능\n- MY 247 [열기] 클릭 시 개별 학생의 MY 247 확인 가능\n- 상담관리 [숫자(상담 수)] 클릭 시 개별 학생의 상담내역 작성/확인\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "이름 검색 / SMS 전송 기능 활용 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "MY 247 [열기] 클릭 시 개별 학생의 MY 247 확인 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "상담관리 [숫자(상담 수)] 클릭 시 개별 학생의 상담내역 작성/확인",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8117,43 +8131,38 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "날짜별로 확인 가능",
+        "text": "- 날짜별로 확인 가능\n- 학생 이름 선택시 학생의 상세 정보 화면으로 즉시 이동가능\n- 일자별 출결 내역 및 등/하원 시간 표기 (결석/지각/조퇴/외출 등 색상 표기 상이)\n- 월별 누적 생활관리 내역 확인 (결석/지각/조퇴/외출 누적)\n- 하원 취소 기능 및 지각, 결설 등의 사유 입력 가능 (학생 공유되지 않음)\n- MY247 APP에서 작성한 ‘출결 변경 신청사유’가 LMS 출결관리에 자동으로 연동\n반 선택 필터링: 출결관리 화면 상단에서 특정 반을 선택하여 해당 반의 출결 현황만 모아서 확인",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "학생 이름 선택시 학생의 상세 정보 화면으로 즉시 이동가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "일자별 출결 내역 및 등/하원 시간 표기 (결석/지각/조퇴/외출 등 색상 표기 상이)",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "월별 누적 생활관리 내역 확인 (결석/지각/조퇴/외출 누적)",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "하원 취소 기능 및 지각, 결설 등의 사유 입력 가능 (학생 공유되지 않음)",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "MY247 APP에서 작성한 ‘출결 변경 신청사유’가 LMS 출결관리에 자동으로 연동",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "반 선택 필터링: 출결관리 화면 상단에서 특정 반을 선택하여 해당 반의 출결 현황만 모아서 확인",
+        "text": "\n",
         "images": [],
         "bold": true
       },
@@ -8167,7 +8176,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(가) 모의고사 성적자료",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8179,45 +8189,41 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "학력평가, 시대인재 모의고사 등 모의고사별로 학생 성적 입력 가능",
+        "text": "- 학력평가, 시대인재 모의고사 등 모의고사별로 학생 성적 입력 가능\n- 문항 마킹 및 성적 입력 양식 다운로드 후 업로드\n- 시대인재 서바이벌 프로 모의고사 성적 파일 연동 가능\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "문항 마킹 및 성적 입력 양식 다운로드 후 업로드",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "시대인재 서바이벌 프로 모의고사 성적 파일 연동 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "※ 서프 해설영상 제공 안내: 모의고사 해설영상은 서프 진행 지점 재원생의 MY247 APP에서만 제공되며, 지점 LMS에서는 확인이 불가합니다.",
+        "text": "※ 서프 해설영상 제공 안내: 모의고사 해설영상은 서프 진행 지점 재원생의 MY247 APP에서만 제공되며, 지점 LMS에서는 확인이 불가합니다.\n※ 학평 및 평가원 모의고사는 LMS>입시관리>모의고사 성적자료에서 엑셀 양식 다운로드 후, 성적을 수기 이력하여 업로드\n※ 재학생 성적 업로드: 고1 / 고2 / 고3 재학생도 N수생과 동일한 엑셀 양식으로 성적 업로드가 가능합니다. \n(학년 카테고리를 알맞게 선택 후 업로드 진행)\n",
         "images": [],
         "bold": true
       },
       {
         "type": "p",
-        "text": "학평 및 평가원 모의고사는 LMS>입시관리>모의고사 성적자료에서 엑셀 양식 다운로드 후, 성적을 수기 이력하여 업로드",
+        "text": "\n",
         "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "재학생 성적 업로드: 고1 / 고2 / 고3 재학생도 N수생과 동일한 엑셀 양식으로 성적 업로드가 가능합니다. (학년 카테고리를 알맞게 선택 후 업로드 진행)",
-        "images": [],
-        "bold": true
+        "bold": false,
+        "style": "callout"
       },
       {
         "type": "p",
         "text": "(나) 합격자 취합",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8229,22 +8235,30 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "수시 및 정시 합격자 정보 입력 및 파일 업로드 페이지",
+        "text": "- 수시 및 정시 합격자 정보 입력 및 파일 업로드 페이지\n- 합격 대학과 학과, 합격증 파일 업로드 및 제출",
         "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "합격 대학과 학과, 파일 업로드 및 제출",
-        "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
         "text": "(다) 입시상담 관리",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [
           "image125.png"
         ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
         "bold": false
       },
       {
@@ -8257,7 +8271,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "학생 과목별 성적 확인 가능 (수능, 평가원 모의고사 등), 지원 대학 검색 및 학과선택, 지원유형과 기타의견 수기로 작성 가능(목표 대학 검색 시 교육대학, 기술대학, 방통대 등 대학교/전문대학/기능대학 외의 학교 정보도 추가되어 검색 가능합니다.)",
+        "text": "- 학생 과목별 성적 확인 가능 (수능, 평가원 모의고사 등), 지원 대학 검색 및 학과선택, 지원유형과 기타의견 수기로 작성 가능\n(목표 대학 검색 시 교육대학, 기술대학, 방통대 등 대학교/전문대학/기능대학 외의 학교 정보도 추가되어 검색 가능합니다.)",
         "images": [],
         "bold": false
       },
@@ -8271,11 +8285,12 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(가) 커뮤니티",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
-        "text": "홈페이지의 커뮤니티 중 공지사항과 오늘의247 페이지의 글을 만들거나 수정할 수 있는 페이지",
+        "text": "- 홈페이지의 커뮤니티 중 공지사항과 오늘의247 페이지의 글을 만들거나 수정할 수 있는 페이지",
         "images": [],
         "bold": false
       },
@@ -8311,37 +8326,32 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "최상위글 및 일반 게시글 등록 가능",
+        "text": "- 최상위글 및 일반 게시글 등록 가능\n- 공개 여부 확인, 글 제목 클릭시 바로 수정 페이지로 이동\n- 공개 여부, 지점 선택, 최상위글 여부 및 순위, 첨부파일 등록 가능\n- 본문 내 이미지 업로드 시 가로 사이즈 : 1000px 이내\n- 본문 내용 없이 이미지만 업로드 된 경우 게시글이 네이버 및 구글 검색에 검색되지 않음\n- 다중 이미지 첨부 기능: 게시글 작성 시 에디터 상단의 '사진' 버튼을 클릭하여 1회에 최대 10장의 이미지를 한 번에 동시 첨부 가능",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "공개 여부 확인, 글 제목 클릭시 바로 수정 페이지로 이동",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "공개 여부, 지점 선택, 최상위글 여부 및 순위, 첨부파일 등록 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "본문 내 이미지 업로드 시 가로 사이즈 : 1000px 이내",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "본문 내용 없이 이미지만 업로드 된 경우 게시글이 네이버 및 구글 검색에 검색되지 않음",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "다중 이미지 첨부 기능: 게시글 작성 시 에디터 상단의 '사진' 버튼을 클릭하여 1회에 최대 10장의 이미지를 한 번에 동시 첨부 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8349,13 +8359,15 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(나) 예약/문의",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "Ⓐ 입시교실/설명회",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8367,7 +8379,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "홈페이지의 예약/문의 탭의 설명회 예약 글을 등록 및 수정 가능한 페이지",
+        "text": "- 홈페이지의 예약/문의 탭의 설명회 예약 글을 등록 및 수정 가능한 페이지",
         "images": [],
         "bold": false
       },
@@ -8381,37 +8393,34 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "입시교실/설명회 목록 확인 및 일정 [등록하기] 클릭",
+        "text": "- 입시교실/설명회 목록 확인 및 일정 [등록하기] 클릭\n- 설명회 정보 및 온라인 예약 기능 설정\n- 제목/썸네일/파일 첨부 및 글 작성 후 [저장하기] 클릭",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "설명회 정보 및 온라인 예약 기능 설정",
+        "text": "※ 썸네일 권장 사이즈 200*170\n※ 본문 내 이미지 권장 사이즈 : 1000px 이내",
         "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "제목/썸네일/파일 첨부 및 글 작성 후 [저장하기] 클릭",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "썸네일 권장 사이즈 200*170",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "본문 내 이미지 권장 사이즈 : 1000px 이내",
-        "images": [],
-        "bold": false
+        "bold": false,
+        "style": "callout"
       },
       {
         "type": "p",
         "text": "Ⓑ 초도상담 (구 등록/상담 예약)",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [
           "image132.png"
         ],
@@ -8427,19 +8436,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "상담 예약 목록 확인 및 예약자 이름 클릭",
+        "text": "- 상담 예약 목록 확인 및 예약자 이름 클릭\n- 상담문의 내용 내에 핸드폰 번호 확인 및 상담일정 예약\n- 초기 상담 진행자가 내역을 작성하여 [ERP등록] 가능",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "상담문의 내용 내에 핸드폰 번호 확인 및 상담일정 예약",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "초기 상담 진행자가 내역을 작성하여 [ERP등록] 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8447,13 +8451,15 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(다) 문의 게시판",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "Ⓐ Q&A",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8465,21 +8471,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "등록 문의 글 목록 확인 및 제목 클릭 시 답변 페이지로 이동",
+        "text": "- 등록 문의 글 목록 확인 및 제목 클릭 시 답변 페이지로 이동\n- 공개 여부 및 답변 상태 변경",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "공개 여부 및 답변 상태 변경",
+        "text": "Ⓑ FAQ",
         "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "Ⓑ F&A",
-        "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8491,19 +8493,20 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "F&A 질문 등록 가능",
+        "text": "- FAQ 질문 등록 가능\n- 입학 및 등록/학습시스템/입시 및 진학/생활관리 분류로 나누어서 선택 가능\n- 공개 여부 및 등록자 닉네임 설정 가능 - 이투스247 학원",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "입합 및 등록/학습시스템/입시 및 진학/생활관리 분류로 나누어서 선택 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "공개 여부 및 등록자 닉네임 설정 가능 - 이투스247 학원",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8517,7 +8520,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(가) 질문예약",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8529,43 +8533,38 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "일자별/시간별 질문예약이 가능한 선생님 등록",
+        "text": "- 일자별/시간별 질문예약이 가능한 선생님 등록\n- 과목별 해당 선생님, 질문예약일, 질문예약요일, 질문예약시간, 시간간격 선택\n- 요일별 학생들이 예약 가능한 시간 설정\n- 등록 시, [학생 MY247 APP - 질문예약] 영역에서 질문예약 가능\n- 학생이 MY247 APP에서 예약 시 질문 내용과 이미지를 함께 첨부 가능\n- LMS에서 관리자가 특정 학생의 질문 예약을 임의로 추가하거나 취소 가능\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "과목별 해당 선생님, 질문예약일, 질문예약요일, 질문예약시간, 시간간격 선택",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "요일별 학생들이 예약 가능한 시간 설정",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "등록 시, [학생 MY247 APP - 질문예약] 영역에서 질문예약 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "학생이 MY247 APP에서 예약 시 질문 내용과 이미지를 함께 첨부 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "LMS에서 관리자가 특정 학생의 질문 예약을 임의로 추가하거나 취소 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "(※ 추후, 당일 날짜 이후의 질문예약 신청을 제한하는 기능도 업데이트될 예정)",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8573,25 +8572,27 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(나) MY247 공지사항",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
-        "text": "MY247 APP 공지사항 등록",
+        "text": "- MY247 APP 공지사항 등록\n- 등록 시, 등록한 지점 재원생에게만 노출 예) 양재점에서 등록 시, 양재점 지점 재원생에게만 노출\n- 다중 이미지 첨부 기능: MY247 공지사항 등록 시 사진 버튼을 통해 최대 10장의 이미지를 동시 업로드 가능",
         "images": [
           "image137.png"
         ],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "등록 시, 등록한 지점 재원생에게만 노출 예) 양재점에서 등록 시, 양재점 지점 재원생에게만 노출",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "다중 이미지 첨부 기능: MY247 공지사항 등록 시 사진 버튼을 통해 최대 10장의 이미지를 동시 업로드 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8599,45 +8600,41 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(다) 질문예약 학습현황",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
-        "text": "학생별/과목별 질문예약 이용현황 확인",
+        "text": "- 학생별/과목별 질문예약 이용현황 확인\n- 날짜 지정하여 확인 가능",
         "images": [
           "image138.png"
         ],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "날짜 지정하여 확인 가능",
-        "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
         "text": "(라) LMAT 관리",
-        "images": [
-          "image139.png"
-        ],
-        "bold": false
+        "images": [],
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
-        "text": "학생들이 MY247 APP에서 시행한 LMAT 결과 확인 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "엑셀로 채점 결과 다운로드 가능",
+        "text": "- 학생들이 MY247 APP에서 시행한 LMAT 결과 확인 가능\n- 엑셀로 채점 결과 다운로드 가능\n- 날짜 지정하여 확인 가능",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "날짜 지정하여 확인 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8645,7 +8642,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(마) LMTI 관리",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8657,19 +8655,13 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "학생들이 MY247 APP에서 시행한 LMTI 결과 확인 가능",
+        "text": "- 학생들이 MY247 APP에서 시행한 LMTI 결과 확인 가능\n- 학생별 진단결과 확인 가능\n- 날짜 지정하여 확인 가능",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "학생별 진단결과 확인 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "날짜 지정하여 확인 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8683,31 +8675,34 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(가) 메리트",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "Ⓐ결과관리(구 매리트 성적)",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "- 재원생 매리트 성적 현황 조회 가능\n- 과목 / 조회기간 선택 후 검색\n- 해당 교과 / 과목 / 기간 내 학생들 성적 조회",
         "images": [
           "image141.png"
         ],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "재원생 매리트 성적 현황 조회 가능",
+        "text": "\n",
         "images": [],
         "bold": false
       },
       {
         "type": "p",
-        "text": "과목 / 조회기간 선택 후 검색",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "해당 교과 / 과목 / 기간 내 학생들 성적 조회",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8715,7 +8710,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "Ⓑ매리트 학습현황",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8735,7 +8731,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(나) 영어듣기",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8747,34 +8744,36 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "각 학년, N수생 기간 별 설정하여 조회 가능",
+        "text": "- 각 학년, N수생 기간 별 설정하여 조회 가능\n- 학생정보 / 교재명 / 응시단원 / 결과 목록 내 조회 가능\n[누적결과] 클릭 시 기존 시험동안 누적되었던 결과가 조회 가능하며 [N]버튼 클릭 시 시험 세부내용 조회 가능",
         "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "학생정보 / 교재명 / 응시단원 / 결과 목록 내 조회 가능",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "[누적결과] 클릭 시 기존 시험동안 누적되었던 결과가 조회 가능하며 [N]버튼 클릭 시 시험 세부내용 조회 가능",
-        "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
         "text": "(다) VOCA TEST",
-        "images": [
-          "image144.png"
-        ],
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
         "bold": false
       },
       {
         "type": "p",
         "text": "영어 듣기 관리 내용과 동일",
-        "images": [],
+        "images": [
+          "image144.png"
+        ],
         "bold": false
       },
       {
@@ -8787,7 +8786,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(가) 본사 지점 소통(구 업무요청)",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8799,19 +8799,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "상단의 공지사항 / 자료실 / 업무요청 카테고리 선택",
+        "text": "- 상단의 공지사항 / 자료실 / 업무요청 카테고리 선택\n- 공지사항 / 자료실 : 본사 공지 내용 및 입시, 학습자료 확인\n- 업무요청 : LMS 시스템 오류 및 지점 문의사항에 대해 본사에 업무 요청하는 게시판",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "공지사항 / 자료실 : 본사 공지 내용 및 입시, 학습자료 확인",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "업무요청 : LMS 시스템 오류 및 지점 문의사항에 대해 본사에 업무 요청하는 게시판",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -8819,7 +8814,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(나) 직원교육 (입시 및 전산)",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8831,13 +8827,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "입시교육 및 시스템교육을 온라인으로 제공하는 게시판",
-        "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "LMS/ERP의 기본 기능에 대한 온라인 교육 가능",
+        "text": "- 입시교육 및 시스템교육을 온라인으로 제공하는 게시판\n- LMS/ERP의 기본 기능에 대한 온라인 교육 가능",
         "images": [],
         "bold": false
       },
@@ -8851,7 +8841,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(가) 점수대별 인원분포",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8871,7 +8862,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "(나) 학습통계 (지점별 / 반별 비교)",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -8883,13 +8875,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "지점별 순공 시간 데이터를 비교 및 확인",
+        "text": "- 지점별 순공 시간 데이터를 비교 및 확인\n- 지점 내의 반별로 순공 시간 데이터를 확인",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "지점 내의 반별로 순공 시간 데이터를 확인",
+        "text": "\n",
         "images": [],
         "bold": false
       },
@@ -9698,6 +9691,66 @@ window.ETOOS_CHAPTERS = [
         "title": "2. LMS 페이지 안내",
         "blockIdx": 16,
         "matchText": "(2) LMS 페이지 안내"
+      },
+      {
+        "id": "st_1794381913126",
+        "title": "① 대시보드",
+        "blockIdx": 17,
+        "matchText": "① 대시보드"
+      },
+      {
+        "id": "st_1794381923949",
+        "title": "② 재원생 관리",
+        "blockIdx": 33,
+        "matchText": "② 재원생 관리"
+      },
+      {
+        "id": "st_1794382478589",
+        "title": "③ 지점/반 관리",
+        "blockIdx": 67,
+        "matchText": "③ 지점/반 관리"
+      },
+      {
+        "id": "st_1794382528574",
+        "title": "④ 출결 관리",
+        "blockIdx": 74,
+        "matchText": "④ 출결 관리"
+      },
+      {
+        "id": "st_1794382588636",
+        "title": "⑤ 입시 관리",
+        "blockIdx": 82,
+        "matchText": "⑤ 입시 관리"
+      },
+      {
+        "id": "st_1794383097124",
+        "title": "⑥ 홈페이지 관리",
+        "blockIdx": 98,
+        "matchText": "⑥ 홈페이지 관리"
+      },
+      {
+        "id": "st_1794383649260",
+        "title": "⑦ MY247 관리",
+        "blockIdx": 132,
+        "matchText": "⑦ MY247 관리"
+      },
+      {
+        "id": "st_1794384383563",
+        "title": "⑧ 매리트 관리",
+        "blockIdx": 155,
+        "matchText": "⑧ 매리트 관리"
+      },
+      {
+        "id": "st_1794384505814",
+        "title": "⑨ 본사지원",
+        "blockIdx": 171,
+        "matchText": "⑨ 본사지원"
+      },
+      {
+        "id": "st_1794384565414",
+        "title": "⑩ 통계",
+        "blockIdx": 179,
+        "matchText": "⑩ 통계"
       }
     ],
     "shortTitle": "5. 이투스247학원 LMS"
