@@ -164,6 +164,12 @@
       padding: 0.1rem 0.25rem;
       border-radius: 0.2rem;
     }
+    /* Preserve explicit Enter line breaks & wrap long URLs in ALL paragraph styles */
+    .manual-paragraph {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
     /* Editable Active Styles */
     .editable-active .editable-item {
       outline: 1.5px dashed #f59e0b;
@@ -1810,8 +1816,8 @@
             } else {
               const styleKey = getParagraphStyleKey(block, text);
               const styleDef = PARAGRAPH_STYLES[styleKey] || PARAGRAPH_STYLES['normal'];
-              p.className = styleDef.className;
-              p.textContent = text;
+              p.className = `${styleDef.className} manual-paragraph`;
+              p.textContent = text.replace(/<br\s*\/?>/gi, '\n');
             }
 
             // Apply inline editable attributes & Style Toolbar if Admin & Edit Mode is ON
@@ -1824,6 +1830,7 @@
               p.classList.add('editable-item');
               p.contentEditable = "true";
               p.setAttribute('data-block-idx', idx);
+              p.onkeydown = handleCellKeydown;
               p.oninput = function() {
                 block.text = this.innerText;
                 saveCustomChapters(false);
