@@ -1959,9 +1959,9 @@
                         <i class="fa-solid fa-trash-can"></i> 삭제
                       </button>
                     </div>` : '';
-                  imagesHtml += `<div class="cell-image-container inline-block relative cursor-zoom-in group my-1 select-none" contenteditable="false" onclick="openLightbox('${safeImgAttr}')">
+                  imagesHtml += `<div class="cell-image-container inline-block max-w-full relative cursor-zoom-in group my-1 select-none" contenteditable="false" onclick="openLightbox('${safeImgAttr}')">
                     ${cellEditControls}
-                    <img src="${imgSrc}" class="max-h-44 rounded-lg border border-slate-200 group-hover:border-brand-500 shadow-2xs group-hover:shadow transition" loading="lazy" />
+                    <img src="${imgSrc}" class="max-w-full h-auto rounded-lg border border-slate-200 group-hover:border-brand-500 shadow-2xs group-hover:shadow transition" loading="lazy" />
                     <span class="absolute bottom-1 right-1 bg-slate-900/80 text-white text-[9px] px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-magnifying-glass-plus mr-0.5"></i>확대</span>
                   </div>`;
                 });
