@@ -975,6 +975,7 @@
     // State
     let chaptersData = [];
     let currentChapterId = 1;
+    let currentSubTopicIndex = 0;
     let fontSizeLevel = 0; // -1, 0, 1, 2
     let isAdminLoggedIn = (sessionStorage.getItem('etoos247_admin_auth') === 'true');
     let isEditMode = false;
@@ -1209,6 +1210,35 @@
       return chap.subTopics;
     }
 
+    function getNormalizedSubTopicRanges(chap) {
+      if (!chap || !Array.isArray(chap.blocks) || chap.blocks.length === 0) return [];
+      const topics = getChapterSubTopics(chap);
+      if (!topics || topics.length === 0) return [];
+
+      // Heal stale blockIdx using matchText and sort by document order
+      const normalized = topics.map(topic => {
+        let idx = Number.isInteger(topic.blockIdx) ? topic.blockIdx : 0;
+        if (topic.matchText) {
+          const cur = chap.blocks[idx];
+          if (!cur || !cur.text || !cur.text.includes(topic.matchText)) {
+            const foundIdx = chap.blocks.findIndex(b => b.text && b.text.includes(topic.matchText));
+            if (foundIdx !== -1) {
+              idx = foundIdx;
+              topic.blockIdx = foundIdx;
+            }
+          }
+        }
+        idx = Math.max(0, Math.min(idx, chap.blocks.length - 1));
+        return { topic, blockIdx: idx };
+      }).sort((a, b) => a.blockIdx - b.blockIdx);
+
+      return normalized.map((item, i) => {
+        const start = (i === 0) ? 0 : item.blockIdx;
+        const end = (i < normalized.length - 1) ? Math.max(start, normalized[i + 1].blockIdx) : chap.blocks.length;
+        return { topic: item.topic, start, end };
+      });
+    }
+
     function renderQuickJumpNav(chapId) {
       const listEl = document.getElementById('quickJumpList');
       const mobileListEl = document.getElementById('mobileQuickJumpList');
@@ -1229,6 +1259,9 @@
       if (!chap) return;
 
       const topics = getChapterSubTopics(chap);
+      const ranges = getNormalizedSubTopicRanges(chap);
+      const isPaginating = !isEditing && ranges.length > 0;
+      const activeTopic = isPaginating && ranges[currentSubTopicIndex] ? ranges[currentSubTopicIndex].topic : null;
 
       if (countEl) countEl.textContent = `${topics.length}개 항목`;
       if (mobileSubtitle) {
@@ -1256,9 +1289,13 @@
           }
         }
 
+        const isActive = (activeTopic === topic);
+
         // Desktop aside item (Editorial Left-Rail TOC)
         const btn = document.createElement('button');
-        btn.className = `w-full text-left border-l-2 -ml-[2px] pl-3 pr-2 py-1.5 rounded-r-lg border-transparent text-slate-600 hover:text-brand-700 hover:border-brand-300 hover:bg-brand-50/40 font-medium transition-all flex items-center justify-between gap-2 group quick-jump-link cursor-pointer`;
+        btn.className = isActive
+          ? `w-full text-left border-l-2 -ml-[2px] pl-3 pr-2 py-1.5 rounded-r-lg border-brand-600 bg-brand-50/90 text-brand-800 font-bold transition-all flex items-center justify-between gap-2 group quick-jump-link cursor-pointer`
+          : `w-full text-left border-l-2 -ml-[2px] pl-3 pr-2 py-1.5 rounded-r-lg border-transparent text-slate-600 hover:text-brand-700 hover:border-brand-300 hover:bg-brand-50/40 font-medium transition-all flex items-center justify-between gap-2 group quick-jump-link cursor-pointer`;
         btn.dataset.targetIdx = targetIdx;
         btn.title = topic.title;
         btn.onclick = () => jumpToSubTopic(targetIdx);
@@ -1270,13 +1307,15 @@
 
         // Mobile drawer item
         const mBtn = document.createElement('button');
-        mBtn.className = `w-full text-left px-3.5 py-2.5 rounded-xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-brand-800 border border-slate-200/80 transition flex items-center gap-3`;
+        mBtn.className = isActive
+          ? `w-full text-left px-3.5 py-2.5 rounded-xl bg-brand-50 text-brand-900 border border-brand-300 transition flex items-center gap-3`
+          : `w-full text-left px-3.5 py-2.5 rounded-xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-brand-800 border border-slate-200/80 transition flex items-center gap-3`;
         mBtn.onclick = () => {
           jumpToSubTopic(targetIdx);
           toggleMobileQuickJump(false);
         };
         mBtn.innerHTML = `
-          <span class="w-6 h-6 rounded-lg bg-brand-100 text-brand-700 font-bold text-xs flex items-center justify-center shrink-0">${idx + 1}</span>
+          <span class="w-6 h-6 rounded-lg ${isActive ? 'bg-brand-600 text-white' : 'bg-brand-100 text-brand-700'} font-bold text-xs flex items-center justify-center shrink-0">${idx + 1}</span>
           <span class="font-medium text-xs leading-snug flex-1">${escapeHtml(topic.title)}</span>
           <i class="fa-solid fa-arrow-turn-down-right text-[10px] text-slate-400"></i>
         `;
@@ -1285,11 +1324,32 @@
     }
 
     function jumpToSubTopic(targetIdx) {
+      const chap = chaptersData.find(c => c.id === currentChapterId);
+      const isEditing = (isAdminLoggedIn && isEditMode);
+      const ranges = getNormalizedSubTopicRanges(chap);
+
+      if (chap && !isEditing && ranges.length > 0) {
+        let rangeIdx = ranges.findIndex(r => targetIdx >= r.start && targetIdx < r.end);
+        if (rangeIdx === -1) rangeIdx = ranges.findIndex(r => r.topic.blockIdx === targetIdx);
+        if (rangeIdx === -1) rangeIdx = 0;
+
+        currentSubTopicIndex = rangeIdx;
+        renderReaderContent(chap);
+        renderQuickJumpNav(currentChapterId);
+        updateBottomChapterNav();
+
+        const activeRange = ranges[rangeIdx];
+        if (targetIdx === activeRange.topic.blockIdx || targetIdx === activeRange.start) {
+          const scrollArea = document.getElementById('contentScrollArea');
+          if (scrollArea) scrollArea.scrollTop = 0;
+          return;
+        }
+      }
+
       let el = document.getElementById(`chap-${currentChapterId}-block-${targetIdx}`) || document.querySelector(`[data-block-idx="${targetIdx}"]`);
       
       if (!el) {
         // Fallback search
-        const chap = chaptersData.find(c => c.id === currentChapterId);
         const topics = getChapterSubTopics(chap);
         const matched = topics.find(t => t.blockIdx === targetIdx);
         if (matched && matched.matchText) {
@@ -1612,8 +1672,44 @@
       alert(`✅ "${inputTitle.trim()}" 항목이 우측 퀵 점프 목차에 성공적으로 등록되었습니다!`);
     }
 
+    function updateBottomChapterNav() {
+      const chapIndex = chaptersData.findIndex(c => c.id === currentChapterId);
+      const chap = chapIndex !== -1 ? chaptersData[chapIndex] : null;
+      const isEditing = (isAdminLoggedIn && isEditMode);
+      const ranges = getNormalizedSubTopicRanges(chap);
+      const isPaginating = !isEditing && ranges.length > 0;
+
+      const isFirst = (chapIndex <= 0) && (!isPaginating || currentSubTopicIndex <= 0);
+      const isLast = (chapIndex === -1 || chapIndex >= chaptersData.length - 1) && (!isPaginating || currentSubTopicIndex >= ranges.length - 1);
+
+      const prevBtn = document.getElementById('prevChapBtn');
+      const nextBtn = document.getElementById('nextChapBtn');
+      if (prevBtn) {
+        prevBtn.disabled = isFirst;
+        prevBtn.classList.toggle('opacity-50', isFirst);
+        if (isPaginating && currentSubTopicIndex > 0) {
+          prevBtn.title = `이전 소주제: ${ranges[currentSubTopicIndex - 1].topic.title}`;
+        } else if (chapIndex > 0) {
+          prevBtn.title = `이전 탭: ${chaptersData[chapIndex - 1].title}`;
+        } else {
+          prevBtn.title = '';
+        }
+      }
+      if (nextBtn) {
+        nextBtn.disabled = isLast;
+        nextBtn.classList.toggle('opacity-50', isLast);
+        if (isPaginating && currentSubTopicIndex < ranges.length - 1) {
+          nextBtn.title = `다음 소주제: ${ranges[currentSubTopicIndex + 1].topic.title}`;
+        } else if (chapIndex !== -1 && chapIndex < chaptersData.length - 1) {
+          nextBtn.title = `다음 탭: ${chaptersData[chapIndex + 1].title}`;
+        } else {
+          nextBtn.title = '';
+        }
+      }
+    }
+
     // Go to specific chapter
-    function goToChapter(id) {
+    function goToChapter(id, subTopicIdx = 0) {
       let chap = chaptersData.find(c => c.id === id);
       if (!chap && chaptersData.length > 0) {
         chap = chaptersData[0];
@@ -1621,6 +1717,13 @@
       }
       if (!chap) return;
       currentChapterId = id;
+
+      const ranges = getNormalizedSubTopicRanges(chap);
+      if (subTopicIdx === -1) {
+        currentSubTopicIndex = Math.max(0, ranges.length - 1);
+      } else {
+        currentSubTopicIndex = Math.max(0, Math.min(subTopicIdx, Math.max(0, ranges.length - 1)));
+      }
 
       // Update Header Info
       document.getElementById('chapTitle').textContent = chap.title || '';
@@ -1632,14 +1735,8 @@
       // Render Right Quick Jump TOC
       renderQuickJumpNav(id);
 
-      // Prev / Next button state by array order (works with added/deleted/reordered tabs)
-      const chapIndex = chaptersData.findIndex(c => c.id === id);
-      const isFirst = (chapIndex <= 0);
-      const isLast = (chapIndex === -1 || chapIndex >= chaptersData.length - 1);
-      document.getElementById('prevChapBtn').disabled = isFirst;
-      document.getElementById('prevChapBtn').classList.toggle('opacity-50', isFirst);
-      document.getElementById('nextChapBtn').disabled = isLast;
-      document.getElementById('nextChapBtn').classList.toggle('opacity-50', isLast);
+      // Prev / Next button state
+      updateBottomChapterNav();
 
       // Refresh Top Nav active state
       renderTopChapterNav();
@@ -1750,7 +1847,16 @@
         return;
       }
 
+      const isEditing = (isAdminLoggedIn && isEditMode);
+      const ranges = getNormalizedSubTopicRanges(chap);
+      const isPaginating = !isEditing && ranges.length > 0;
+      if (isPaginating) {
+        currentSubTopicIndex = Math.max(0, Math.min(currentSubTopicIndex, ranges.length - 1));
+      }
+      const activeRange = isPaginating ? ranges[currentSubTopicIndex] : null;
+
       chap.blocks.forEach((block, idx) => {
+        if (activeRange && (idx < activeRange.start || idx >= activeRange.end)) return;
         if (block.type === 'p') {
           const text = block.text ? block.text.replace(/\s*p\.?\s*\d+\s*$/i, '').trim() : '';
           const images = block.images || [];
@@ -2035,9 +2141,26 @@
     function navigateChapter(dir) {
       const idx = chaptersData.findIndex(c => c.id === currentChapterId);
       if (idx === -1) return;
+      const chap = chaptersData[idx];
+      const isEditing = (isAdminLoggedIn && isEditMode);
+      const ranges = getNormalizedSubTopicRanges(chap);
+
+      if (!isEditing && ranges.length > 0) {
+        const nextSubIdx = currentSubTopicIndex + dir;
+        if (nextSubIdx >= 0 && nextSubIdx < ranges.length) {
+          currentSubTopicIndex = nextSubIdx;
+          renderReaderContent(chap);
+          renderQuickJumpNav(chap.id);
+          updateBottomChapterNav();
+          const scrollArea = document.getElementById('contentScrollArea');
+          if (scrollArea) scrollArea.scrollTop = 0;
+          return;
+        }
+      }
+
       const nextIdx = idx + dir;
       if (nextIdx >= 0 && nextIdx < chaptersData.length) {
-        goToChapter(chaptersData[nextIdx].id);
+        goToChapter(chaptersData[nextIdx].id, dir < 0 ? -1 : 0);
       }
     }
 
@@ -3710,6 +3833,7 @@
       if (chap) {
         renderReaderContent(chap);
         renderQuickJumpNav(currentChapterId);
+        updateBottomChapterNav();
       }
     }
 
