@@ -16432,8 +16432,8 @@
         "type": "p",
         "text": "[교재 검색 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -16446,70 +16446,70 @@
       },
       {
         "type": "p",
-        "text": "교재 / 묶음 상품 검색",
+        "text": "A. 교재 / 묶음 상품 검색\n- 도서 : 1권 단위 개별 교재\n- 묶음 : 2개 이상의 교재들을 결합한 상품\n\nB. 묶음 상품 목록\n\nC. 도서 목록\n- 묶음 상품 검색 시, 묶음 상품으로 구성한 도서 목록\n\nD. 묶음 상품 생성\n- 도서 검색  도서 선택  선택 교재 추가  묶음명 등 묶음 상품 정보 설정  저장\n※ 빠른 교재 추가 방법 : 도서 / 묶음 상품 검색  상품 더블 클릭\n※ 교재 등록 방법은 [교재관리]부분을 확인해주세요.\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "도서 : 1권 단위 개별 교재",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "묶음 : 2개 이상의 교재들을 결합한 상품",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "묶음 상품 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "도서 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "묶음 상품 검색 시, 묶음 상품으로 구성한 도서 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "묶음 상품 생성",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "도서 검색  도서 선택  선택 교재 추가  묶음명 등 묶음 상품 정보 설정  저장",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "빠른 교재 추가 방법 : 도서 / 묶음 상품 검색  상품 더블 클릭",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "교재 등록 방법은 [교재관리]부분을 확인해주세요.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -16518,22 +16518,22 @@
         "type": "p",
         "text": "4.2 반 배정",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "등록된 반으로 회원을 배정 합니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "[반 배정 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -16546,133 +16546,133 @@
       },
       {
         "type": "p",
-        "text": "반 정보 검색조건",
+        "text": "A. 반 정보 검색조건\n- 수강년도, 지점, 강의 분류 조건을 입력 후 반 정보를 조회 합니다.\n- 엑셀다운로드 : B에서 선택한 반에 배정됐던 학생 정보를 다운로드 합니다.\n\nB. 반 목록\n- 입력된 검색 조건에 해당되는 반 목록을 조회 합니다.\n\nC. 회원 검색조건\n- 수강년도,지점,반 분류,반명 입력,수강상태,원생타입,학교명,이름조건을 입력 후 회원정보를 조회 합니다.\n \nD. 회원 목록\n- 회원 검색조건에 해당되는 회원목록 정보를 리스트로 보여줍니다.\n\nE. 배정정보 목록\n- 상단 반 목록에서 선택된 반에 배정된 회원의 목록을 보여줍니다.\n- 반 배정 방법 : 회원목록 선택  화살표(<, >) 버튼 선택\n- Ctrl, Shift 키를 이용하여 여러 명을 배정할 수 있습니다.\n\nF. 기타 버튼\n- 수강상태변경 : 수강 / 수료 / 취소 외 미사용\n- SMS 전송 : 배정정보 목록에서 선택한 학생에게 SMS를 전송합니다.\n- 납부처리 : 배정정보 목록에서 선택한 학생의 수납처리 내역으로 이동합니다.\n- 반이동 / 대표반 : 미사용 기능",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강년도, 지점, 강의 분류 조건을 입력 후 반 정보를 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "엑셀다운로드 : B에서 선택한 반에 배정됐던 학생 정보를 다운로드 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "입력된 검색 조건에 해당되는 반 목록을 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원 검색조건",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강년도,지점,반 분류,반명 입력,수강상태,원생타입,학교명,이름조건을",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "입력 후 회원정보를 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원 검색조건에 해당되는 회원목록 정보를 리스트로 보여줍니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "배정정보 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "상단 반 목록에서 선택된 반에 배정된 회원의 목록을 보여줍니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 배정 방법 : 회원목록 선택  화살표(<, >) 버튼 선택",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "Ctrl, Shift 키를 이용하여 여러 명을 배정할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "기타 버튼",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강상태변경 : 수강 / 수료 / 취소 외 미사용",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "SMS 전송 : 배정정보 목록에서 선택한 학생에게 SMS를 전송합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "납부처리 : 배정정보 목록에서 선택한 학생의 수납처리 내역으로 이동합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "반이동 / 대표반 : 미사용 기능",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -16688,22 +16688,22 @@
         "type": "p",
         "text": "4.3 온라인 접수 관리(기숙지점 사용 메뉴)",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "홈페이지의 모집요강을 관리하며 온라인 접수로 등록한 회원의 응시현황을 관리할 수 있습니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "[온라인 접수 관리 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -16716,70 +16716,63 @@
       },
       {
         "type": "p",
-        "text": "모집 요강 등록 및 조회",
+        "text": "A. 모집 요강 등록 및 조회\n- 모집요강을 등록하기 위해서는 반 관리의 반 정보 생성 시 강의분류를 온라인 접수 분류로 반을 생성해야 모집요강에서 모집정보를 등록 할 수 있습니다.\n- 검색 : 조건에 해당되는 모집요강 목록을 조회 합니다.\n- 삭제 : 목록에서 선택된 모집요강 정보를 삭제 합니다. 응시현황 정보가 있는 경우 삭제 할 수 없습니다.\n\nB. 모집요강 관리\n- 온라인 접수 반 별로 모집요강을 등록합니다.\n- 1개의 반에 다수의 모집요강을 등록할 수 있습니다.\n- 1개의 모집요강에 다수의 접수유형을 등록할 수 있습니다.\n\n※ 홈페이지 내에 온라인 등록원서 접수 등록을 원하실 경우, 게시여부 [예]로 수정해주셔야 합니다.\n※ 수강료 정보 설정 : 미사용 기능",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "모집요강을 등록하기 위해서는 반 관리의 반 정보 생성 시 강의분류를 온라인 접수 분류로",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반을 생성해야 모집요강에서 모집정보를 등록 할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "검색 : 조건에 해당되는 모집요강 목록을 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "삭제 : 목록에서 선택된 모집요강 정보를 삭제 합니다. 응시현황 정보가 있는 경우 삭제 할 수 없습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "모집요강 관리",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "온라인 접수 반 별로 모집요강을 등록합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "1개의 반에 다수의 모집요강을 등록할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "1개의 모집요강에 다수의 접수유형을 등록할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "B-1 모집요강 등록 방법 : 강의분류  반 선택  년도 / 학년 선택  모집명 입력  저장",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -16795,10 +16788,10 @@
       },
       {
         "type": "p",
-        "text": "B-2 접수유형 등록 방법 : 접수유형 목록 하단의 신규 버튼 선택  접수유형 입력  홈페이지 게시 여부 선택  모집 시작 / 종료일 설정  저장  모집요강 정보 입력  저장",
+        "text": "B-1 모집요강 등록 방법 : 강의분류  반 선택  년도 / 학년 선택  모집명 입력  저장",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "callout"
       },
       {
         "type": "p",
@@ -16811,24 +16804,24 @@
       },
       {
         "type": "p",
-        "text": "※ 홈페이지 내에 온라인 등록원서 접수 등록을 원하실 경우, 게시여부 [예]로 수정해주셔야 합니다.",
+        "text": "B-2 접수유형 등록 방법 : 접수유형 목록 하단의 신규 버튼 선택  접수유형 입력  홈페이지 게시 여부 선택  모집 시작 / 종료일 설정  저장  모집요강 정보 입력  저장",
         "images": [],
         "bold": false,
         "style": "callout"
       },
       {
         "type": "p",
-        "text": "※ 수강료 정보 설정 : 미사용 기능",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "callout"
       },
       {
         "type": "p",
-        "text": "응시현황",
+        "text": "\n",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "callout"
       },
       {
         "type": "p",
@@ -16841,87 +16834,94 @@
       },
       {
         "type": "p",
-        "text": "응시현황 조회 : 모집요강 관리 목록 중, 접수유형 클릭 시 홈페이지(온라인)에서 접수한 회원현황을 보여줍니다.",
+        "text": "C. 응시현황\n- 응시현황 조회 : 모집요강 관리 목록 중, 접수유형 클릭 시 홈페이지(온라인)에서 접수한 회원현황을 보여줍니다.\n\n- 응시현황 상세검색\n: 응시생등록 버튼을 클릭하면 상단과 같이 접수정보의 상세정보를 조회합니다.\n: 홈페이지의 온라인접수를 통하여 해당 모집요강에 접수된 회원의 응시현황을 확인할 수 있으며, 응시정보 및 성적정보 등을 입력 받을 수 있습니다. 또한 회원 및 응시정보 에 직접 정보를 입력하여 해당 모집유형에 응시정보를 등록할 수 있으며 등록된 회원정보는 회원정보 관리에서 조회가 가능합니다.\n\n- 성적정보\n: 접수된 성적 정보를 입력 및 수정할 있으며 시험종류별 성적 입력도 가능합니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "응시현황 상세검색",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "응시생등록 버튼을 클릭하면 상단과 같이 접수정보의 상세정보를 조회합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "홈페이지의 온라인접수를 통하여 해당 모집요강에 접수된 회원의 응시현황을 확인할 수 있으며, 응시정보 및 성적정보 등을 입력 받을 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "또한 회원 및 응시정보 에 직접 정보를 입력하여 해당 모집유형에 응시정보를 등록할 수 있으며 등록된 회원정보는 회원정보 관리에서 조회가 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "성적정보",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "접수된 성적 정보를 입력 및 수정할 있으며 시험종류별 성적 입력도 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수납관리",
+        "text": "5. 수납관리",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
         "text": "수납에 필요한 가상계좌 생성 및 수납처리를 관리 합니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "5.1 수강료 청구",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "회원에 대한 청구정보를 일괄 청구하여 가상계좌를 생성하거나 취소할 수 있습니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "[수강료 청구 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -16934,182 +16934,182 @@
       },
       {
         "type": "p",
-        "text": "반 검색조건",
+        "text": "A. 반 검색조건:\n- 수강년도, 반상태, 반 분류, 운영형태, 담임 명, 반 명에 해당되는 검색조건을 선택합니다.\n\nB. 반 목록\n- 반 검색조건에 해당하는 반 목록이 표시됩니다.\n\nC. 수강료 회차 목록\n- 반 정보에서 생성한 회차별 수강료가 표시됩니다.\n\nD. 회원 목록\n- B에서 선택한 반에 현재 배정되어 있는 회원 목록이 표시됩니다.\n- Ctrl, Shift를 이용하여, 원하는 학생만 선택할 수 있습니다.\n- 최초 청구정보 조회 시 청구상태가 미청구 상태이며, 개인에 따라 미청구, 미납, 취소, 완납 등의 상태가 나타나게 됩니다\n\nE. 청구정보\n- 납부마감일 : C에서 선택한 수강료 회차에 해당하는 월의 말일로 설정되어 있으며, 수정 가능합니다.\n- 포털청구 : 홈페이지에서 온라인 카드결제를 받기 위해서 체크해야 합니다. 포털청구가 체크된 수강료만 학생이 온라인 카드결제를 할 수 있습니다.\n- 청구적용 : D에서 선택한 학생들에게 수강료가 청구됩니다.\n- 청구취소 : 미납 상태의 수강료 청구를 취소합니다.\n- 엑셀다운로드 : 청구정보의 상세내역을 엑셀로 저장합니다.\n\nF. 수강료 상세 내역\n- 수강료 / 모의고사 / 교재비가 표시됩니다.\n- 수강료 회차 정보 및 수강료 상세내역\n- 수강료 회차정보를 클릭하면 다음과 같이 회원 별 청구 리스트가 조회 됩니다.\n- 최초 청구정보 조회 시 청구상태가 미청구 상태이며, 개인에 따라 미청구,미납,취소,완납 등의 상태가 나타나게 됩니다.\n- 회원 청구정보에 고정할인이 있는 경우 청구적용 시 할인을 적용 받게 됩니다.\n- 단, 청구정보 적용 시 하단과 같이 전체 할인 적용 시 개인별 고정할인은 적용되지 않습니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강년도, 반상태, 반 분류, 운영형태, 담임 명, 반 명에 해당되는 검색조건을 선택합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 검색조건에 해당하는 반 목록이 표시됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 회차 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 정보에서 생성한 회차별 수강료가 표시됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원 목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "B에서 선택한 반에 현재 배정되어 있는 회원 목록이 표시됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "Ctrl, Shift를 이용하여, 원하는 학생만 선택할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "최초 청구정보 조회 시 청구상태가 미청구 상태이며, 개인에 따라 미청구, 미납, 취소, 완납 등의 상태가 나타나게 됩니다",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "청구정보",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "납부마감일 : C에서 선택한 수강료 회차에 해당하는 월의 말일로 설정되어 있으며, 수정 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "포털청구 : 홈페이지에서 온라인 카드결제를 받기 위해서 체크해야 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "포털청구가 체크된 수강료만 학생이 온라인 카드결제를 할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "청구적용 : D에서 선택한 학생들에게 수강료가 청구됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "청구취소 : 미납 상태의 수강료 청구를 취소합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "엑셀다운로드 : 청구정보의 상세내역을 엑셀로 저장합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 상세 내역",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 / 모의고사 / 교재비가 표시됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 회차 정보 및 수강료 상세내역",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "료 청구정보",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 회차정보를 클릭하면 다음과 같이 회원 별 청구 리스트가 조회 됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "최초 청구정보 조회 시 청구상태가 미청구 상태이며, 개인에 따라 미청구,미납,취소,",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "완납 등의 상태가 나타나게 됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원 청구정보에 고정할인이 있는 경우 청구적용 시 할인을 적용 받게 됩니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "단, 청구정보 적용 시 하단과 같이 전체 할인 적용 시 개인별 고정할인은 적용되지 않습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -17118,22 +17118,22 @@
         "type": "p",
         "text": "5.2 수납 처리",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "회원의 수납 및 환불 관련된 업무를 관리합니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "[수납 처리 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -17146,7 +17146,16 @@
       },
       {
         "type": "p",
-        "text": "회원정보 검색 및 회원 목록",
+        "text": "",
+        "images": [
+          "upload_52a28f35f86c.png"
+        ],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "A. 회원정보 검색 및 회원 목록",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -17155,15 +17164,6 @@
         "type": "p",
         "text": "회원별 청구목록",
         "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "",
-        "images": [
-          "upload_52a28f35f86c.png"
-        ],
         "bold": false,
         "style": "normal"
       },
@@ -20305,6 +20305,12 @@
         "title": "4. 반 관리",
         "blockIdx": 151,
         "matchText": "4. 반 관리"
+      },
+      {
+        "id": "st_1795415238996",
+        "title": "5. 수납관리",
+        "blockIdx": 292,
+        "matchText": "5. 수납관리"
       }
     ]
   }
