@@ -1,3 +1,4 @@
+window.ETOOS_CHAPTERS_VERSION = 1795406651313;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -20390,3 +20391,4 @@ window.ETOOS_CHAPTERS = [
     ]
   }
 ];
+window.ETOOS_ORIGINAL_CHAPTERS = JSON.parse(JSON.stringify(window.ETOOS_CHAPTERS));
