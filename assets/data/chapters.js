@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795397129646;
+window.ETOOS_CHAPTERS_VERSION = 1795400075140;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -8908,16 +8908,10 @@ window.ETOOS_CHAPTERS = [
         "matchText": "(1) 메인 홈페이지 안내"
       },
       {
-        "id": "st_1794372576423",
+        "id": "st_1795399267223",
         "title": "2. LMS 페이지 안내",
         "blockIdx": 16,
         "matchText": "(2) LMS 페이지 안내"
-      },
-      {
-        "id": "st_1794381913126",
-        "title": "① 대시보드",
-        "blockIdx": 17,
-        "matchText": "① 대시보드"
       },
       {
         "id": "st_1794381923949",
