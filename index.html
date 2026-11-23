@@ -1814,7 +1814,8 @@
     }
 
     // Render Blocks in Reader View
-    function renderReaderContent(chap) {
+    function renderReaderContent(chap, options = {}) {
+      const showAll = Boolean(options && options.showAll);
       const container = document.getElementById('readerBody');
       container.innerHTML = '';
 
@@ -1849,7 +1850,8 @@
 
       const isEditing = (isAdminLoggedIn && isEditMode);
       const ranges = getNormalizedSubTopicRanges(chap);
-      const isPaginating = !isEditing && ranges.length > 0;
+      const isPaginating = !isEditing && !showAll && ranges.length > 0;
+      const imgLoadingAttr = showAll ? 'eager' : 'lazy';
       if (isPaginating) {
         currentSubTopicIndex = Math.max(0, Math.min(currentSubTopicIndex, ranges.length - 1));
       }
@@ -1897,7 +1899,7 @@
                 <div class="absolute top-3 right-3 bg-slate-900/75 group-hover:bg-brand-600 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center gap-1.5 shadow-sm z-10 cursor-zoom-in print:hidden" onclick="openLightbox('${imgName}')">
                   <i class="fa-solid fa-magnifying-glass-plus"></i> 확대 보기
                 </div>
-                <img src="${imgSrc}" alt="매뉴얼 캡처" class="max-h-[500px] w-auto mx-auto rounded-xl object-contain bg-white border border-slate-100 group-hover:scale-[1.008] transition-transform duration-200 cursor-zoom-in" loading="lazy" onclick="openLightbox('${imgName}')" />
+                <img src="${imgSrc}" alt="매뉴얼 캡처" class="max-h-[500px] w-auto mx-auto rounded-xl object-contain bg-white border border-slate-100 group-hover:scale-[1.008] transition-transform duration-200 cursor-zoom-in" loading="${imgLoadingAttr}" onclick="openLightbox('${imgName}')" />
                 <div class="mt-2 text-[11px] text-slate-400 group-hover:text-brand-700 transition flex items-center justify-center gap-1.5 print:hidden">
                   <i class="fa-solid fa-magnifying-glass-plus text-[10px]"></i>
                   <span>클릭하면 고화질 원본으로 크게 볼 수 있습니다</span>
@@ -2067,7 +2069,7 @@
                     </div>` : '';
                   imagesHtml += `<div class="cell-image-container inline-block max-w-full relative cursor-zoom-in group my-1 select-none" contenteditable="false" onclick="openLightbox('${safeImgAttr}')">
                     ${cellEditControls}
-                    <img src="${imgSrc}" class="max-w-full h-auto rounded-lg border border-slate-200 group-hover:border-brand-500 shadow-2xs group-hover:shadow transition" loading="lazy" />
+                    <img src="${imgSrc}" class="max-w-full h-auto rounded-lg border border-slate-200 group-hover:border-brand-500 shadow-2xs group-hover:shadow transition" loading="${imgLoadingAttr}" />
                     <span class="absolute bottom-1 right-1 bg-slate-900/80 text-white text-[9px] px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-magnifying-glass-plus mr-0.5"></i>확대</span>
                   </div>`;
                 });
@@ -2165,8 +2167,40 @@
     }
 
     // Print only the main reader content (excluding header, section header, and quick jump)
-    function printMainContent() {
+    // Temporarily renders the full current chapter/tab even when paginated by subtopics
+    async function printMainContent() {
       closeAllSearchResults();
+      const chap = chaptersData.find(c => c.id === currentChapterId);
+      const isEditing = (isAdminLoggedIn && isEditMode);
+      const ranges = chap ? getNormalizedSubTopicRanges(chap) : [];
+
+      if (chap && !isEditing && ranges.length > 0) {
+        renderReaderContent(chap, { showAll: true });
+        const imgs = Array.from(document.querySelectorAll('#readerBody img')).filter(img => !img.complete);
+        if (imgs.length > 0) {
+          await Promise.race([
+            Promise.all(imgs.map(img => new Promise(res => {
+              img.addEventListener('load', res, { once: true });
+              img.addEventListener('error', res, { once: true });
+            }))),
+            new Promise(res => setTimeout(res, 1500))
+          ]);
+        }
+
+        let restored = false;
+        const restoreView = () => {
+          if (restored) return;
+          restored = true;
+          window.removeEventListener('afterprint', restoreView);
+          const current = chaptersData.find(c => c.id === currentChapterId);
+          if (current) renderReaderContent(current);
+        };
+        window.addEventListener('afterprint', restoreView);
+        window.print();
+        setTimeout(restoreView, 300);
+        return;
+      }
+
       window.print();
     }
 
