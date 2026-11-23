@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795407035356;
+window.ETOOS_CHAPTERS_VERSION = 1795413342182;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -14463,35 +14463,35 @@ window.ETOOS_CHAPTERS = [
     "blocks": [
       {
         "type": "p",
-        "text": "247학원 운영관리(erp) 접속하기",
+        "text": "1. 이투스247학원 ERP 접속하기",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "h1"
       },
       {
         "type": "p",
         "text": "접속 URL : https://247erp.etoos.com",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "callout"
       },
       {
         "type": "p",
         "text": "1.1 시스템 요구사항",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "h2"
       },
       {
         "type": "p",
-        "text": "운영환경 클라이언트",
+        "text": "- 운영환경 클라이언트\n- 운영환경 : 윈도우 7 이상\n",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "운영환경 : 윈도우 7 이상",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -14501,14 +14501,7 @@ window.ETOOS_CHAPTERS = [
         "text": "1.2 247학원 운영관리(erp)접속하기",
         "images": [],
         "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "사용자 아이디와 비밀번호를 입력하여 학원운영관리(ERP)에 접속합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
+        "style": "h2"
       },
       {
         "type": "p",
@@ -14521,7 +14514,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "로그인 성공 시 다음과 같이 일일인원보고 메뉴로 접속 되며 가맹점의 경우 로열티 관련 결제 금액이 존재 할 경우 로열티 관리> 로열티 결제 화면으로 자동 이동됩니다.",
+        "text": "- 사용자 아이디와 비밀번호를 입력하여 학원운영관리(ERP)에 접속합니다.\n- 로그인 성공 시 다음과 같이 일일 인원보고 메뉴로 접속 되며 \n가맹점의 경우 로열티 관련 결제 금액이 존재 할 경우 로열티 관리> 로열티 결제 화면으로 자동 이동됩니다.",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -14530,19 +14530,12 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[일일 인원보고]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
-        "text": "전화상담 / 방문상담 인원 모두 입력 후, 저장 버튼을 클릭합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "※ 일일인원보고는 지점 최초 로그인 시, 필수로 1회 입력하여야만 타 메뉴 이용 가능합니다.",
+        "text": "※ 전화상담 / 방문상담 인원 모두 입력 후, 저장 버튼을 클릭합니다.\n※ 일일인원보고는 지점 최초 로그인 시, 필수로 1회 입력하여야만 타 메뉴 이용 가능합니다.\n※ 일일인원보고 저장 후에도 타 메뉴 이용 불가능한 경우 이전 일자 선택 후 검색 하여 입력 부탁드립니다.",
         "images": [
           "upload_4a34673455b3.png"
         ],
@@ -14551,7 +14544,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "※ 일일인원보고 저장 후에도 타 메뉴 이용 불가능한 경우 이전 일자 선택 후 검색 하여 입력 부탁드립니다.",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "callout"
@@ -14560,15 +14553,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[로열티 결제]",
         "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "결제가 필요한 금액을 체크 후, 결제하기 버튼을 클릭합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -14581,10 +14567,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "ERP 메뉴",
+        "text": "결제가 필요한 금액을 체크 후, 결제하기 버튼을 클릭합니다.",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "2. ERP 메뉴",
+        "images": [],
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "tbl",
@@ -14915,35 +14908,35 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "회원관리",
+        "text": "3. 회원관리",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
         "text": "회원의 기본 인적 사항 정보를 등록 및 수정할 수 있으며, 고지서 인쇄 및 상담 내용을 관리 합니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "3.1 회원정보관리",
-        "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "회원 정보를 등록 및 수정 합니다.",
+        "text": "3.1 회원정보관리",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "[회원 정보 관리 화면]",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "회원 정보를 등록 및 수정 합니다.",
         "images": [],
         "bold": true,
         "style": "bold"
@@ -14959,28 +14952,28 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "회원정보 검색 및 회원 목록",
+        "text": "A. 회원정보 검색 및 회원 목록\nB. 회원정보 입력 및 수정\nC. 회원 부가정보(학부모 / 보호자) 정보 입력 및 수정\nD. 회원 기타정보(반 배정 / 납부정보 / 상담정보 / 개인별 출결시간)",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "회원정보 입력 및 수정",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "회원 부가정보(학부모 / 보호자) 정보 입력 및 수정",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "회원 기타정보(반 배정 / 납부정보 / 상담정보 / 개인별 출결시간)",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
@@ -14989,15 +14982,15 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[회원 목록 검색]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
         "text": "A 또는 B 부분에 원하는 조건을 설정하여 회원 목록을 검색할 수 있습니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -15010,42 +15003,42 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "반 정보 검색 조건",
+        "text": "A. 반 정보 검색 조건\n- 수강년도 : 특정 년도에 등원한 회원정보를 검색\n- 강의분류 : 특정 반에 배정된 회원정보를 검색\n\nB. 회원 정보 검색 조건\n\nC. 검색 및 기타 버튼\n- 엑셀다운로드 : 검색된 회원 정보 다운로드 버튼 / 가맹 원장 ID 로그인 후 사용 가능",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강년도 : 특정 년도에 등원한 회원정보를 검색",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "강의분류 : 특정 반에 배정된 회원정보를 검색",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원 정보 검색 조건",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "검색 및 기타 버튼",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "엑셀다운로드 : 검색된 회원 정보 다운로드 버튼 / 가맹 원장 ID 로그인 후 사용 가능",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15054,15 +15047,15 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[반 변경]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
         "text": "회원을 특정한 반에 배정하거나 반에서 배정을 취소할 수 있습니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -15075,21 +15068,21 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "회원 검색",
+        "text": "A. 회원 검색\nB. 반 검색\nC. 선택한 회원의 반 배정 / 배정 취소 버튼회원 조회배정된 회원 조회\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 검색",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "선택한 회원의 반 배정 / 배정 취소 버튼회원 조회배정된 회원 조회",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15098,19 +15091,19 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[SMS전송]",
         "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "- 선택한 회원들을 대상으로 문자를 발송할 수 있습니다.\n- 학생 / 부모 / 학생+부모 등 문자를 연락처를 선택하여 발송할 수 있습니다.",
+        "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "선택한 회원들을 대상으로 문자를 발송할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "학생 / 부모 / 학생+부모 등 문자를 연락처를 선택하여 발송할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15126,35 +15119,28 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "SMS 발송 대상 1차 선택",
+        "text": "A. SMS 발송 대상 1차 선택\nB. SMS 내용 입력\nC. SMS 수신 번호 / 발송 시간 설정\nD. SMS 발송 대상 2차 선택\nE. SMS 발송",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "SMS 내용 입력",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "SMS 수신 번호 / 발송 시간 설정",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "SMS 발송 대상 2차 선택",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "SMS 발송",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15163,8 +15149,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "3.1.2 회원 등록",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
@@ -15175,17 +15161,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "회원에 관한 기본 정보를 등록 및 수정할 수 있습니다.",
+        "text": "- 회원에 관한 기본 정보를 등록 및 수정할 수 있습니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "로열티 및 재원생 혜택 지급과 연동되는 정보가 포함되어 있습니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "callout"
       },
       {
         "type": "p",
@@ -15198,52 +15184,45 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "부모정보 : 부모정보는 신규입력 후 부가정보에서 수정하거나 추가등록 할 수 있습니다.",
+        "text": "A. 부모정보 : 부모정보는 신규입력 후 부가정보에서 수정하거나 추가등록 할 수 있습니다.\nB. 통합회원 고유번호 :\n- 학생이 홈페이지 또는 MY247 APP에서 재원생 인증 신청을 할 경우 인증 번호가 부여됩니다.※ 재원생 인증 신청은 원생상태가 [재원생]인 경우에만 가능합니다.\n- LMS에서 재원생 인증 승인을 할 경우 통합회원 고유번호 상태가 [Y]로 변경됩니다.\n- 통합회원 고유번호 [Y] + 원생상태 [재원생]인 학생들만 로열티가 부과되며, MY247 APP 이용이 가능합니다.",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "통합회원 고유번호 :",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "학생이 홈페이지 또는 MY247 APP에서 재원생 인증 신청을 할 경우 인증 번호가 부여됩니다.※ 재원생 인증 신청은 원생상태가 [재원생]인 경우에만 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "LMS에서 재원생 인증 승인을 할 경우 통합회원 고유번호 상태가 [Y]로 변경됩니다.",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "통합회원 고유번호 [Y] + 원생상태 [재원생]인 학생들만 로열티가 부과되며,",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "MY247 APP 이용이 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "학생 계정 조회 : 학생 본인 명의의 ID를 모두 조회할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -15256,7 +15235,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "학생 계정 목록 중, 학생 정보에 등록된 통합회원 고유번호와 동일한 번호가 부여된 ID로 로그인한 경우에만 MY247 APP 사용이 가능합니다.",
+        "text": "C. 학생 계정 조회 : 학생 본인 명의의 ID를 모두 조회할 수 있습니다.\n- 학생 계정 목록 중, 학생 정보에 등록된 통합회원 고유번호와 동일한 번호가 부여된 ID로 로그인한 경우에만 MY247 APP 사용이 가능합니다.\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15270,77 +15256,77 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "학년 : 학생의 학년 정보를 선택합니다.",
+        "text": "D. 학년 : 학생의 학년 정보를 선택합니다.\nN수생 또는 재학생(고3 등) 여부에 따라서 로열티가 다르게 부과됩니다.\n중3이하로 설정하신 경우, 재원생 혜택 지급 대상에서 제외됩니다.\nE. 카드번호 : 출결카드 번호를 입력 또는 수정합니다.\n출결카드 등록 : 카드번호 칸 클릭 → PC에 연결한 카드리더기(출결카드 등록용)에 출결카드 태그 → 저장  (자세한 방법은 [별첨1] 참고)\nF. 수강반 : 윈터스쿨 등원생은 ‘윈터’, 썸머스쿨 등원생은 ‘썸머’, 그 외 등원생은 ‘정규’를 선택해야 합니다. 수강반 선택이 잘못될 경우 재원생 혜택 지급 대상에서 제외됩니다.\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "N수생 또는 재학생(고3 등) 여부에 따라서 로열티가 다르게 부과됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "중3이하로 설정하신 경우, 재원생 혜택 지급 대상에서 제외됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "카드번호 : 출결카드 번호를 입력 또는 수정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "출결카드 등록 : 카드번호 칸 클릭 → PC에 연결한 카드리더기(출결카드 등록용)에 출결카드 태그 → 저장  (자세한 방법은 [별첨1] 참고)",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강반 : 윈터스쿨 등원생은 ‘윈터’, 썸머스쿨 등원생은 ‘썸머’, 그 외 등원생은 ‘정규’를 선택해야 합니다. 수강반 선택이 잘못될 경우 재원생 혜택 지급 대상에서 제외됩니다.",
+        "text": "기타 정보\n- 수강번호 : 회원 등록 시 회원의 고유번호인 수강번호(학생번호)가 자동으로 부여됩니다.\n- 회원자리 : 학생의 자리 번호를 기입합니다. LMS 학생정보 및 출결 정보에 표시됩니다.\n- 실제 등원일 : 달력은 상단의 날짜 클릭 시 다음과 같은 순서로 날짜를 선택할 수 있습니다.\n※ 등원일 이전에는 LMS 출결 관리 대상에 포함되지 않습니다.\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "기타 정보",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강번호 : 회원 등록 시 회원의 고유번호인 수강번호(학생번호)가 자동으로 부여됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원자리 : 학생의 자리 번호를 기입합니다. LMS 학생정보 및 출결 정보에 표시됩니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "실제 등원일 : 달력은 상단의 날짜 클릭 시 다음과 같은 순서로 날짜를 선택할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "등원일 이전에는 LMS 출결 관리 대상에 포함되지 않습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15358,21 +15344,21 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "주의사항",
+        "text": "※ 주의사항\n재원생 인증 승인  퇴원한 학생의 경우, 원생상태를 재원생으로 바꾼 즉시 로열티가 부과됩니다.\n원생상태를 재원생으로 변경하기 전, 통합회원 고유번호(Y) 여부 확인 부탁드립니다.",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "재원생 인증 승인  퇴원한 학생의 경우, 원생상태를 재원생으로 바꾼 즉시 로열티가 부과됩니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "원생상태를 재원생으로 변경하기 전, 통합회원 고유번호(Y) 여부 확인 부탁드립니다.",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "bold"
@@ -15381,8 +15367,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[회원 부가정보]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15395,196 +15381,168 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "원생 상태 :",
+        "text": "A. 원생 상태 :\n- 회원의 상태를 관리 하며, 예비생, 재원생, 휴학생, 퇴원생, 졸업생, 제적생 상태 값을 정확히 구분해야 합니다.\n※ 재원생의 경우 휴학생, 퇴원생, 졸업생, 제적생으로만 변경 가능합니다.\n※ 휴학생,졸업생,제적생도 퇴원생과 동일하게 로열티 대상에서 제외됩니다.\n\nB. 퇴원 사유 및 퇴원 날짜 :\n- 퇴원생이 발생할 경우 원생 상태를 퇴원생으로 변경 후, 퇴원 사유와 퇴원 날짜를 입력해야 합니다.\n※ 회원퇴원 시 퇴원설정을 하지 않을 경우 로열티 부과가 지속됩니다.\n\nC. 현금영수증 :\n- 현금영수증이 자동 발급되도록 설정할 수 있습니다.\n- 발급 : 현금영수증 번호에 입력된 값을 발급. 현금 영수증 발급 번호가 없을 경우 부모HP 번호로 자동 발급 처리됩니다.\n- 미발급 – 영수증번호는 자진발급으로 처리됩니다.\n\nD. 고정할인 :\n- 월별로 고정된 값을 할인 할 경우 고정 할인률 또는 할인금액을 설정할 수 있습니다.\n- 통학지점: 반정보의 수강료 금액만 할인 처리됩니다.\n- 기숙지점: 수강료, 기숙사비, 식대 금액 모두 할인 처리 가능합니다.\n- 검색 / 삭제 고정 할인을 조회 선택 또는 삭제 합니다.\n\nE. 부가정보 수정 :\n- 부가정보를 수정할 경우, 신규 / 저장 / 삭제 버튼을 클릭합니다.\n\nF. 부모설정 :\n- 2명 이상의 부가정보를 저장할 경우, 1명을 주 보호자(부모)로 설정할 수 있습니다.\n※ 부모 설정이 된 번호로 출결문자가 발송됩니다.\n\nG. 학부모 인증 :\n- 학부모 계정으로 MY247 APP에서 자녀의 정보를 확인할 수 있습니다.\n- 학부모 인증 방법 : 부가정보에 등록된 번호로 회원가입  학부모 인증 클릭\n- 학부모 인증이 완료된 경우 좌측에 통합회원 고유번호가 부여됩니다.\n- 학부모 인증 성공 후에도 학부모로 MY247 APP로그인이 안 될 경우 학부모 계정 조회를 클릭하여, 학부모 인증된 계정의 ID를 안내 부탁드립니다.\n\n태블릿 주소 : 미사용 기능",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원의 상태를 관리 하며, 예비생, 재원생, 휴학생, 퇴원생, 졸업생, 제적생 상태 값을 정확히 구분해야 합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "※ 재원생의 경우 휴학생, 퇴원생, 졸업생, 제적생으로만 변경 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "callout"
       },
       {
         "type": "p",
-        "text": "※ 휴학생,졸업생,제적생도 퇴원생과 동일하게 로열티 대상에서 제외됩니다.",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "callout"
       },
       {
         "type": "p",
-        "text": "퇴원 사유 및 퇴원 날짜 :",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "퇴원생이 발생할 경우 원생 상태를 퇴원생으로 변경 후,",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "퇴원 사유와 퇴원 날짜를 입력해야 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "※ 회원퇴원 시 퇴원설정을 하지 않을 경우 로열티 부과가 지속됩니다.",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "callout"
       },
       {
         "type": "p",
-        "text": "C. 현금영수증 :",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "현금영수증이 자동 발급되도록 설정할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "발급 : 현금영수증 번호에 입력된 값을 발급. 현금 영수증 발급 번호가 없을 경우 부모HP 번호로 자동 발급 처리됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "미발급 – 영수증번호는 자진발급으로 처리됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "고정할인 :",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "월별로 고정된 값을 할인 할 경우 고정 할인률 또는 할인금액을 설정할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "통학지점: 반정보의 수강료 금액만 할인 처리됩니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "기숙지점: 수강료, 기숙사비, 식대 금액 모두 할인 처리 가능합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "검색 / 삭제 고정 할인을 조회 선택 또는 삭제 합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "부가정보 수정 :",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "부가정보를 수정할 경우, 신규 / 저장 / 삭제 버튼을 클릭합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "부모설정 :",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "2명 이상의 부가정보를 저장할 경우, 1명을 주 보호자(부모)로 설정할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "※ 부모 설정이 된 번호로 출결문자가 발송됩니다.",
-        "images": [],
-        "bold": true,
-        "style": "callout"
-      },
-      {
-        "type": "p",
-        "text": "학부모 인증 :",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "학부모 계정으로 MY247 APP에서 자녀의 정보를 확인할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "학부모 인증 방법 : 부가정보에 등록된 번호로 회원가입  학부모 인증 클릭",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "학부모 인증이 완료된 경우 좌측에 통합회원 고유번호가 부여됩니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "학부모 인증 성공 후에도 학부모로 MY247 APP로그인이 안 될 경우 학부모 계정 조회를 클릭하여, 학부모 인증된 계정의 ID를 안내 부탁드립니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "태블릿 주소 : 미사용 기능",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15593,8 +15551,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[회원정보 관리 버튼]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15607,42 +15565,42 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "신규버튼",
+        "text": "- 신규버튼: 새로운 회원정보를 입력 시 사용합니다.\n- 저장버튼: 신규버튼을 클릭하여 입력된 회원정보를 신규 등록하거나 회원정보 리스트에서 선택된 회원정보를 선택하여 변경된 사항을 수정 처리 합니다.\n- 납부처리: 회원정보 리스트에서 선택된 회원정보의 수납을 받기 위해서 수납처리 화면으로 이동합니다.\n\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "새로운 회원정보를 입력 시 사용합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "저장버튼",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "신규버튼을 클릭하여 입력된 회원정보를 신규 등록하거나 회원정보 리스트에서 선택된 회원정보를 선택하여 변경된 사항을 수정 처리 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "납부처리",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "회원정보 리스트에서 선택된 회원정보의 수납을 받기 위해서 수납처리 화면으로 이동합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15651,8 +15609,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[기타정보]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15665,42 +15623,42 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "반배정",
+        "text": "- 반배정: 회원이 배정됐던 반 목록을 확인할 수 있습니다. 반 선택 후 배정과 배정취소 가능 합니다.\n- 납부정보: 회원의 수강료 청구 내역과 납부 상태를 조회 합니다.\n- 상담정보: 회원의 상담관리에서 작성한 상담내역을 조회 합니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원이 배정됐던 반 목록을 확인할 수 있습니다. 반 선택 후 배정과 배정취소 가능 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "납부정보",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원의 수강료 청구 내역과 납부 상태를 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "상담정보",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "회원의 상담관리에서 작성한 상담내역을 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15709,26 +15667,26 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[개인별 출결시간]",
         "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "- 개인별 등ㆍ하원 시간을 다르게 설정할 수 있습니다.\n- 반 정보의 수업시간과 같이 LMS 출결정보와 연동됩니다.",
+        "images": [],
         "bold": true,
         "style": "bold"
       },
       {
         "type": "p",
-        "text": "개인별 등ㆍ하원 시간을 다르게 설정할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 정보의 수업시간과 같이 LMS 출결정보와 연동됩니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "※ 특정 요일만 체크할 경우 체크 하지 않은 요일은 등원하지 않는 것으로 처리됩니다.",
+        "text": "※ 특정 요일만 체크할 경우 체크 하지 않은 요일은 등원하지 않는 것으로 처리됩니다.\n※ 특정 요일의 등ㆍ하원 시간만 조정하려는 경우에도 반드시 다른 요일도 체크 해야 LMS 출결 대상에 포함됩니다.\n예시) 위 이미지와 같이 체크할 경우, 월 / 수 / 금을 제외한 요일은 출결 대상에서 제외됩니다.",
         "images": [
           "upload_c67d43c13a05.png"
         ],
@@ -15737,31 +15695,24 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "※ 특정 요일의 등ㆍ하원 시간만 조정하려는 경우에도 반드시 다른 요일도 체크 해야 LMS 출결 대상에 포함됩니다.",
+        "text": "\n",
         "images": [],
         "bold": true,
         "style": "callout"
       },
       {
         "type": "p",
-        "text": "예시) 위 이미지와 같이 체크할 경우, 월 / 수 / 금을 제외한 요일은 출결 대상에서 제외됩니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
         "text": "3.2 회원 조회",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "[회원정보 조회 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15774,14 +15725,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "회원정보 검색 조건 : 수강년도에 해당하는 이름 또는 학생의 연락처를 입력합니다.",
+        "text": "A. 회원정보 검색 조건 : 수강년도에 해당하는 이름 또는 학생의 연락처를 입력합니다.\nB. 검색 및 SMS 전송 버튼 : 검색 조건에 맞는 회원들을 검색합니다. 선택한 회원에게 SMS를 전송합니다.",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "box-blue"
       },
       {
         "type": "p",
-        "text": "검색 및 SMS 전송 버튼 : 검색 조건에 맞는 회원들을 검색합니다. 선택한 회원에게 SMS를 전송합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15790,22 +15741,22 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "3.3 상담관리",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "회원의 상담 내용을 관리 합니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "[상담관리 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15818,77 +15769,77 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "A. 검색조건:",
+        "text": "A. 검색조건: 지점, 반 분류, 상담구분, 학생명, 상담자, 내용, 기간 조건을 입력 후 상담내역을 조회합니다.\nB. 상담목록: 입력된 검색 조건에 해당되는 상담 목록을 조회 합니다.\nC. 상담등록 (주요정보 및 부가정보)\n- 필수입력 : 지점, 상담구분, 학생명, 상담 내용\n- 부가입력 : 반명, 학교, 계열, 학년, 집전화, 핸드폰, 보호자 핸드폰, 보호자명\n- 학생명검색 : 지점에 기존에 등록된 회원 정보를 검색합니다.\n- 학교검색 : 학교 정보를 팝업 화면에서 조회하며, 목록을 선택하여 학교 정보를 입력 합니다.\n- 신규 : 새로운 상담내용을 작성할 경우 사용합니다.\n- 저장 : 입력한 상담정보를 등록하거나 수정합니다.\n- 삭제 : 선택된 상담내용을 삭제 합니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "지점, 반 분류, 상담구분, 학생명, 상담자, 내용, 기간 조건을 입력 후 상담내역을 조회합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "B. 상담목록: 입력된 검색 조건에 해당되는 상담 목록을 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "C. 상담등록 (주요정보 및 부가정보)",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "필수입력 : 지점, 상담구분, 학생명, 상담 내용",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "부가입력 : 반명, 학교, 계열, 학년, 집전화, 핸드폰, 보호자 핸드폰, 보호자명",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "학생명검색 : 지점에 기존에 등록된 회원 정보를 검색합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "학교검색 : 학교 정보를 팝업 화면에서 조회하며, 목록을 선택하여 학교 정보를 입력 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "신규 : 새로운 상담내용을 작성할 경우 사용합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "저장 : 입력한 상담정보를 등록하거나 수정합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "삭제 : 선택된 상담내용을 삭제 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -15897,22 +15848,15 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "3.4 일일 인원보고",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "[일일 인원보고]",
         "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "전화상담 / 방문상담 수를 작성합니다.",
-        "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15925,38 +15869,45 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "반 관리",
+        "text": "전화상담 / 방문상담 수를 작성합니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "4. 반 관리",
+        "images": [],
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
         "text": "반 관련 정보 입력, 반 배정, 선발고사 정보를 관리 합니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "4.1 반 정보",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
         "text": "반 정보를 생성 및 수정 합니다.",
         "images": [],
-        "bold": false,
-        "style": "normal"
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
         "text": "[반 정보 화면]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15969,105 +15920,105 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "검색조건",
+        "text": "A. 검색조건: \n- 수강년도, 지점, 강의 분류 조건을 입력 후 반정보를 조회 합니다.\nB. 반목록\n- 입력된 검색 조건에 해당되는 반목록을 조회 합니다.\nC. 반정보\n- 반의 상제정보를 설정하여 관리합니다.My 247 메뉴: My 247 메뉴의 모든 기능을 사용하시려면 전체 체크를 해주세요.\nD. 수강료\n- 선택된 반에 해당되는 수강료 목록을 조회하거나 설정할 수 있습니다.\n- 회차별 수강료 : 월별로 해당 반의 수강료를 설정합니다.\n- 수강료 및 교재비 : 수강료, 모의고사, 교재비, 기타비용 등 세부항목의 금액 및 월별 수강료 항목을 관리합니다.\nE. 반 정보 수정 버튼\n- 신규버튼 : 반의 표시된 모든 정보를 초기화 하고 새로이 입력할 준비를 합니다.\n- 저장버튼 : 입력한 반정보를 신규 등록하거나 선택한 반정보를 저장(수정) 합니다.\n- 삭제버튼 : 목록에서 선택된 반정보를 삭제 합니다.단 회원정보가 배정된 경우 삭제할 수 없습니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강년도, 지점, 강의 분류 조건을 입력 후 반정보를 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반목록",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "입력된 검색 조건에 해당되는 반목록을 조회 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반정보",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반의 상제정보를 설정하여 관리합니다.My 247 메뉴: My 247 메뉴의 모든 기능을 사용하시려면 전체 체크를 해주세요.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "선택된 반에 해당되는 수강료 목록을 조회하거나 설정할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회차별 수강료 : 월별로 해당 반의 수강료를 설정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 및 교재비 : 수강료, 모의고사, 교재비, 기타비용 등 세부항목의 금액 및 월별 수강료 항목을 관리합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 정보 수정 버튼",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "신규버튼 : 반의 표시된 모든 정보를 초기화 하고 새로이 입력할 준비를 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "저장버튼 : 입력한 반정보를 신규 등록하거나 선택한 반정보를 저장(수정) 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "삭제버튼 : 목록에서 선택된 반정보를 삭제 합니다.단 회원정보가 배정된 경우",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "삭제할 수 없습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -16076,8 +16027,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[반 기본정보 생성]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -16090,182 +16041,168 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "반 종류",
+        "text": "1. 반 종류\n코칭반 : \n- 학생들이 반드시 배정되어야 하는 기본 반입니다.(※ 코칭반에 배정되지 않은 학생은 LMS 및 MY247 APP을 이용할 수 없습니다.)\n- 학생들은 1개의 코칭반에만 배정 가능합니다.\n\n특강반 : 과목에 따라서 생성 및 배정 가능합니다.\n- 학생들은 복수의 특강반에 배정 가능합니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "코칭반 : 학생들이 반드시 배정되어야 하는 기본 반입니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "코칭반에 배정되지 않은 학생은 LMS 및 MY247 APP을 이용할 수 없습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "학생들은 1개의 코칭반에만 배정 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "특강반 : 과목에 따라서 생성 및 배정 가능합니다.",
+        "text": "2. 반 기본정보\n①  수강년도 : 수강년도는 수능이 아닌 반이 운영되는 실제 수강 년도를 선택합니다. (※ 한번 설정한 수강년도는 수정할 수 없습니다.)\n② 특강차수 : 미사용 기능\n③ 반명 : 생성할 반 이름을 설정합니다.\n④ 담임명 : 반의 담임을 설정합니다.\n⑤ 수강료 : 반에 대한 기본 수강료를 설정합니다.\n⑥ 기 간  : \n- 반의 수강기간을 설정합니다.\n- 회원의 반배정 시 회원의 수강기간은 반의 수강기간을 기본으로 설정되며,수강시작일 이후 배정 시 현재일자를 수강시작일로 설정됩니다.\n※ 수강기간 내에서만 회차별 수강료를 설정할 수 있습니다.\n⑦ 정 원  : 반의 정원을 설정하며, 반배정 시 정원초과인 경우 정원초과에 대한 경고메시지를 보여줍니다.\n⑧ 계 열  : 반의 계열을 선택 합니다.\n⑨ 엑셀다운로드 : 반에 배정되었던 학생의 목록을 다운로드 합니다.\n⑩ 비 고  : 반의 기타정보를 입력 합니다.\n⑪ 기 타  : 반에 지정된 학생들의 LMS 및 My 247 APP 노출 여부를 설정합니다.\n※ LMS 및 My 247 APP 사용을 위해서는 꼭 체크해주세요. [직원/ 학생] 메뉴 전체 선택 해주셔야 합니다.\n⑫ 수업시간설정 : 출결 관리를 설정하는 기준이 되므로 요일과 등원 / 하원(수업시작,수업종료) 시간을 정확히 설정합니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "학생들은 복수의 특강반에 배정 가능합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반 기본정보",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강년도 : 수강년도는 수능이 아닌 반이 운영되는 실제 수강 년도를 선택합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "한번 설정한 수강년도는 수정할 수 없습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "특강차수 : 미사용 기능",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "반명 : 생성할 반 이름을 설정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "담임명 : 반의 담임을 설정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 : 반에 대한 기본 수강료를 설정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "기 간  : 반의 수강기간을 설정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "회원의 반배정 시 회원의 수강기간은 반의 수강기간을 기본으로",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "설정되며,수강시작일 이후 배정 시 현재일자를 수강시작일로 설정됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강기간 내에서만 회차별 수강료를 설정할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "정 원  : 반의 정원을 설정하며, 반배정 시 정원초과인 경우 정원초과에 대한 경고",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "메시지를 보여줍니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "계 열  : 반의 계열을 선택 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "엑셀다운로드 : 반에 배정되었던 학생의 목록을 다운로드 합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "비 고  : 반의 기타정보를 입력 합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "기 타  : 반에 지정된 학생들의 LMS 및 My 247 APP 노출 여부를 설정합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "LMS 및 My 247 APP 사용을 위해서는 꼭 체크해주세요. [직원/ 학생] 메뉴 전체 선택 해주셔야 합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "수업시간설정 : 출결 관리를 설정하는 기준이 되므로 요일과",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "등원 / 하원(수업시작,수업종료) 시간을 정확히 설정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -16291,14 +16228,7 @@ window.ETOOS_CHAPTERS = [
         "text": "‘수강’으로 설정된 학생에 대한 목록을 카운트한 값이 “반 목록” 의 인원 값으로 나타납니다.",
         "images": [],
         "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "3. 예약자반 사용 안내",
-        "images": [],
-        "bold": false,
-        "style": "h1"
+        "style": "callout"
       },
       {
         "type": "p",
@@ -16306,27 +16236,6 @@ window.ETOOS_CHAPTERS = [
         "images": [
           "upload_366d9a8cfbce.png"
         ],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "- 반 관리 – 반 정보 내에서 센터 - 예약자반을 선택하고 반 생성을 위한 필수값을 기재하여 [신규] 생성합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "- 선예약금 받고자 하는 월 과 금액을 기입하여 [저장]합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "- 저장한 회차 별 수강료를 [청구적용]하여 예약금을 수납청구 및 수납 처리 프로세스는 동일합니다.",
-        "images": [],
         "bold": false,
         "style": "normal"
       },
@@ -16341,28 +16250,56 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "- 예약자가 추후 실제 등원 할 경우에는 반 변경이 필요합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "※ 예약자 반에서는 출결 My247 / 재원생인증 / 이투스구독권 제공 등이 불가합니다.",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "3. 예약자반 사용 안내\n- 반 관리 – 반 정보 내에서 센터 - 예약자반을 선택하고 반 생성을 위한 필수값을 기재하여 [신규] 생성합니다.\n- 선예약금 받고자 하는 월 과 금액을 기입하여 [저장]합니다.\n- 저장한 회차 별 수강료를 [청구적용]하여 예약금을 수납청구 및 수납 처리 프로세스는 동일합니다.\n- 예약자가 추후 실제 등원 할 경우에는 반 변경이 필요합니다.\n- 반관리 – 반배정에서 실제 반으로 변경 배정 또는 회원정보관리 – 반배정 변경 처리 해주시기 바랍니다.",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "※ 예약자 반에서는 출결 My247 / 재원생인증 / 이투스구독권 제공 등이 불가합니다.\n※ 시스템 상으로 시기 별 예약자 현황을 파악하여 분석자료로 활용하기 위하므로 예약자반 활용에 적극 동참하여 주시기 바랍니다.\n",
         "images": [],
         "bold": false,
         "style": "callout"
       },
       {
         "type": "p",
-        "text": "- 반관리 – 반배정에서 실제 반으로 변경 배정 또는 회원정보관리 – 반배정 변경 처리 해주시기 바랍니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "※ 시스템 상으로 시기 별 예약자 현황을 파악하여 분석자료로 활용하기 위하므로 예약자반 활용에 적극 동참하여 주시기 바랍니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "callout"
@@ -16371,8 +16308,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[수강료 설정]",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -16385,63 +16322,63 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "회차별 수강료(교재비)",
+        "text": "A. 회차별 수강료(교재비)\n- 생성되어 있는 회차(월)별 수강료 목록입니다.\n- 목록 선택 후, 아래의 수강료 및 교재비에서 금액을 수정할 수 있습니다.\n- 수업시작일 / 수업종료일 : 날짜 클릭 후, 아래의 저장 버튼을 클릭하면 날짜를 수정합니다.\n예) 11월~12월 설정인 경우 수강료 226,000원 금액이 11,12월 의 1회차로 다음과 같이 생성되며 추가 등록 시 회차는 순번대로 증가합니다.\n\nB. 수강료 및 교재비\n- 항목의 빈칸에 금액을 직접 수정하여 입력합니다.\n- 수강료 및 교재비에서 금액 및 기간설정 후 저장 시 상단 회차별 수강료 금액이 설정됩니다.\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "생성되어 있는 회차(월)별 수강료 목록입니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "목록 선택 후, 아래의 수강료 및 교재비에서 금액을 수정할 수 있습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수업시작일 / 수업종료일 : 날짜 클릭 후, 아래의 저장 버튼을 클릭하면 날짜를 수정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "예) 11월~12월 설정인 경우 수강료 226,000원 금액이 11,12월 의 1회차로 다음과 같이",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "생성되며 추가 등록 시 회차는 순번대로 증가합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "수강료 및 교재비",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "항목의 빈칸에 금액을 직접 수정하여 입력합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "수강료 및 교재비에서 금액 및 기간설정 후 저장 시 상단 회차별 수강료 금액이 설정됩니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -16466,28 +16403,28 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "교재비설정",
+        "text": "C. 교재비설정\n검색버튼을 클릭하여 교재를 선택할 수 있는 팝업화면에서 교재를 설정합니다.\n\n* 수강료 및 교재비용 설정 시 별도의 회차로 생성하여 등록해야 합니다. 이는 수강료 및 교재의 사업자 정보가 다르기 때문에 합산된 금액을 수납처리 할 수 없습니다.\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "검색버튼을 클릭하여 교재를 선택할 수 있는 팝업화면에서 교재를 설정합니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "* 수강료 및 교재비용 설정 시 별도의 회차로 생성하여 등록해야 합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "이는 수강료 및 교재의 사업자 정보가 다르기 때문에 합산된 금액을 수납처리 할 수 없습니다.",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
@@ -20347,46 +20284,28 @@ window.ETOOS_CHAPTERS = [
     ],
     "subTopics": [
       {
-        "id": "st_8_210",
-        "title": "3. 예약자반 사용 안내",
-        "blockIdx": 210,
-        "matchText": "3. 예약자반 사용 안내"
+        "id": "st_1795407201920",
+        "title": "1. 이투스247학원 ERP 접속하기",
+        "blockIdx": 0,
+        "matchText": "1. 이투스247학원 ERP 접속하기"
       },
       {
-        "id": "st_8_610",
-        "title": "1. C타입 멀티허브와 태블릿 연결",
-        "blockIdx": 610,
-        "matchText": "1. C타입 멀티허브와 태블릿 연결"
+        "id": "st_1795407531713",
+        "title": "2. ERP 메뉴",
+        "blockIdx": 15,
+        "matchText": "2. ERP 메뉴"
       },
       {
-        "id": "st_8_611",
-        "title": "2. 카드리더기와 C타입 멀티허브 연결",
-        "blockIdx": 611,
-        "matchText": "2. 카드리더기와 C타입 멀티허브 연결"
+        "id": "st_1795407556295",
+        "title": "3. 회원관리",
+        "blockIdx": 17,
+        "matchText": "3. 회원관리"
       },
       {
-        "id": "st_8_612",
-        "title": "3. 충전기와 C타입 멀티허브 연결",
-        "blockIdx": 612,
-        "matchText": "3. 충전기와 C타입 멀티허브 연결"
-      },
-      {
-        "id": "st_8_640",
-        "title": "1. 오류 안내 음성 출력 : \"관리자에게 문의하세요\"",
-        "blockIdx": 640,
-        "matchText": "1. 오류 안내 음성 출력 : \"관리자에게 문의하세요\""
-      },
-      {
-        "id": "st_8_641",
-        "title": "2. 외출 / 복귀 / 조퇴 버튼 재선택 후 출결카드 / 번호입력",
-        "blockIdx": 641,
-        "matchText": "2. 외출 / 복귀 / 조퇴 버튼 재선택 후 출결카드 "
-      },
-      {
-        "id": "st_8_642",
-        "title": "3. 오류 지속 시 설정에서 오류 원인 확인 후 출결관리 업체 가온 연락: 010-6215",
-        "blockIdx": 642,
-        "matchText": "3. 오류 지속 시 설정에서 오류 원인 확인 후 출결관"
+        "id": "st_1795409003697",
+        "title": "4. 반 관리",
+        "blockIdx": 151,
+        "matchText": "4. 반 관리"
       }
     ]
   }
