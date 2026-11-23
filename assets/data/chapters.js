@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1794384629086;
+window.ETOOS_CHAPTERS_VERSION = 1795392096522;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -7833,6 +7833,13 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "                    ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
         "text": "② 재원생 관리",
         "images": [],
         "bold": false
@@ -9701,59 +9708,1008 @@ window.ETOOS_CHAPTERS = [
       {
         "id": "st_1794381923949",
         "title": "② 재원생 관리",
-        "blockIdx": 33,
+        "blockIdx": 34,
         "matchText": "② 재원생 관리"
       },
       {
         "id": "st_1794382478589",
         "title": "③ 지점/반 관리",
-        "blockIdx": 67,
+        "blockIdx": 68,
         "matchText": "③ 지점/반 관리"
       },
       {
         "id": "st_1794382528574",
         "title": "④ 출결 관리",
-        "blockIdx": 74,
+        "blockIdx": 75,
         "matchText": "④ 출결 관리"
       },
       {
         "id": "st_1794382588636",
         "title": "⑤ 입시 관리",
-        "blockIdx": 82,
+        "blockIdx": 83,
         "matchText": "⑤ 입시 관리"
       },
       {
         "id": "st_1794383097124",
         "title": "⑥ 홈페이지 관리",
-        "blockIdx": 98,
+        "blockIdx": 99,
         "matchText": "⑥ 홈페이지 관리"
       },
       {
         "id": "st_1794383649260",
         "title": "⑦ MY247 관리",
-        "blockIdx": 132,
+        "blockIdx": 133,
         "matchText": "⑦ MY247 관리"
       },
       {
         "id": "st_1794384383563",
         "title": "⑧ 매리트 관리",
-        "blockIdx": 155,
+        "blockIdx": 156,
         "matchText": "⑧ 매리트 관리"
       },
       {
         "id": "st_1794384505814",
         "title": "⑨ 본사지원",
-        "blockIdx": 171,
+        "blockIdx": 172,
         "matchText": "⑨ 본사지원"
       },
       {
         "id": "st_1794384565414",
         "title": "⑩ 통계",
-        "blockIdx": 179,
+        "blockIdx": 180,
         "matchText": "⑩ 통계"
       }
     ],
     "shortTitle": "5. 이투스247학원 LMS"
+  },
+  {
+    "id": 7,
+    "shortTitle": "6. MY247 APP",
+    "title": "6. MY247 APP",
+    "sub": "새 섹션 설명을 입력하세요",
+    "icon": "fa-desktop",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "<MY247 APP 설치>",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "1. MY247 APP 모바일",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "PLAY STORE 또는 APP STORE 검색 이투스247학원 MY247",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "2. MY247 APP PC",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "■ MY247 APP Windows PC 버전 다운로드 링크 : https://ko.fm/nKs",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "■ MY247 APP Macbook 버전 다운로드 링크 : https://bit.ly/3RGpnuq",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "■ 꼭 확인해 주세요.",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "Windows PC 버전 설치 시 반드시 관리자 권한으로 실행해 주세요.",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "다운로드가 안 될 경우 다운로드 기록 창에서 다시 시도하거나, 방화벽 설정에서 다운로드를 허용해 주세요.",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "모바일 APP과 달리 PC 버전은 APP 알림이 오지 않습니다.",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "브라우저를 닫으면 순공시간 측정에 차이가 있을 수 있습니다.",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "MY247 앱 학생 이용안내",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "(1) MY247 앱 전체 메뉴",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "",
+        "images": [
+          "upload_dc3a8b64cfa0.png"
+        ],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "1) 대시보드: 오늘의 공부 결과를 한눈에 보는 화면",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "2) 나만의 시간표: 나의 공부 계획을 시간표로 만들고, 순공시간을 스톱워치로 기록 가능한 기능",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "3) 리포트: 나의 학습 성향과 성취도 진단 결과, 공부 학습량 데이터, 생활 기록의 흐름을 확인하고, 담임선생님의 총평도 확인 할 수 있는 메뉴",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "4) 인강/교재: 모의고사 성적을 바탕으로 만들어진 ‘LMIP 큐레이션’을 활용할 수 있고, 나에게 맞는 인강이나 교재를 검색할 수 있는 메뉴",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "5) 내정보: 나의 재원 정보를 확인하고, 선택 과목, 목표 대학 설정 가능. 또한 공지사항, 매리트, 수납/결제, 입시센터, 마켓 ECI등 학원 생활에 필요한 정보들을 확인할 수 있는 메뉴",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "6) 질문 예약: 궁금한 문제를 바로 해결할 수 있도록 과목별 전문 선생님과의 1:1 질문을 예약",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "7) 매리트: 국어, 수학, 영어, 사과탐 등 일일테스트와 LMTI, LMIT를 응시 할 수 있는 메뉴",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "8) 메뉴 더보기",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "- 공지사항: 학원 필수 공지와 운영 일정 확인",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "- 출결 변경: 갑작스럽게 출석을 못하거나 지각할 경우, 학원에 알릴 수 있도록 신청하는 곳",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "- 주간 식단표 (기숙 재원생 대상)",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "- 응원의 편지 (기숙 재원생 대상)",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "9)설정: 순공 레이스, D-day, 나만의 시간표 레이아웃 등을 관리 설정할 수 있는 메뉴",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "10)D-day: 설정을 통해 필요한 D-day 이름과 날짜를 조정할 수 있고, 최대 3개 까지 가능",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "(2) 홈(대시보드)",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "",
+        "images": [
+          "upload_141e099d216f.jpg"
+        ],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "실제로 기록된 공부 시간과 함께 전국 이투스247학원 재원생 중 나의 공부 시간 순위를 확인할 수 있는 홈 화면. 경쟁이 아니라 “나도 이만큼 하고 있구나 ” 하는 동기부여용으로 참고",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "평균과의 비교/과목별 밸런스/학습 유형별 비율",
+        "images": [
+          "upload_f2daf0152f31.jpg"
+        ],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "최상위권과 순공 시간, 과목별 밸런스를 비교해볼 수 있고, 학습 유형별 비율을 확인할 수 있다.",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "참고용 정보이므로 부담 가질 필요 없이, 공부가 끝난 뒤 가볍게 확인하는 용도로 사용 독려",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "(3) 나만의 시간표",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "학생이 실제로 공부한 시간이 기록되는 곳. MY247에서 가장 중요하게 사용되는 화면",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "월간 / 주간 / 일간 별로 나눠서 확인 가능",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_314fc620fb6d.png"
+              ]
+            },
+            {
+              "text": "월간: 한 달 전체 계획을 크게 보는 용도",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_9af10c1d3a03.png"
+              ]
+            },
+            {
+              "text": "주간: 이번 주 공부 흐름을 보는 용도",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_9f18b7b0b702.png"
+              ]
+            },
+            {
+              "text": "일간: 오늘 하루를 시간대별로 기록하는 메인 화면",
+              "images": []
+            }
+          ]
+        ],
+        "colWidths": [
+          287
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ⓐ 나만의 시간표 사용 방법",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_44a866c96846.png"
+              ]
+            },
+            {
+              "text": "일정 추가: 과목과 내용을 추가",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_37c5d114a865.png"
+              ]
+            },
+            {
+              "text": "스톱워치 실행: 공부를 시작할 때 반드시 ▶ 버튼을 눌러야 함",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_5e3e35973f33.png"
+              ]
+            },
+            {
+              "text": "바로시작 기능: 일정을 추가하지 않아도 바로 순공시간을 기록할 수 있는 기능\n학습한 과목 및 시간은 나만의 시간표에 바로 반영",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_fd8cf4b4fbcc.png"
+              ]
+            },
+            {
+              "text": "일정 수정/삭제/반복 설정: 오기입 시 언제든 수정 가능하고, 또한 원하는 주기를 설정하여 일정을 반복할 수 있는 기능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_f7b9ceb2b3c8.png"
+              ]
+            },
+            {
+              "text": "현황: 과목별, 유형별 목표 시간을 설정 가능",
+              "images": []
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "유의할 점",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "- 스톱워치 실행을 해야 공부 시간이 기록됨 (나만의 시간표에 계획만 하면 순공 시간에 반영되지 않음)",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "- 오늘을 포함한 앞으로의 일정은 수정 가능, 24시간 이전에 등록한 일정은 수정되지 않음",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "(4) 리포트",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_485eb61a2fd7.png"
+              ]
+            },
+            {
+              "text": "진단: LMTI&LMAT 진단 결과를 통해 스스로의 학습 성향을 확인\n진단은 <매리트-LMTI/LMAT에서 테스트 가능>",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_552d7db178ca.jpg"
+              ]
+            },
+            {
+              "text": "학습: 공부 시간과 패턴 등을 확인\n주간, 월간별 확인 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_fa5ee76539a1.png"
+              ]
+            },
+            {
+              "text": "생활: 출결, 생활 점수, 주간 패턴 파악\n주간, 월간별 확인 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_78e1525394ac.jpg"
+              ]
+            },
+            {
+              "text": "입시: 모의고사 성적을 바탕으로 입시 분석 현황 확인 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_0ef137563425.png"
+              ]
+            },
+            {
+              "text": "종합: 한 달동안의 생활, 공통, 학습 평가 등을 같이 확인 가능",
+              "images": []
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "(5) 인강/교재",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_184d8fd57893.png"
+              ]
+            },
+            {
+              "text": "검색창에서 나에게 맞는 인강과 교재 검색\n원하는 강의를 바로 나만의 시간표에 추가 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_51b8bb51b993.png"
+              ]
+            },
+            {
+              "text": "원하는 강의를 나만의 시간표에 바로 추가 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_8438309548cb.png"
+              ]
+            },
+            {
+              "text": "LMIP 추천 큐레이션 : 입력한 수능/모의고사 기준으로 인강을 추천",
+              "images": []
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "(6) 내정보",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "학습 기준을 설정하는 관리 영역",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "앱 최초 설치 시 프로필 세팅 안내",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_d998bf9acd7d.png"
+              ]
+            },
+            {
+              "text": "프로필 사진과 닉네임은 대시보드 순공 랭킹과 운동장에서 보여짐\n실명 대신 닉네임 사용 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_4b7bda8a713f.png"
+              ]
+            },
+            {
+              "text": "학습 환경\n현재 다니는 지점과 반, 좌석 정보를 확인\n보유 중인 인강 패스 정보 확인",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_50102f7b98ec.png"
+              ]
+            },
+            {
+              "text": "목표 대학 설정\n여러개 설정 가능, 상시 수정 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_32abde57857f.png"
+              ]
+            },
+            {
+              "text": "선택 과정 설정\n응시 예정 과목을 선택\n변경이 필요한 경우 수정 가능",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_9857cf698212.png"
+              ]
+            },
+            {
+              "text": "학생 필수 서비스/학원 행정\n학원 생활과 관련된 정보 확인 가능",
+              "images": []
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "(7) 질문 예약",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_9486a53f5e35.png"
+              ]
+            },
+            {
+              "text": "예약 신청: 과목과 선생님을 선택하고, 원하는 날짜 시간을 선택해요.",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_091d3451ec48.png"
+              ]
+            },
+            {
+              "text": "예약 신청 화면에서 선생님께 여쭤볼 내용을 간단하게 기재 가능\n(문제를 사진으로 찍어서 이미지 업로드 가능)",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_025638980078.png"
+              ]
+            },
+            {
+              "text": "예약 이력 : 나의 예약 날짜, 시간 등을 확인",
+              "images": []
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "(8) 매리트",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_2769e42e79f1.png"
+              ]
+            },
+            {
+              "text": "국어, 수학, 영어, 사과탐 일일테스트 응시",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_fd0aa754b38e.png"
+              ]
+            },
+            {
+              "text": "영어 듣기 평가- 리스닝 마스터 20회(2026)- 리스닝 마스터 40회(2026)\nVOCA TEST- 워드마스터 베이직(2026)- 워드마스터 하이스트(2026)- 워드마스터 수능2000(2026)- 워드마스터 EBS 파이널(2026)",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_84279f563281.png"
+              ]
+            },
+            {
+              "text": "LMTI: 학습성향진단\nLMAT: 학습성취도진단\n진단 후 결과를 자동으로 분석하여 바로 받아볼 수 있습니다.",
+              "images": []
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "(9) 메뉴 더보기",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_077d76f4eb60.png"
+              ]
+            },
+            {
+              "text": "마켓ECI",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_3755d8f3ef04.png"
+              ]
+            },
+            {
+              "text": "상담 관리",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_e76401be8cac.png"
+              ]
+            },
+            {
+              "text": "수납/결제 확인",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_384f46e1e9cd.png"
+              ]
+            },
+            {
+              "text": "입시 센터",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_5b82cc8ef2ee.png"
+              ]
+            },
+            {
+              "text": "공지사항",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_c4d09c2ce7f5.png"
+              ]
+            },
+            {
+              "text": "출결 변경\n출결 변경은 정상적으로 등원·하원 처리가 되지 않았거나, 지각·조퇴·결석 등의 사유가 발생했을 때 정정 신청하는 기능\n출결 변경 신청하기 : 날짜, 출결 유형을 선택하고 사유를 입력",
+              "images": []
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "(10) 설정",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "tbl",
+        "rows": [
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_0dd2ee4e7bde.png"
+              ]
+            },
+            {
+              "text": "순공 레이스 관리\n순공 레이스에 내 이름(닉네임)과 프로필 사진을 숨길 수 있어요.",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_dbb95de4a461.png"
+              ]
+            },
+            {
+              "text": "D-day 관리\n3/6/9월 모의평가 D-day를 수정할 수 있이요.",
+              "images": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "images": [
+                "upload_fd5a46c3a906.png"
+              ]
+            },
+            {
+              "text": "나만의 시간표 관리\n일정 패널 위치를 선택할 수 있습니다.",
+              "images": []
+            }
+          ]
+        ]
+      }
+    ],
+    "subTopics": [
+      {
+        "id": "st_7_1",
+        "title": "1. MY247 APP 모바일",
+        "blockIdx": 1,
+        "matchText": "1. MY247 APP 모바일"
+      },
+      {
+        "id": "st_7_3",
+        "title": "2. MY247 APP PC",
+        "blockIdx": 3,
+        "matchText": "2. MY247 APP PC"
+      },
+      {
+        "id": "st_7_12",
+        "title": "(1) MY247 앱 전체 메뉴",
+        "blockIdx": 12,
+        "matchText": "(1) MY247 앱 전체 메뉴"
+      },
+      {
+        "id": "st_7_14",
+        "title": "1) 대시보드: 오늘의 공부 결과를 한눈에 보는 화면",
+        "blockIdx": 14,
+        "matchText": "1) 대시보드: 오늘의 공부 결과를 한눈에 보는 화면"
+      },
+      {
+        "id": "st_7_15",
+        "title": "2) 나만의 시간표: 나의 공부 계획을 시간표로 만들고, 순공시간을 스톱워치로 기",
+        "blockIdx": 15,
+        "matchText": "2) 나만의 시간표: 나의 공부 계획을 시간표로 만들고"
+      },
+      {
+        "id": "st_7_16",
+        "title": "3) 리포트: 나의 학습 성향과 성취도 진단 결과, 공부 학습량 데이터, 생활 기",
+        "blockIdx": 16,
+        "matchText": "3) 리포트: 나의 학습 성향과 성취도 진단 결과, 공"
+      },
+      {
+        "id": "st_7_17",
+        "title": "4) 인강/교재: 모의고사 성적을 바탕으로 만들어진 ‘LMIP 큐레이션’을 활용할",
+        "blockIdx": 17,
+        "matchText": "4) 인강/교재: 모의고사 성적을 바탕으로 만들어진 ‘"
+      },
+      {
+        "id": "st_7_18",
+        "title": "5) 내정보: 나의 재원 정보를 확인하고, 선택 과목, 목표 대학 설정 가능. 또",
+        "blockIdx": 18,
+        "matchText": "5) 내정보: 나의 재원 정보를 확인하고, 선택 과목,"
+      },
+      {
+        "id": "st_7_19",
+        "title": "6) 질문 예약: 궁금한 문제를 바로 해결할 수 있도록 과목별 전문 선생님과의 1",
+        "blockIdx": 19,
+        "matchText": "6) 질문 예약: 궁금한 문제를 바로 해결할 수 있도록"
+      },
+      {
+        "id": "st_7_28",
+        "title": "(2) 홈(대시보드)",
+        "blockIdx": 28,
+        "matchText": "(2) 홈(대시보드)"
+      },
+      {
+        "id": "st_7_34",
+        "title": "(3) 나만의 시간표",
+        "blockIdx": 34,
+        "matchText": "(3) 나만의 시간표"
+      },
+      {
+        "id": "st_7_43",
+        "title": "(4) 리포트",
+        "blockIdx": 43,
+        "matchText": "(4) 리포트"
+      },
+      {
+        "id": "st_7_45",
+        "title": "(5) 인강/교재",
+        "blockIdx": 45,
+        "matchText": "(5) 인강/교재"
+      },
+      {
+        "id": "st_7_47",
+        "title": "(6) 내정보",
+        "blockIdx": 47,
+        "matchText": "(6) 내정보"
+      },
+      {
+        "id": "st_7_51",
+        "title": "(7) 질문 예약",
+        "blockIdx": 51,
+        "matchText": "(7) 질문 예약"
+      },
+      {
+        "id": "st_7_53",
+        "title": "(8) 매리트",
+        "blockIdx": 53,
+        "matchText": "(8) 매리트"
+      },
+      {
+        "id": "st_7_55",
+        "title": "(9) 메뉴 더보기",
+        "blockIdx": 55,
+        "matchText": "(9) 메뉴 더보기"
+      }
+    ]
   },
   {
     "id": 6,
@@ -14365,7 +15321,7 @@ window.ETOOS_CHAPTERS = [
         "matchText": "카드리더기와"
       }
     ],
-    "shortTitle": "6. 이투스247학원 ERP 운영관리"
+    "shortTitle": "7. 이투스247학원 ERP 운영관리"
   }
 ];
 window.ETOOS_ORIGINAL_CHAPTERS = JSON.parse(JSON.stringify(window.ETOOS_CHAPTERS));
