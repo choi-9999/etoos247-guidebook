@@ -1944,17 +1944,31 @@
               
               let imagesHtml = '';
               if (cell.images && cell.images.length > 0) {
-                cell.images.forEach(img => {
+                cell.images.forEach((img, imgIdx) => {
                   const imgSrc = (img.startsWith('data:') || img.startsWith('blob:') || img.startsWith('http'))
                     ? img
                     : `assets/media/${img}`;
                   const safeImgAttr = img.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+                  const cellEditControls = (isAdminLoggedIn && isEditMode) ? `
+                    <div class="absolute top-1.5 left-1.5 flex items-center gap-1 z-20 bg-white/90 backdrop-blur-xs p-0.5 rounded border border-amber-200 shadow-sm print:hidden" onclick="event.stopPropagation()">
+                      <label class="px-1.5 py-0.5 bg-amber-600 hover:bg-amber-700 text-white text-[10px] font-bold rounded cursor-pointer transition flex items-center gap-1" title="새 이미지로 교체">
+                        <i class="fa-solid fa-camera"></i> 교체
+                        <input type="file" accept="image/*" class="hidden" onchange="replaceTableCellImage(currentChapterId, ${idx}, ${rIdx}, ${cIdx}, ${imgIdx}, this)" />
+                      </label>
+                      <button type="button" onclick="deleteTableCellImage(currentChapterId, ${idx}, ${rIdx}, ${cIdx}, ${imgIdx})" class="px-1.5 py-0.5 bg-rose-600 hover:bg-rose-700 text-white text-[10px] font-bold rounded transition flex items-center gap-1" title="이 이미지 삭제">
+                        <i class="fa-solid fa-trash-can"></i> 삭제
+                      </button>
+                    </div>` : '';
                   imagesHtml += `<div class="cell-image-container inline-block relative cursor-zoom-in group my-1 select-none" contenteditable="false" onclick="openLightbox('${safeImgAttr}')">
+                    ${cellEditControls}
                     <img src="${imgSrc}" class="max-h-44 rounded-lg border border-slate-200 group-hover:border-brand-500 shadow-2xs group-hover:shadow transition" loading="lazy" />
                     <span class="absolute bottom-1 right-1 bg-slate-900/80 text-white text-[9px] px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-magnifying-glass-plus mr-0.5"></i>확대</span>
                   </div>`;
                 });
               }
+              const addCellImgBtn = (isAdminLoggedIn && isEditMode)
+                ? `<div contenteditable="false" class="mt-1 opacity-0 group-hover/cell:opacity-100 focus-within:opacity-100 transition-opacity print:hidden" onclick="event.stopPropagation()"><label class="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-semibold text-slate-500 hover:text-brand-700 bg-slate-100 hover:bg-brand-50 border border-slate-200 rounded cursor-pointer transition" title="이 셀에 이미지 추가"><i class="fa-solid fa-image"></i> +이미지<input type="file" accept="image/*" class="hidden" onchange="addTableCellImage(currentChapterId, ${idx}, ${rIdx}, ${cIdx}, this)" /></label></div>`
+                : '';
 
               // Apply saved column width if present
               const colWidthStyle = (colWidths && colWidths[cIdx]) ? `style="width: ${colWidths[cIdx]}px; min-width: 60px;"` : '';
@@ -1963,11 +1977,11 @@
                 // Header with column resize handle and column delete button
                 const deleteColBtn = (isAdminLoggedIn && isEditMode) ? `<button contenteditable="false" onclick="event.stopPropagation(); deleteSpecificTableCol(currentChapterId, ${idx}, ${cIdx})" class="opacity-0 group-hover/th:opacity-100 transition-opacity p-0.5 text-rose-500 hover:text-white hover:bg-rose-600 rounded text-[10px] absolute left-1 top-1 z-20 cursor-pointer print:hidden" title="이 열 삭제"><i class="fa-solid fa-xmark"></i></button>` : '';
                 const resizerHtml = (isAdminLoggedIn && isEditMode) ? `<div contenteditable="false" class="col-resizer print:hidden" onmousedown="initColResize(event, currentChapterId, ${idx}, ${cIdx})" title="드래그하여 열 너비 조절"></div>` : '';
-                const editableAttr = (isAdminLoggedIn && isEditMode) ? `class="editable-item relative group/th pl-4" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)"` : `class="relative"`;
-                tableHtml += `<th ${colWidthStyle} ${editableAttr}>${deleteColBtn}${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}${resizerHtml}</th>`;
+                const editableAttr = (isAdminLoggedIn && isEditMode) ? `class="editable-item relative group/th group/cell pl-4" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)"` : `class="relative"`;
+                tableHtml += `<th ${colWidthStyle} ${editableAttr}>${deleteColBtn}${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}${addCellImgBtn}${resizerHtml}</th>`;
               } else {
                 if (isAdminLoggedIn && isEditMode) {
-                  tableHtml += `<td ${colWidthStyle} class="editable-item" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)">${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}</td>`;
+                  tableHtml += `<td ${colWidthStyle} class="editable-item group/cell" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)">${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}${addCellImgBtn}</td>`;
                 } else {
                   tableHtml += `<td ${colWidthStyle}>${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}</td>`;
                 }
@@ -3934,13 +3948,21 @@
       saveCustomChapters(false);
     }
 
-    // Replace Image in Block
-    function replaceBlockImage(chapId, blockIdx, imgIdx, input) {
+    // Shared helper to read and compress an uploaded image file
+    function readAndCompressImageFile(input, onReady) {
       if (!input.files || input.files.length === 0) return;
       const file = input.files[0];
       const reader = new FileReader();
       reader.onload = async function(e) {
         const dataUrl = await compressImageDataUrl(e.target.result);
+        onReady(dataUrl);
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Replace Image in Block
+    function replaceBlockImage(chapId, blockIdx, imgIdx, input) {
+      readAndCompressImageFile(input, (dataUrl) => {
         const chap = chaptersData.find(c => c.id === chapId);
         if (chap && chap.blocks[blockIdx] && chap.blocks[blockIdx].images) {
           chap.blocks[blockIdx].images[imgIdx] = dataUrl;
@@ -3948,8 +3970,46 @@
           saveCustomChapters(false);
           alert('✅ 이미지가 성공적으로 교체되었습니다!');
         }
-      };
-      reader.readAsDataURL(file);
+      });
+    }
+
+    // Replace Image in Table Cell
+    function replaceTableCellImage(chapId, blockIdx, rowIdx, cellIdx, imgIdx, input) {
+      readAndCompressImageFile(input, (dataUrl) => {
+        const chap = chaptersData.find(c => c.id === chapId);
+        const cell = chap?.blocks?.[blockIdx]?.rows?.[rowIdx]?.[cellIdx];
+        if (cell && Array.isArray(cell.images)) {
+          cell.images[imgIdx] = dataUrl;
+          renderReaderContent(chap);
+          saveCustomChapters(false);
+          alert('✅ 표 이미지가 성공적으로 교체되었습니다!');
+        }
+      });
+    }
+
+    // Add Image to Table Cell
+    function addTableCellImage(chapId, blockIdx, rowIdx, cellIdx, input) {
+      readAndCompressImageFile(input, (dataUrl) => {
+        const chap = chaptersData.find(c => c.id === chapId);
+        const cell = chap?.blocks?.[blockIdx]?.rows?.[rowIdx]?.[cellIdx];
+        if (cell) {
+          if (!Array.isArray(cell.images)) cell.images = [];
+          cell.images.push(dataUrl);
+          renderReaderContent(chap);
+          saveCustomChapters(false);
+        }
+      });
+    }
+
+    // Delete Image in Table Cell
+    function deleteTableCellImage(chapId, blockIdx, rowIdx, cellIdx, imgIdx) {
+      const chap = chaptersData.find(c => c.id === chapId);
+      const cell = chap?.blocks?.[blockIdx]?.rows?.[rowIdx]?.[cellIdx];
+      if (!cell || !Array.isArray(cell.images)) return;
+      if (!confirm('정말 이 표 이미지를 삭제하시겠습니까?')) return;
+      cell.images.splice(imgIdx, 1);
+      renderReaderContent(chap);
+      saveCustomChapters(false);
     }
 
     // Delete Image in Block
