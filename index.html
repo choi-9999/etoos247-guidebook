@@ -4725,20 +4725,19 @@
         }
       }
 
-      const payloadObj = {
+      let chaptersToPublish = JSON.parse(JSON.stringify(chaptersData));
+      let preUploadedMedia = [];
+      let totalUploadedImagesCount = 0;
+
+      let payloadObj = {
         action: 'publish',
         password: pwd,
-        chaptersData: chaptersData,
+        chaptersData: chaptersToPublish,
         expectedCommitSha: serverPublishStatus.latestCommitSha,
         forceOverwrite: forceOverwrite
       };
-      const payloadJson = JSON.stringify(payloadObj);
-      const payloadBytes = new Blob([payloadJson]).size;
-
-      if (payloadBytes > 4.2 * 1024 * 1024) {
-        await showAppAlert(`⚠️ 한 번에 전송할 데이터 크기(${(payloadBytes / (1024 * 1024)).toFixed(2)}MB)가 Vercel 요청 제한(4.5MB)에 근접했습니다.\n\n이미지를 너무 많이 한 번에 추가한 경우 몇 장씩 나누어 [운영 서버에 반영]을 눌러 주세요.`);
-        return;
-      }
+      let payloadJson = JSON.stringify(payloadObj);
+      let payloadBytes = new Blob([payloadJson]).size;
 
       const btn = document.getElementById('publishServerBtn');
       const prevHtml = btn ? btn.innerHTML : '';
@@ -4749,6 +4748,105 @@
       updateServerSyncBadge('GitHub 커밋 및 배포 요청 중...', 'publishing');
 
       try {
+        // Automatically split large inline image payloads into < 2.5MB batches so Vercel 4.5MB limit is never hit
+        if (payloadBytes > 3.2 * 1024 * 1024) {
+          const dataUrls = [];
+          const seenUrls = new Set();
+          chaptersToPublish.forEach(ch => {
+            (ch.blocks || []).forEach(b => {
+              (b.images || []).forEach(im => {
+                if (typeof im === 'string' && im.startsWith('data:image/') && !seenUrls.has(im)) {
+                  seenUrls.add(im);
+                  dataUrls.push(im);
+                }
+              });
+              (b.rows || []).forEach(r => r.forEach(c => {
+                (c.images || []).forEach(im => {
+                  if (typeof im === 'string' && im.startsWith('data:image/') && !seenUrls.has(im)) {
+                    seenUrls.add(im);
+                    dataUrls.push(im);
+                  }
+                });
+              }));
+            });
+          });
+
+          if (dataUrls.length > 0) {
+            const batches = [];
+            let curBatch = [];
+            let curSize = 0;
+            const MAX_BATCH_BYTES = 2.5 * 1024 * 1024;
+            for (const url of dataUrls) {
+              if (curBatch.length > 0 && curSize + url.length > MAX_BATCH_BYTES) {
+                batches.push(curBatch);
+                curBatch = [];
+                curSize = 0;
+              }
+              curBatch.push(url);
+              curSize += url.length;
+            }
+            if (curBatch.length > 0) batches.push(curBatch);
+
+            const urlToFileName = new Map();
+            for (let bIdx = 0; bIdx < batches.length; bIdx++) {
+              updateServerSyncBadge(`이미지 분할 업로드 중 (${bIdx + 1}/${batches.length})...`, 'publishing');
+              const batchRes = await fetch('/api/publish', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  action: 'upload_media_batch',
+                  password: pwd,
+                  images: batches[bIdx]
+                })
+              });
+              const batchData = await batchRes.json().catch(() => ({}));
+              if (batchRes.status === 401) {
+                sessionStorage.removeItem('etoos247_admin_pwd');
+                updateServerSyncBadge('인증 실패', 'error');
+                await showAppAlert('❌ 관리자 비밀번호가 서버 설정(ADMIN_PASSWORD)과 일치하지 않습니다.');
+                return;
+              }
+              if (!batchRes.ok || !batchData.ok || !Array.isArray(batchData.items)) {
+                throw new Error((batchData && batchData.error) || `이미지 업로드 실패 (${batchRes.status})`);
+              }
+              batches[bIdx].forEach((origUrl, idx) => {
+                const uploaded = batchData.items[idx];
+                if (uploaded && uploaded.fileName) {
+                  urlToFileName.set(origUrl, uploaded.fileName);
+                  preUploadedMedia.push({ repoPath: uploaded.repoPath, sha: uploaded.sha });
+                }
+              });
+            }
+
+            totalUploadedImagesCount = preUploadedMedia.length;
+            chaptersToPublish.forEach(ch => {
+              (ch.blocks || []).forEach(b => {
+                if (Array.isArray(b.images)) b.images = b.images.map(im => urlToFileName.get(im) || im);
+                if (Array.isArray(b.rows)) b.rows.forEach(r => r.forEach(c => {
+                  if (c && Array.isArray(c.images)) c.images = c.images.map(im => urlToFileName.get(im) || im);
+                }));
+              });
+            });
+
+            payloadObj = {
+              action: 'publish',
+              password: pwd,
+              chaptersData: chaptersToPublish,
+              preUploadedMedia,
+              expectedCommitSha: serverPublishStatus.latestCommitSha,
+              forceOverwrite: forceOverwrite
+            };
+            payloadJson = JSON.stringify(payloadObj);
+            payloadBytes = new Blob([payloadJson]).size;
+            updateServerSyncBadge('본문 데이터 커밋 중...', 'publishing');
+          }
+        }
+
+        if (payloadBytes > 4.2 * 1024 * 1024) {
+          await showAppAlert(`⚠️ 전송할 텍스트 데이터 크기(${(payloadBytes / (1024 * 1024)).toFixed(2)}MB)가 Vercel 요청 제한(4.5MB)을 초과합니다.`);
+          return;
+        }
+
         const res = await fetch('/api/publish', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -4787,7 +4885,8 @@
         localStorage.setItem('etoos247_has_unpublished_changes', 'false');
 
         updateServerSyncBadge('서버 반영 요청 완료 (약 20~30초 후 적용)', 'synced');
-        const imgNote = data.uploadedImages > 0 ? `\n• 새 이미지 ${data.uploadedImages}개가 assets/media/에 자동 분리 저장되었습니다.` : '';
+        const totalImgs = (data.uploadedImages || 0) + totalUploadedImagesCount;
+        const imgNote = totalImgs > 0 ? `\n• 새 이미지 ${totalImgs}개가 assets/media/에 자동 분리 저장되었습니다.` : '';
         await showAppAlert(`🎉 운영 서버 반영 요청이 완료되었습니다!\n\n• 커밋 ID: ${(data.commitSha || '').slice(0, 7)}${imgNote}\n• Vercel 재배포가 완료되는 약 20~30초 뒤 모든 직원 화면에 자동 적용됩니다.`);
       } catch (err) {
         console.error('Publish failed:', err);

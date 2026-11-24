@@ -182,6 +182,41 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ ok: true, configured: cfg.configured });
   }
 
+  if (action === 'upload_media_batch') {
+    if (!cfg.configured) {
+      return res.status(500).json({
+        ok: false,
+        error: 'Vercel 환경변수(GITHUB_TOKEN, GITHUB_OWNER, GITHUB_REPO)가 설정되지 않아 이미지를 업로드할 수 없습니다.'
+      });
+    }
+    const images = Array.isArray(body.images) ? body.images : [];
+    if (images.length === 0) {
+      return res.status(400).json({ ok: false, error: '업로드할 이미지가 없습니다.' });
+    }
+    try {
+      const items = await Promise.all(images.map(async (imgVal) => {
+        if (typeof imgVal !== 'string') return null;
+        const match = imgVal.match(/^data:image\/(png|jpeg|jpg|gif|webp);base64,([A-Za-z0-9+/=\r\n]+)$/i);
+        if (!match) return null;
+        const rawExt = match[1].toLowerCase();
+        const ext = rawExt === 'jpeg' ? 'jpg' : rawExt;
+        const base64Clean = match[2].replace(/\s+/g, '');
+        const hash = crypto.createHash('sha256').update(base64Clean).digest('hex').slice(0, 12);
+        const fileName = `upload_${hash}.${ext}`;
+        const repoPath = `assets/media/${fileName}`;
+        const sha = await createGitBlob(cfg.owner, cfg.repo, cfg.token, base64Clean, 'base64');
+        return { fileName, repoPath, sha };
+      }));
+      return res.status(200).json({ ok: true, items: items.filter(Boolean) });
+    } catch (err) {
+      console.error('Media batch upload error:', err);
+      return res.status(err.status || 500).json({
+        ok: false,
+        error: err.message || '이미지 업로드 중 오류가 발생했습니다.'
+      });
+    }
+  }
+
   if (action !== 'publish') {
     return res.status(400).json({ ok: false, error: '지원하지 않는 요청 작업입니다.' });
   }
@@ -253,6 +288,15 @@ module.exports = async function handler(req, res) {
     for (const [repoPath, base64Content] of mediaBlobs.entries()) {
       const imgSha = await createGitBlob(cfg.owner, cfg.repo, cfg.token, base64Content, 'base64');
       treeEntries.push({ path: repoPath, mode: '100644', type: 'blob', sha: imgSha });
+    }
+
+    const preUploadedMedia = Array.isArray(body.preUploadedMedia) ? body.preUploadedMedia : [];
+    const seenPaths = new Set(treeEntries.map(e => e.path));
+    for (const item of preUploadedMedia) {
+      if (item && item.repoPath && item.sha && !seenPaths.has(item.repoPath)) {
+        seenPaths.add(item.repoPath);
+        treeEntries.push({ path: item.repoPath, mode: '100644', type: 'blob', sha: item.sha });
+      }
     }
 
     // 4. Create tree, commit, and update branch reference atomically
