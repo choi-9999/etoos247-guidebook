@@ -331,7 +331,7 @@
       <div class="flex items-center gap-3">
         <img src="assets/logo.png" alt="이투스247학원" class="h-7 sm:h-8 w-auto object-contain" />
         <span class="hidden h-4 w-px bg-slate-300 sm:inline-block"></span>
-        <span class="hidden sm:inline-block text-[11px] font-bold tracking-wider text-slate-500 uppercase">STAFF GUIDEBOOK</span>
+        <span class="hidden sm:inline-block text-[11px] font-bold tracking-wider text-slate-500 uppercase">GUIDEBOOK</span>
       </div>
     </div>
 
@@ -361,7 +361,7 @@
 
     <!-- Gate Footer -->
     <div class="relative z-10 w-full text-center py-4 px-4 text-[11px] text-slate-400 border-t border-slate-100">
-      © ETOOS247 Academy · 본 자료는 임직원 전용 매뉴얼로 외부 유출 및 무단 공유를 금합니다.
+      Copyright © ETOOS ECI Co.,Ltd. All rights Reserved. 본 자료는 임직원 전용 매뉴얼로 외부 유출 및 무단 공유를 금합니다.
     </div>
   </div>
 
@@ -1358,13 +1358,38 @@
       }
     });
 
-    function handleGateLogin() {
+    async function verifyAdminPassword(pwd) {
+      if (!pwd) return false;
+      if (location.protocol.startsWith('http')) {
+        try {
+          const res = await fetch('/api/publish', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'verify', password: pwd })
+          });
+          const ct = res.headers.get('content-type') || '';
+          if (ct.includes('application/json')) {
+            const data = await res.json();
+            if (res.ok && data.ok) return true;
+            if (res.status === 401) return false;
+          }
+        } catch (_) {
+          // Fallback to offline verification if serverless API isn't running
+        }
+      }
+      return (pwd === '2470' || pwd === 'admin247');
+    }
+
+    async function handleGateLogin() {
       const inp = document.getElementById('gatePasswordInput');
       const errEl = document.getElementById('gateErrorMsg');
       const keepChk = document.getElementById('gateKeepLoginChk');
       const val = inp ? inp.value.trim() : '';
 
-      if (val === GATE_ACCESS_CODE) {
+      const isUserCode = (val === GATE_ACCESS_CODE);
+      const isAdminCode = !isUserCode && await verifyAdminPassword(val);
+
+      if (isUserCode || isAdminCode) {
         if (errEl) errEl.classList.add('hidden');
         if (keepChk && keepChk.checked) {
           localStorage.setItem('etoos247_gate_auth', GATE_ACCESS_CODE);
@@ -1373,8 +1398,22 @@
           sessionStorage.setItem('etoos247_gate_auth', GATE_ACCESS_CODE);
         }
         if (inp) inp.value = '';
+
+        if (isAdminCode) {
+          isAdminLoggedIn = true;
+          sessionStorage.setItem('etoos247_admin_auth', 'true');
+          sessionStorage.setItem('etoos247_admin_pwd', val);
+          updateAdminUI();
+          goToChapter(currentChapterId);
+          checkServerPublishStatus();
+        }
+
         closeGateLoginModal();
         updateGateVisibility();
+
+        if (isAdminCode) {
+          showAppAlert('🎉 관리자로 로그인되었습니다! 상단 [본문 수정] 버튼을 통해 내용을 자유롭게 편집하실 수 있습니다.');
+        }
       } else {
         if (errEl) errEl.classList.remove('hidden');
         if (inp) {
@@ -2877,33 +2916,7 @@
 
     async function handleAdminLogin() {
       const pwd = document.getElementById('adminPasswordInput').value;
-      let verified = false;
-
-      if (location.protocol.startsWith('http')) {
-        try {
-          const res = await fetch('/api/publish', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ action: 'verify', password: pwd })
-          });
-          const ct = res.headers.get('content-type') || '';
-          if (ct.includes('application/json')) {
-            const data = await res.json();
-            if (res.ok && data.ok) {
-              verified = true;
-            } else if (res.status === 401) {
-              document.getElementById('loginErrorMsg').classList.remove('hidden');
-              return;
-            }
-          }
-        } catch (_) {
-          // Fallback to offline verification if serverless API isn't running
-        }
-      }
-
-      if (!verified && (pwd === '2470' || pwd === 'admin247')) {
-        verified = true;
-      }
+      const verified = await verifyAdminPassword(pwd);
 
       if (verified) {
         isAdminLoggedIn = true;
