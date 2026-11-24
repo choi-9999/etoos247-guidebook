@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795498887285;
+window.ETOOS_CHAPTERS_VERSION = 1795499612074;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -10015,6 +10015,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_ce2ff225824b.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
         "text": "⑩ 통계",
         "images": [],
         "bold": false,
@@ -10148,7 +10156,7 @@ window.ETOOS_CHAPTERS = [
       {
         "id": "st_1794384565414",
         "title": "⑩ 통계",
-        "blockIdx": 228,
+        "blockIdx": 229,
         "matchText": "⑩ 통계"
       }
     ],
@@ -10180,7 +10188,7 @@ window.ETOOS_CHAPTERS = [
         "text": "■ PLAY STORE 또는 APP STORE 검색 '이투스247학원 MY247'",
         "images": [],
         "bold": false,
-        "style": "normal"
+        "style": "callout"
       },
       {
         "type": "p",
@@ -10198,31 +10206,31 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "■ MY247 APP Windows PC 버전 다운로드 링크 : https://ko.fm/nKs",
+        "text": "■ MY247 APP Windows PC 버전 다운로드 링크 : https://ko.fm/nKs\n■ MY247 APP Macbook 버전 다운로드 링크 : https://bit.ly/3RGpnuq\n",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "■ MY247 APP Macbook 버전 다운로드 링크 : https://bit.ly/3RGpnuq",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
       },
       {
         "type": "p",
-        "text": "■ 꼭 확인해 주세요.",
+        "text": "■ 꼭 확인해 주세요.\n1. Windows PC 버전 설치 시 반드시 관리자 권한으로 실행해 주세요.\n2. 다운로드가 안 될 경우 다운로드 기록 창에서 다시 시도하거나, 방화벽 설정에서 다운로드를 허용해 주세요.\n3. 모바일 APP과 달리 PC 버전은 APP 알림이 오지 않습니다.\n4. 브라우저를 닫으면 순공시간 측정에 차이가 있을 수 있습니다.",
         "images": [],
         "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "1. Windows PC 버전 설치 시 반드시 관리자 권한으로 실행해 주세요.\n2. 다운로드가 안 될 경우 다운로드 기록 창에서 다시 시도하거나, 방화벽 설정에서 다운로드를 허용해 주세요.\n3. 모바일 APP과 달리 PC 버전은 APP 알림이 오지 않습니다.\n4. 브라우저를 닫으면 순공시간 측정에 차이가 있을 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
+        "style": "callout"
       },
       {
         "type": "p",
@@ -10263,7 +10271,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "1) 대시보드: 오늘의 공부 결과를 한눈에 보는 화면\n2) 나만의 시간표: 나의 공부 계획을 시간표로 만들고, 순공시간을 스톱워치로 기록 가능한 기능\n3) 리포트: 나의 학습 성향과 성취도 진단 결과, 공부 학습량 데이터, 생활 기록의 흐름을 확인하고, 담임선생님의 총평도 확인 할 수 있는 메뉴\n4) 인강/교재: 모의고사 성적을 바탕으로 만들어진 ‘LMIP 큐레이션’을 활용할 수 있고, 나에게 맞는 인강이나 교재를 검색할 수 있는 메뉴\n5) 내정보: 나의 재원 정보를 확인하고, 선택 과목, 목표 대학 설정 가능. 또한 공지사항, 매리트, 수납/결제, 입시센터, 마켓 ECI등 학원 생활에 필요한 정보들을 확인할 수 있는 메뉴\n6) 질문 예약: 궁금한 문제를 바로 해결할 수 있도록 과목별 전문 선생님과의 1:1 질문을 예약\n7) 매리트: 국어, 수학, 영어, 사과탐 등 일일테스트와 LMTI, LMIT를 응시 할 수 있는 메뉴\n8) 메뉴 더보기\n- 공지사항: 학원 필수 공지와 운영 일정 확인\n- 출결 변경: 갑작스럽게 출석을 못하거나 지각할 경우, 학원에 알릴 수 있도록 신청하는 곳\n- 주간 식단표 (기숙 재원생 대상)\n- 응원의 편지 (기숙 재원생 대상)\n9)설정: 순공 레이스, D-day, 나만의 시간표 레이아웃 등을 관리 설정할 수 있는 메뉴\n10)D-day: 설정을 통해 필요한 D-day 이름과 날짜를 조정할 수 있고, 최대 3개 까지 가능",
+        "text": "1) 대시보드: 오늘의 공부 결과를 한눈에 보는 화면\n\n2) 나만의 시간표: 나의 공부 계획을 시간표로 만들고, 순공시간을 스톱워치로 기록 가능한 기능\n\n3) 리포트: 나의 학습 성향과 성취도 진단 결과, 공부 학습량 데이터, 생활 기록의 흐름을 확인하고, 담임선생님의 총평도 확인 할 수 있는 메뉴\n\n4) 인강/교재: 모의고사 성적을 바탕으로 만들어진 ‘LMIP 큐레이션’을 활용할 수 있고, 나에게 맞는 인강이나 교재를 검색할 수 있는 메뉴\n\n5) 내정보: 나의 재원 정보를 확인하고, 선택 과목, 목표 대학 설정 가능. 또한 공지사항, 매리트, 수납/결제, 입시센터, 마켓 ECI등 학원 생활에 필요한 정보들을 확인할 수 있는 메뉴\n\n6) 질문 예약: 궁금한 문제를 바로 해결할 수 있도록 과목별 전문 선생님과의 1:1 질문을 예약\n\n7) 매리트: 국어, 수학, 영어, 사과탐 등 일일테스트와 LMTI, LMIT를 응시 할 수 있는 메뉴\n\n8) 메뉴 더보기\n- 공지사항: 학원 필수 공지와 운영 일정 확인\n- 출결 변경: 갑작스럽게 출석을 못하거나 지각할 경우, 학원에 알릴 수 있도록 신청하는 곳\n- 주간 식단표 (기숙 재원생 대상)\n- 응원의 편지 (기숙 재원생 대상)\n\n9) 설정: 순공 레이스, D-day, 나만의 시간표 레이아웃 등을 관리 설정할 수 있는 메뉴\n\n10) D-day: 설정을 통해 필요한 D-day 이름과 날짜를 조정할 수 있고, 최대 3개 까지 가능",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -10347,6 +10355,13 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "실제로 기록된 공부 시간과 함께 전국 이투스247학원 재원생 중 나의 공부 시간 순위를 확인할 수 있는 홈 화면. \n경쟁이 아니라 “나도 이만큼 하고 있구나 ” 하는 동기부여용으로 참고",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
         "text": "",
         "images": [
           "upload_141e099d216f.jpg"
@@ -10356,14 +10371,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "실제로 기록된 공부 시간과 함께 전국 이투스247학원 재원생 중 나의 공부 시간 순위를 확인할 수 있는 홈 화면. \n경쟁이 아니라 “나도 이만큼 하고 있구나 ” 하는 동기부여용으로 참고",
-        "images": [],
-        "bold": false,
-        "style": "callout"
-      },
-      {
-        "type": "p",
-        "text": "평균과의 비교/과목별 밸런스/학습 유형별 비율",
+        "text": "\n",
         "images": [
           "upload_710d7b16bd68.png"
         ],
@@ -10372,10 +10380,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "- 최상위권과 순공 시간, 과목별 밸런스를 비교해볼 수 있고, 학습 유형별 비율을 확인할 수 있다.\n- 참고용 정보이므로 부담 가질 필요 없이, 공부가 끝난 뒤 가볍게 확인하는 용도로 사용 독려\n",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "- 평균과의 비교/과목별 밸런스/학습 유형별 비율\n- 최상위권과 순공 시간, 과목별 밸런스를 비교해볼 수 있고, 학습 유형별 비율을 확인할 수 있다.\n- 참고용 정보이므로 부담 가질 필요 없이, 공부가 끝난 뒤 가볍게 확인하는 용도로 사용 독려",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
       },
       {
         "type": "p",
@@ -10408,10 +10423,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Ⓐ 나만의 시간표 사용 방법",
+        "text": "ㅤ",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "나만의 시간표 사용 방법",
+        "images": [],
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "tbl",
@@ -10646,10 +10668,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
         "text": "앱 최초 설치 시 프로필 세팅 안내",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "tbl",
@@ -10988,49 +11017,49 @@ window.ETOOS_CHAPTERS = [
       {
         "id": "st_1795393418772",
         "title": "② 나만의 시간표",
-        "blockIdx": 31,
+        "blockIdx": 32,
         "matchText": "② 나만의 시간표"
       },
       {
         "id": "st_1795395500511",
         "title": "③ 리포트",
-        "blockIdx": 38,
+        "blockIdx": 40,
         "matchText": "③ 리포트"
       },
       {
         "id": "st_1795395678599",
         "title": "④ 인강/교재",
-        "blockIdx": 40,
+        "blockIdx": 42,
         "matchText": "④ 인강/교재"
       },
       {
         "id": "st_1795396361835",
         "title": "⑤ 내정보",
-        "blockIdx": 42,
+        "blockIdx": 44,
         "matchText": "⑤ 내정보"
       },
       {
         "id": "st_1795396426200",
         "title": "⑥ 질문 예약",
-        "blockIdx": 47,
+        "blockIdx": 50,
         "matchText": "⑥ 질문 예약"
       },
       {
         "id": "st_1795396503210",
         "title": "⑦ 매리트",
-        "blockIdx": 49,
+        "blockIdx": 52,
         "matchText": "⑦ 매리트"
       },
       {
         "id": "st_1795396808453",
         "title": "⑧ 메뉴 더보기",
-        "blockIdx": 51,
+        "blockIdx": 54,
         "matchText": "⑧ 메뉴 더보기"
       },
       {
         "id": "st_1795396850240",
         "title": "⑨ 설정",
-        "blockIdx": 53,
+        "blockIdx": 56,
         "matchText": "⑨ 설정"
       }
     ]
