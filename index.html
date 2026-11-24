@@ -4309,7 +4309,7 @@
     }
 
     async function createParagraphBlockFromPrompt() {
-      const newText = await showAppPrompt('추가할 새 문단이나 안내 사항을 입력하세요:', '[추가 안내] ', { title: '새 문단 추가' });
+      const newText = await showAppPrompt('추가할 새 문단이나 안내 사항을 입력하세요:', '', { title: '새 문단 추가' });
       if (!newText || !newText.trim()) return null;
       return {
         type: 'p',
