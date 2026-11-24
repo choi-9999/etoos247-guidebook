@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795481896210;
+window.ETOOS_CHAPTERS_VERSION = 1795483911280;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -9,9 +9,10 @@ window.ETOOS_CHAPTERS = [
     "blocks": [
       {
         "type": "p",
-        "text": "1) 이투스247학원이란?",
+        "text": "1. 이투스247학원이란?",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
@@ -23,13 +24,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "2) 이투스247학원의 심볼",
+        "text": "2. 이투스247학원의 심볼",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
-        "text": "24시간 주7일이 순환되는 구조를 형상화하고 있습니다. 이는 이투스247학원의 철학이 담긴 것으로 ‘깊이 있는 공부’를 실현하고자 하는 이투스247학원의 설립 목표를 상징하고 있습니다.",
+        "text": "24시간 주7일이 순환되는 구조를 형상화하고 있습니다. \n이는 이투스247학원의 철학이 담긴 것으로 ‘깊이 있는 공부’를 실현하고자 하는 이투스247학원의 설립 목표를 상징하고 있습니다.",
         "images": [],
         "bold": false,
         "style": "callout"
@@ -44,9 +46,10 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "3) 이투스247학원의 핵심가치",
+        "text": "3. 이투스247학원의 핵심가치",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
@@ -66,17 +69,10 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "4) 이투스247학원의 학습공간",
+        "text": "4. 이투스247학원의 학습공간",
         "images": [],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "",
-        "images": [
-          "image5.jpeg"
-        ],
-        "bold": false
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
@@ -89,22 +85,7 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "image6.jpeg"
-        ],
-        "bold": false
-      },
-      {
-        "type": "p",
-        "text": "[렉쳐룸]",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "p",
-        "text": "",
-        "images": [
-          "image7.jpeg"
+          "upload_628a458a873e.jpg"
         ],
         "bold": false
       },
@@ -119,16 +100,39 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "image8.jpeg"
+          "upload_2d37757ca9c4.jpg"
         ],
         "bold": false
       },
       {
         "type": "p",
-        "text": "[리프레쉬룸]",
+        "text": "[리프레시룸]",
         "images": [],
         "bold": false,
         "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "",
+        "images": [
+          "upload_f24110f64f7f.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "[메디컬존]",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "",
+        "images": [
+          "upload_a8437c880820.jpg"
+        ],
+        "bold": false
       },
       {
         "type": "p",
@@ -140,27 +144,27 @@ window.ETOOS_CHAPTERS = [
     "subTopics": [
       {
         "id": "st_1_0",
-        "title": "이투스247학원이란?",
+        "title": "1. 이투스247학원이란?",
         "blockIdx": 0,
-        "matchText": "1) 이투스247학원이란?"
+        "matchText": "1. 이투스247학원이란?"
       },
       {
         "id": "st_1_1",
-        "title": "이투스247학원의 심볼",
+        "title": "2. 이투스247학원의 심볼",
         "blockIdx": 2,
-        "matchText": "2) 이투스247학원의 심볼"
+        "matchText": "2. 이투스247학원의 심볼"
       },
       {
         "id": "st_1_2",
-        "title": "핵심가치 3대 원칙",
+        "title": "3. 핵심가치 3대 원칙",
         "blockIdx": 5,
-        "matchText": "3) 이투스247학원의 핵심가치"
+        "matchText": "3. 이투스247학원의 핵심가치"
       },
       {
         "id": "st_1_3",
-        "title": "학습공간 구성 안내",
+        "title": "4. 학습공간 구성 안내",
         "blockIdx": 8,
-        "matchText": "4) 이투스247학원의 학습공간"
+        "matchText": "4. 이투스247학원의 학습공간"
       }
     ],
     "shortTitle": "1. 이투스247학원의 이해"
@@ -209,11 +213,11 @@ window.ETOOS_CHAPTERS = [
               "images": []
             },
             {
-              "text": "사업계획워크샵 (12 월 )\n이투스 구독권 ( 인강 ) 제공 \n윈터스쿨 모집 및 개강 \n재수조기선발반 모집 및 개강 \n재수정규반 모집 및 개강  \n수시 / 정시 합격자데이터 취합 (~2 월 )",
+              "text": "•사업계획워크샵 (12 월 )\n•이투스 구독권 ( 인강 ) 제공 \n•윈터스쿨 모집 및 개강 \n•재수조기선발반 모집 및 개강 \n•재수정규반 모집 및 개강  \n•수시 / 정시 합격자데이터 취합 (~2 월 )",
               "images": []
             },
             {
-              "text": "재수정규반 운영\n6 월 평가원 모의고사장 신고 (3 월 )\n재원생 만족도 조사 (4 월 )\n상반기 원장단 모집평가 워크샵 (5 월 )\n반수성공반 홍보",
+              "text": "•재수정규반 운영\n•6 월 평가원 모의고사장 신고 (3 월 )\n•재원생 만족도 조사 (4 월 )\n•상반기 원장단 모집평가 워크샵 (5 월 )\n•반수성공반 홍보",
               "images": []
             }
           ],
@@ -223,11 +227,11 @@ window.ETOOS_CHAPTERS = [
               "images": []
             },
             {
-              "text": "정시상담\n정시분석 설명회 / 겨울방학 대입전략 설명회\n정시 원서접수 (1 월 )\n합격자 발표 (~2 월 )\n재수성공 전략 설명회 (2 월 )",
+              "text": "•정시상담\n•정시분석 설명회 / 겨울방학 대입전략 설명회\n•정시 원서접수 (1 월 )\n•합격자 발표 (~2 월 )\n•재수성공 전략 설명회 (2 월 )",
               "images": []
             },
             {
-              "text": "서울시교육청 학력평가 (3 월 )\n경기도교육청 학력평가 (5 월 )\n재수성공사례 선배와의 간담회",
+              "text": "•서울시교육청 학력평가 (3 월 )\n•경기도교육청 학력평가 (5 월 )\n•재수성공사례 선배와의 간담회",
               "images": []
             }
           ],
@@ -251,11 +255,11 @@ window.ETOOS_CHAPTERS = [
               "images": []
             },
             {
-              "text": "경찰대 / 사관학교 1 차 시험 (7 월 )\n9 월 평가원 모의고사장 신고 (6 월 )\n재수 반수반 개강 (6 월 )\n썸머스쿨 개강 운영 ( 지점 상이 )\n수능 D-100 행사 진행 (8 월 )",
+              "text": "•경찰대 / 사관학교 1 차 시험 (7 월 )\n•9 월 평가원 모의고사장 신고 (6 월 )\n•재수 반수반 개강 (6 월 )\n•썸머스쿨 개강 운영 ( 지점 상이 )\n•수능 D-100 행사 진행 (8 월 )",
               "images": []
             },
             {
-              "text": "파이널 완성반 운영\n윈터스쿨 브로슈어 수량 취합 (10 월 )\n재원생 만족도 조사 (10 월 )\n플래너 제작 수량 취합 (10 월 )\n하반기 원장단 모집평가 워크샵 (11 월 )\n수능파이널 대비 모의고사\n각 지점 윈터스쿨 설명회 (11 월 )",
+              "text": "•파이널 완성반 운영\n•윈터스쿨 브로슈어 수량 취합 (10 월 )\n•재원생 만족도 조사 (10 월 )\n•플래너 제작 수량 취합 (10 월 )\n•하반기 원장단 모집평가 워크샵 (11 월 )\n•수능파이널 대비 모의고사\n•각 지점 윈터스쿨 설명회 (11 월 )",
               "images": []
             }
           ],
@@ -265,18 +269,18 @@ window.ETOOS_CHAPTERS = [
               "images": []
             },
             {
-              "text": "6 월 모평 / 모평 설명회 (6 월 )\n인천시교육청 학력평가 (7 월 )\n경찰대 / 사관학교 원서접수 (6 월 )\n여름방학 학습전략 설명회 (7 월 )\n지점 수시교육 (7 월 )",
+              "text": "•6 월 모평 / 모평 설명회 (6 월 )\n•인천시교육청 학력평가 (7 월 )\n•경찰대 / 사관학교 원서접수 (6 월 )\n•여름방학 학습전략 설명회 (7 월 )\n•지점 수시교육 (7 월 )",
               "images": []
             },
             {
-              "text": "수시 / 수능 원서접수 (9 월 )\n9 월 모평 / 모평 설명회 (9 월 )\n수능 / 가채점 상담 (11 월 )\n가채점 분석 설명회 (11 월 )\n지점 정시교육 (11 월 )\n지점 직원교육 (11 월 )\n지점 신입직원교육 (12 월 )",
+              "text": "•수시 / 수능 원서접수 (9 월 )\n•9 월 모평 / 모평 설명회 (9 월 )\n•수능 / 가채점 상담 (11 월 )\n•가채점 분석 설명회 (11 월 )\n•지점 정시교육 (11 월 )\n•지점 직원교육 (11 월 )\n•지점 신입직원교육 (12 월 )",
               "images": []
             }
           ]
         ],
         "colWidths": [
           156,
-          139,
+          302,
           334
         ]
       },
@@ -6258,7 +6262,7 @@ window.ETOOS_CHAPTERS = [
         "matchText": "2. 이투스247학원 고객 서비스"
       }
     ],
-    "shortTitle": "3. 신입생 모집 및 재원생 만족"
+    "shortTitle": "4. 신입생 모집 및 재원생 만족"
   },
   {
     "id": 4,
@@ -7639,7 +7643,7 @@ window.ETOOS_CHAPTERS = [
         "matchText": "퇴원 절차"
       }
     ],
-    "shortTitle": "4. 재원생 정착 프로세스"
+    "shortTitle": "5. 재원생 정착 프로세스"
   },
   {
     "id": 5,
@@ -8994,11 +8998,11 @@ window.ETOOS_CHAPTERS = [
         "matchText": "⑩ 통계"
       }
     ],
-    "shortTitle": "5. 이투스247학원 LMS"
+    "shortTitle": "6. 이투스247학원 LMS"
   },
   {
     "id": 7,
-    "shortTitle": "6. MY247 APP",
+    "shortTitle": "7. MY247 APP",
     "title": "6. MY247 APP",
     "sub": "새 섹션 설명을 입력하세요",
     "icon": "fa-desktop",
@@ -15420,1195 +15424,8 @@ window.ETOOS_CHAPTERS = [
         "matchText": "[별첨3] 입시센터 프로그램 등록 방법 안내"
       }
     ],
-    "shortTitle": "7. 이투스247학원 ERP",
+    "shortTitle": "6. 이투스247학원 ERP",
     "sub": ""
-  },
-  {
-    "id": 9,
-    "title": "8. 신규 지점 SNS 마케팅 실무 교육",
-    "shortTitle": "8. SNS 마케팅 교육",
-    "icon": "fa-bullhorn",
-    "blocks": [
-      {
-        "type": "p",
-        "text": "2026 신규직원 SNS마케팅 교육 · 이투스ECI 가맹마케팅지원팀\n계정 개설부터 콘텐츠 제작, 12월 운영 계획까지",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "p",
-        "text": "1. 본사와 지점, 무엇을 담당할까요?",
-        "images": [],
-        "bold": true,
-        "style": "h1"
-      },
-      {
-        "type": "p",
-        "text": "본사는 초기 개설을 지원하고, 지점은 채널 홍보를 직접 운영합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "구분",
-              "images": []
-            },
-            {
-              "text": "담당 업무",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "본사 지원",
-              "images": []
-            },
-            {
-              "text": "• 지점 홈페이지 개설\n• 네이버 플레이스 신규 등록 지원",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "지점 직접 운영",
-              "images": []
-            },
-            {
-              "text": "• SNS: 플레이스 · 블로그 · 인스타그램 · 당근 등\n• 디지털 광고: 검색광고 운영 등\n• 오프라인: 포스터 · 현수막 게시 등",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "※ SNS 계정 생성 후 본사에 홈페이지 연결 요청 시 페이지 상/하단에 첨부해 드립니다. (LMS 업무요청 게시판 통해 요청)",
-        "images": [],
-        "bold": false,
-        "style": "callout"
-      },
-      {
-        "type": "p",
-        "text": "2. 채널별 역할은 다릅니다",
-        "images": [],
-        "bold": true,
-        "style": "h1"
-      },
-      {
-        "type": "p",
-        "text": "특징을 알고 우리 지점에 맞는 채널을 선택하세요.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "채널",
-              "images": []
-            },
-            {
-              "text": "핵심 목적",
-              "images": []
-            },
-            {
-              "text": "주요 운영 방식",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "오늘의247",
-              "images": []
-            },
-            {
-              "text": "학원 실생활, 모집 정보 확인",
-              "images": []
-            },
-            {
-              "text": "게시글 위주 업로드",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "블로그",
-              "images": []
-            },
-            {
-              "text": "학원 실생활, 모집 정보 확인",
-              "images": []
-            },
-            {
-              "text": "게시글 및 영상 업로드, 댓글 및 이웃 맺기 등으로 소통",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "인스타그램",
-              "images": []
-            },
-            {
-              "text": "학원 실생활, 모집 정보 확인",
-              "images": []
-            },
-            {
-              "text": "카드뉴스, 릴스 영상 업로드, 팔로우 및 DM 등으로 소통",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "네이버 플레이스",
-              "images": []
-            },
-            {
-              "text": "학원 위치, 부대 시설 확인",
-              "images": []
-            },
-            {
-              "text": "위치 · 연락처 · 운영 시간 안내, 새소식 등으로 이벤트 홍보, 후기 관리",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "당근",
-              "images": []
-            },
-            {
-              "text": "학원 위치, 부대 시설 확인",
-              "images": []
-            },
-            {
-              "text": "위치 · 연락처 · 운영 시간 안내, 새소식 등으로 이벤트 홍보, 단골맺기 및 채팅 등으로 소통",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "3. 채널별 계정 개설 및 운영 TIP",
-        "images": [],
-        "bold": true,
-        "style": "h1"
-      },
-      {
-        "type": "p",
-        "text": "(1) 오늘의247",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "등록 경로: LMS 메인 > 홈페이지 관리 > 커뮤니티 > 오늘의 247 > 오른쪽 상단 '등록하기' 버튼 클릭 후 게시글 작성",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "단계",
-              "images": []
-            },
-            {
-              "text": "진행 내용",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "01 게시글 등록",
-              "images": []
-            },
-            {
-              "text": "지점용 LMS 계정 통해 자유롭게 지점 홍보 게시글 작성",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "02 등록 확인",
-              "images": []
-            },
-            {
-              "text": "작성한 게시글이 정상적으로 등록됐는지 홈페이지에서 확인",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "(2) 네이버 블로그 개설 및 운영 TIP",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "사전 준비 리스트: 네이버 계정 (원장님 이름으로 회원가입), 학원 정보 (학원등록번호, 교습과정, 교습소 명칭, 월 수강료, 연락처 등)",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "단계",
-              "images": []
-            },
-            {
-              "text": "진행 내용",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "01 블로그 개설",
-              "images": []
-            },
-            {
-              "text": "지점 관리용 네이버 계정 준비",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "02 기본 정보 입력",
-              "images": []
-            },
-            {
-              "text": "프로필과 소개글 작성 (블로그 주소는 1회만 변경 가능, 네이버 프로필로도 적용 설정)",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "03 레이아웃 설정",
-              "images": []
-            },
-            {
-              "text": "스킨 · 게시물 카테고리 설정",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "• 01 '모바일 화면' 기준으로 작성 추천: 대부분 모바일 화면으로 블로그를 보는 방문자가 많아 모바일 기준으로 작성하는 것을 추천합니다.\n• 02 AI를 이용해 원고 작성 시 시간 단축: ChatGPT 또는 제미나이 등을 이용해 작성하고자 하는 주제와 그에 맞게 제작한 이미지를 삽입하여 원고 작성을 요청하면 업로드 시간을 단축할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "※ 블로그 주제 선정 TIP: 블랙키위(https://blackkiwi.net/)를 통해 최근 인기 검색어를 확인하거나 블로그 통계 페이지에서 유입 키워드를 확인하는 것을 추천해요.\n※ AI를 이용해 원고 작성 또는 이미지 생성 시, 사실 여부를 꼭 확인해 주세요.",
-        "images": [],
-        "bold": false,
-        "style": "callout"
-      },
-      {
-        "type": "p",
-        "text": "(3) 인스타그램 계정 개설 및 부가기능",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "사전 준비 리스트: 학원 정보 (학원등록번호, 교습과정, 교습소 명칭, 월 수강료, 연락처 등)",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "단계",
-              "images": []
-            },
-            {
-              "text": "진행 내용",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "01 계정 생성",
-              "images": []
-            },
-            {
-              "text": "지점용 인스타그램 계정 만들기",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "02 프로필 정보 설정",
-              "images": []
-            },
-            {
-              "text": "프로필 > 프로필 편집 > 소개글에 학원 정보 입력, 웹사이트 링크 등 등록",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "※ 학원 정보 미기재 시, 학원 광고 가이드라인 법안에 의해 부당 광고로 취급 당할 수 있으니 주의하세요!",
-        "images": [],
-        "bold": false,
-        "style": "callout"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "부가기능",
-              "images": []
-            },
-            {
-              "text": "설명",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "01 스토리",
-              "images": []
-            },
-            {
-              "text": "사진, 영상, 게시글 등 24시간 동안 메인 상단 노출",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "02 하이라이트",
-              "images": []
-            },
-            {
-              "text": "과거에 올린 스토리를 하나의 주제로 엮어 프로필에 지속적으로 노출시키는 기능",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "03 멀티 링크 페이지",
-              "images": []
-            },
-            {
-              "text": "멀티 링크 페이지에 여러 페이지 링크 삽입하여 노출\n예) 인포크링크(https://link.inpock.co.kr/), 링크트리(https://linktr.ee/) 등",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "※ 인스타그램은 상시적으로 기능을 업데이트 하는 점 참고 & 다이렉트 메시지(DM)로 문의 남기는 학생이 많으니 알림 설정을 권장합니다.",
-        "images": [],
-        "bold": false,
-        "style": "callout"
-      },
-      {
-        "type": "p",
-        "text": "(4) 네이버 플레이스 주인 변경 신청 및 운영 TIP",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "사전 준비 리스트: 네이버 계정 (사업자등록증과 동일한 명의의 계정), 사업자등록증(PDF 또는 이미지 파일), 시설 사진 및 학원 정보(운영 시간, 수강료 등)",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "단계",
-              "images": []
-            },
-            {
-              "text": "진행 내용",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "01 스마트 플레이스 업체 찾기",
-              "images": []
-            },
-            {
-              "text": "네이버 '스마트 플레이스' 접속 후 전화번호, 업체명 또는 사업자등록번호 검색",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "02 업체 정보 조회",
-              "images": []
-            },
-            {
-              "text": "업체 정보 맞는지 확인 후 '주인 변경' 신청",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "03 주인 변경 신청",
-              "images": []
-            },
-            {
-              "text": "ARS 또는 사업자등록증 등 서류 파일을 통해 주인 인증 후 변경 신청 진행",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "• 01 '지점 정보 수정' 통해 대표 키워드 수정: 경로 [네이버 스마트 플레이스 > 내 업체 > 업체정보] → 기존 사용하던 키워드를 삭제하고 새로 추가할 키워드(예: 윈터스쿨, 재수정규반 등)를 입력 후 저장\n• 02 새소식 기능 이용하여 모집, 이벤트 홍보: 경로 [네이버 스마트 플레이스 > 내 업체 > 새소식 쓰기] → 모집 및 이벤트 진행 시 새소식 기능으로 홍보",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
-        "text": "※ 모집시기별로 핵심 키워드와 새소식을 업데이트 하면 노출이 더 잘 될 수 있어요.",
-        "images": [],
-        "bold": false,
-        "style": "callout"
-      },
-      {
-        "type": "p",
-        "text": "(5) 당근 비즈프로필 개설",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "사전 준비 리스트: 시설 사진, 학원 정보 (학원등록번호, 교습과정, 교습소 명칭, 월 수강료, 연락처 등)",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "단계",
-              "images": []
-            },
-            {
-              "text": "진행 내용",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "01 비즈프로필 관리",
-              "images": []
-            },
-            {
-              "text": "당근에서 비즈프로필 관리 이동",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "02 학원명 입력",
-              "images": []
-            },
-            {
-              "text": "지점명과 소개 입력",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "03 업종 · 정보 등록",
-              "images": []
-            },
-            {
-              "text": "업종 · 위치 · 연락처 설정",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "4. 게시 전 이것만 확인하세요",
-        "images": [],
-        "bold": true,
-        "style": "h1"
-      },
-      {
-        "type": "p",
-        "text": "학원 홍보에서 중요한 법정 표시사항 · 개인정보 · 저작권을 점검합니다.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "항목",
-              "images": []
-            },
-            {
-              "text": "점검 내용",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "01 학원 광고 정보",
-              "images": []
-            },
-            {
-              "text": "명칭 · 등록번호 · 교습비 등 필수 표시사항 확인",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "02 초상권 · 개인정보",
-              "images": []
-            },
-            {
-              "text": "학생 사진 · 후기 · 성적 게시 전 동의 확인 (노출 필요 시 모자이크 처리)",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "03 저작권",
-              "images": []
-            },
-            {
-              "text": "기사 · 이미지 · 타 지점 게시물 무단 복제 금지",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "04 최신 정보 · 문의 관리",
-              "images": []
-            },
-            {
-              "text": "모집 일정 · 혜택 최신화, 다이렉트 메시지(DM) · 댓글 정기 확인",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "5. 콘텐츠 기획 및 제작 도구",
-        "images": [],
-        "bold": true,
-        "style": "h1"
-      },
-      {
-        "type": "p",
-        "text": "(1) 무엇을 올리면 좋을까요?",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "모집 정보 · 학원 소개 · 학원 일상 콘텐츠를 균형 있게 배치하세요.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "카테고리",
-              "images": []
-            },
-            {
-              "text": "주요 콘텐츠 예시",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "모집 정보",
-              "images": []
-            },
-            {
-              "text": "모집 · 혜택 · 개강 일정",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "학원 소개",
-              "images": []
-            },
-            {
-              "text": "공간 · 장학금 · 관리 프로그램",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "학원 일상",
-              "images": []
-            },
-            {
-              "text": "상담 FAQ · 학원 운영 현장",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "(2) 디자인 사이트로 빠르게 제작하기",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "미리 만들어진 템플릿을 활용해 카드뉴스와 홍보물을 제작하세요.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "사이트",
-              "images": []
-            },
-            {
-              "text": "주요 활용 용도",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "미리캔버스",
-              "images": []
-            },
-            {
-              "text": "카드뉴스 · 포스터 · 배너",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "Canva",
-              "images": []
-            },
-            {
-              "text": "SNS 게시물 · 영상 표지",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "망고보드",
-              "images": []
-            },
-            {
-              "text": "이미지 · 홍보물 제작",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "6. 12월 콘텐츠 업로드 계획표",
-        "images": [],
-        "bold": true,
-        "style": "h1"
-      },
-      {
-        "type": "p",
-        "text": "(1) 2026년 12월 콘텐츠 업로드 계획표 | 작성 예시",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "블로그 및 인스타 댓글, 다이렉트 메시지(DM, 채팅) 등은 상시 확인 권장 / 본사 SNS 주제 가이드 참고 추천",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "월",
-              "images": []
-            },
-            {
-              "text": "화",
-              "images": []
-            },
-            {
-              "text": "수",
-              "images": []
-            },
-            {
-              "text": "목",
-              "images": []
-            },
-            {
-              "text": "금",
-              "images": []
-            },
-            {
-              "text": "토",
-              "images": []
-            },
-            {
-              "text": "일",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "",
-              "images": []
-            },
-            {
-              "text": "1",
-              "images": []
-            },
-            {
-              "text": "2\n[블로그·인스타]\n모집 혜택",
-              "images": []
-            },
-            {
-              "text": "3",
-              "images": []
-            },
-            {
-              "text": "4\n[오늘의247]\n시설 소개",
-              "images": []
-            },
-            {
-              "text": "5",
-              "images": []
-            },
-            {
-              "text": "6",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "7\n[블로그·인스타]\n상담 FAQ",
-              "images": []
-            },
-            {
-              "text": "8",
-              "images": []
-            },
-            {
-              "text": "9\n[블로그·인스타]\n학습 관리",
-              "images": []
-            },
-            {
-              "text": "10",
-              "images": []
-            },
-            {
-              "text": "11\n[오늘의247]\n모집 소식",
-              "images": []
-            },
-            {
-              "text": "12",
-              "images": []
-            },
-            {
-              "text": "13\n[네이버 플레이스]\n새소식에 모집 홍보",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "14\n[블로그·인스타]\n오시는 길",
-              "images": []
-            },
-            {
-              "text": "15",
-              "images": []
-            },
-            {
-              "text": "16\n[블로그·인스타]\n학원 일상",
-              "images": []
-            },
-            {
-              "text": "17",
-              "images": []
-            },
-            {
-              "text": "18\n[오늘의247]\n관리 프로그램",
-              "images": []
-            },
-            {
-              "text": "19",
-              "images": []
-            },
-            {
-              "text": "20",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "21\n[블로그·인스타]\n학습 공간",
-              "images": []
-            },
-            {
-              "text": "22",
-              "images": []
-            },
-            {
-              "text": "23\n[블로그·인스타]\n부대시설 소개",
-              "images": []
-            },
-            {
-              "text": "24",
-              "images": []
-            },
-            {
-              "text": "25",
-              "images": []
-            },
-            {
-              "text": "26\n[당근]\n쿠폰 이벤트",
-              "images": []
-            },
-            {
-              "text": "27",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "28\n[블로그·인스타]\n개강 준비",
-              "images": []
-            },
-            {
-              "text": "29",
-              "images": []
-            },
-            {
-              "text": "30\n[블로그·인스타]\n새해 인사",
-              "images": []
-            },
-            {
-              "text": "31",
-              "images": []
-            },
-            {
-              "text": "",
-              "images": []
-            },
-            {
-              "text": "",
-              "images": []
-            },
-            {
-              "text": "",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "(2) 2026년 12월 콘텐츠 업로드 계획표 | 직접 작성",
-        "images": [],
-        "bold": true,
-        "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "게시일 · 채널 · 주제를 함께 정해 보세요.",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "tbl",
-        "rows": [
-          [
-            {
-              "text": "월",
-              "images": []
-            },
-            {
-              "text": "화",
-              "images": []
-            },
-            {
-              "text": "수",
-              "images": []
-            },
-            {
-              "text": "목",
-              "images": []
-            },
-            {
-              "text": "금",
-              "images": []
-            },
-            {
-              "text": "토",
-              "images": []
-            },
-            {
-              "text": "일",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "",
-              "images": []
-            },
-            {
-              "text": "1",
-              "images": []
-            },
-            {
-              "text": "2",
-              "images": []
-            },
-            {
-              "text": "3",
-              "images": []
-            },
-            {
-              "text": "4",
-              "images": []
-            },
-            {
-              "text": "5",
-              "images": []
-            },
-            {
-              "text": "6",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "7",
-              "images": []
-            },
-            {
-              "text": "8",
-              "images": []
-            },
-            {
-              "text": "9",
-              "images": []
-            },
-            {
-              "text": "10",
-              "images": []
-            },
-            {
-              "text": "11",
-              "images": []
-            },
-            {
-              "text": "12",
-              "images": []
-            },
-            {
-              "text": "13",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "14",
-              "images": []
-            },
-            {
-              "text": "15",
-              "images": []
-            },
-            {
-              "text": "16",
-              "images": []
-            },
-            {
-              "text": "17",
-              "images": []
-            },
-            {
-              "text": "18",
-              "images": []
-            },
-            {
-              "text": "19",
-              "images": []
-            },
-            {
-              "text": "20",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "21",
-              "images": []
-            },
-            {
-              "text": "22",
-              "images": []
-            },
-            {
-              "text": "23",
-              "images": []
-            },
-            {
-              "text": "24",
-              "images": []
-            },
-            {
-              "text": "25",
-              "images": []
-            },
-            {
-              "text": "26",
-              "images": []
-            },
-            {
-              "text": "27",
-              "images": []
-            }
-          ],
-          [
-            {
-              "text": "28",
-              "images": []
-            },
-            {
-              "text": "29",
-              "images": []
-            },
-            {
-              "text": "30",
-              "images": []
-            },
-            {
-              "text": "31",
-              "images": []
-            },
-            {
-              "text": "",
-              "images": []
-            },
-            {
-              "text": "",
-              "images": []
-            },
-            {
-              "text": "",
-              "images": []
-            }
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "※ 작성 기준 | 무리하지 않는 업로드 빈도를 정하고 모집·시설·학원 일상 주제를 골고루 배치하세요.",
-        "images": [],
-        "bold": false,
-        "style": "callout"
-      }
-    ],
-    "subTopics": [
-      {
-        "id": "st_9_1",
-        "title": "1. 본사와 지점, 무엇을 담당할까요?",
-        "blockIdx": 1,
-        "matchText": "1. 본사와 지점, 무엇을 담당할까요?"
-      },
-      {
-        "id": "st_9_5",
-        "title": "2. 채널별 역할은 다릅니다",
-        "blockIdx": 5,
-        "matchText": "2. 채널별 역할은 다릅니다"
-      },
-      {
-        "id": "st_9_8",
-        "title": "3. 채널별 계정 개설 및 운영 TIP",
-        "blockIdx": 8,
-        "matchText": "3. 채널별 계정 개설 및 운영 TIP"
-      },
-      {
-        "id": "st_9_31",
-        "title": "4. 게시 전 이것만 확인하세요",
-        "blockIdx": 31,
-        "matchText": "4. 게시 전 이것만 확인하세요"
-      },
-      {
-        "id": "st_9_34",
-        "title": "5. 콘텐츠 기획 및 제작 도구",
-        "blockIdx": 34,
-        "matchText": "5. 콘텐츠 기획 및 제작 도구"
-      },
-      {
-        "id": "st_9_41",
-        "title": "6. 12월 콘텐츠 업로드 계획표",
-        "blockIdx": 41,
-        "matchText": "6. 12월 콘텐츠 업로드 계획표"
-      }
-    ]
   }
 ];
 window.ETOOS_ORIGINAL_CHAPTERS = JSON.parse(JSON.stringify(window.ETOOS_CHAPTERS));
