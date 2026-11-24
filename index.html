@@ -426,7 +426,7 @@
     <div class="w-full flex items-center justify-between gap-4">
       
       <!-- Brand & Title with Official BI Logo -->
-      <div class="flex items-center gap-3.5 cursor-pointer" onclick="goToFirstChapter()">
+      <div class="flex items-center gap-3.5 cursor-pointer" onclick="goToGateScreen()" title="게이트 페이지로 이동">
         <img src="assets/logo.png" alt="이투스247학원" class="h-8 sm:h-9 w-auto object-contain shrink-0 hover:opacity-95 transition" />
         <div class="border-l border-slate-200 pl-3.5 flex items-center">
           <span class="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full font-bold bg-brand-50 text-brand-700 border border-brand-200/80">
@@ -450,22 +450,10 @@
         </div>
       </div>
 
-      <!-- Header Right: Admin Login & Controls -->
+      <!-- Header Right: Admin Controls -->
       <div class="flex items-center gap-2.5">
-        <!-- Admin Section: Login / Logged In States -->
+        <!-- Admin Section: Logged In Controls -->
         <div id="adminArea" class="flex items-center gap-2">
-          <!-- Gate Lock Button -->
-          <button type="button" onclick="lockGateScreen()" class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-100 border border-slate-200 rounded-lg transition" title="화면 잠금 (게이트 페이지로 이동)">
-            <i class="fa-solid fa-door-closed text-[11px]"></i>
-            <span>잠금</span>
-          </button>
-
-          <!-- When NOT logged in: Show Login Button -->
-          <button id="adminLoginBtn" onclick="openAdminLoginModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-white bg-slate-800 hover:bg-slate-900 rounded-lg shadow-sm transition">
-            <i class="fa-solid fa-lock text-[11px]"></i>
-            <span>관리자 로그인</span>
-          </button>
-
           <!-- When Logged In: Show Admin Badge + Edit Mode Toggle + Logout Button -->
           <div id="adminLoggedInControls" class="hidden flex items-center gap-2">
             <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-lg text-xs font-bold">
@@ -1317,11 +1305,20 @@
     // ACCESS GATE AUTHENTICATION (사내 게이트 인증)
     // ==========================================
     const GATE_ACCESS_CODE = 'etoos247A';
+    let gateOverlayForced = false;
 
     function isGateAuthenticated() {
+      if (gateOverlayForced) return false;
       if (isAdminLoggedIn) return true;
       return localStorage.getItem('etoos247_gate_auth') === GATE_ACCESS_CODE
         || sessionStorage.getItem('etoos247_gate_auth') === GATE_ACCESS_CODE;
+    }
+
+    function goToGateScreen() {
+      gateOverlayForced = true;
+      localStorage.removeItem('etoos247_gate_auth');
+      sessionStorage.removeItem('etoos247_gate_auth');
+      updateGateVisibility();
     }
 
     function updateGateVisibility() {
@@ -1391,6 +1388,7 @@
       const isAdminCode = !isUserCode && await verifyAdminPassword(val);
 
       if (isUserCode || isAdminCode) {
+        gateOverlayForced = false;
         if (errEl) errEl.classList.add('hidden');
         if (keepChk && keepChk.checked) {
           localStorage.setItem('etoos247_gate_auth', GATE_ACCESS_CODE);
@@ -2961,19 +2959,19 @@
       }
 
       if (isAdminLoggedIn) {
-        loginBtn.classList.add('hidden');
-        controls.classList.remove('hidden');
+        if (loginBtn) loginBtn.classList.add('hidden');
+        if (controls) controls.classList.remove('hidden');
         if (isEditMode) {
-          banner.classList.remove('hidden');
+          if (banner) banner.classList.remove('hidden');
           document.body.classList.add('editable-active');
         } else {
-          banner.classList.add('hidden');
+          if (banner) banner.classList.add('hidden');
           document.body.classList.remove('editable-active');
         }
       } else {
-        loginBtn.classList.remove('hidden');
-        controls.classList.add('hidden');
-        banner.classList.add('hidden');
+        if (loginBtn) loginBtn.classList.remove('hidden');
+        if (controls) controls.classList.add('hidden');
+        if (banner) banner.classList.add('hidden');
         document.body.classList.remove('editable-active');
       }
     }
