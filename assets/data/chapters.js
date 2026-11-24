@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795478365147;
+window.ETOOS_CHAPTERS_VERSION = 1795480907356;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -174,9 +174,10 @@ window.ETOOS_CHAPTERS = [
     "blocks": [
       {
         "type": "p",
-        "text": "1) 이투스247학원 일정",
+        "text": "1. 이투스247학원 운영 일정",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
@@ -208,11 +209,11 @@ window.ETOOS_CHAPTERS = [
               "images": []
             },
             {
-              "text": "사업계획워크샵 (12 월 )\n이투스 구독권 ( 인강 ) 제공 윈터스쿨 모집 및 개강 재수조기선발반 모집 및 개강 재수정규반 모집 및 개강 이투스 윈터스쿨 모의고사 수시 / 정시 합격자데이터 취합 (~2 월 )",
+              "text": "사업계획워크샵 (12 월 )\n이투스 구독권 ( 인강 ) 제공 \n윈터스쿨 모집 및 개강 \n재수조기선발반 모집 및 개강 \n재수정규반 모집 및 개강  \n수시 / 정시 합격자데이터 취합 (~2 월 )",
               "images": []
             },
             {
-              "text": "재수정규반 운영\n6 월 평가원 모의고사장 신고 (3 월 )\n재원생 만족도 조사 (4 월 )\n상반기 원장단 모집평가 워크샵 (5 월 )\n이투스 전국 모의고사 재수반수반 홍보",
+              "text": "재수정규반 운영\n6 월 평가원 모의고사장 신고 (3 월 )\n재원생 만족도 조사 (4 월 )\n상반기 원장단 모집평가 워크샵 (5 월 )\n반수성공반 홍보",
               "images": []
             }
           ],
@@ -275,7 +276,8 @@ window.ETOOS_CHAPTERS = [
         ],
         "colWidths": [
           156,
-          361
+          139,
+          334
         ]
       },
       {
@@ -388,9 +390,10 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "2) 기본 인력 구성 및 주요 역할",
+        "text": "2. 기본 인력 구성 및 주요 역할",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
@@ -410,7 +413,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "- 학원 운영 및 관리 총괄",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -2399,15 +2403,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "3) 관리 시스템 및 학습기기",
+        "text": "3. 관리 시스템 및 학습기기",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
-        "text": "(1) 학원관리 시스템(ERP)",
+        "text": "① 학원관리 시스템(ERP)",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
@@ -2431,7 +2437,14 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "(2) 학습관리 시스템(LMS, MY247 APP)",
+        "text": "② 학습관리 시스템(LMS, MY247 APP)",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "\n",
         "images": [
           "image12.png"
         ],
@@ -2451,9 +2464,10 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "(3) 학습 콘텐츠 시스템(마켓ECI)",
+        "text": "③ 학습 콘텐츠 시스템(마켓ECI)",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
@@ -2492,7 +2506,8 @@ window.ETOOS_CHAPTERS = [
           "image13.png",
           "image14.png"
         ],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -2501,7 +2516,8 @@ window.ETOOS_CHAPTERS = [
           "image15.png",
           "image16.png"
         ],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -2591,9 +2607,10 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "(4) 출결 프로그램",
+        "text": "④ 출결 프로그램",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "p",
@@ -2744,9 +2761,10 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "(5) 태블릿PC",
+        "text": "⑤ 태블릿PC",
         "images": [],
-        "bold": false
+        "bold": false,
+        "style": "h2"
       },
       {
         "type": "tbl",
@@ -2883,7 +2901,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "[별첨1] 이투스247학원 시스템 환경설정",
         "images": [],
-        "bold": true
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
@@ -3150,9 +3169,10 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "[별첨2] 문자발송 서비스 이용안내",
+        "text": "[별첨2] 문자발송 서비스(비즈모야샷) 이용안내",
         "images": [],
-        "bold": true
+        "bold": false,
+        "style": "h1"
       },
       {
         "type": "p",
@@ -3373,15 +3393,15 @@ window.ETOOS_CHAPTERS = [
     "subTopics": [
       {
         "id": "st_2_0",
-        "title": "월별 및 연간 운영 일정",
+        "title": "1. 이투스247학원 운영 일정",
         "blockIdx": 0,
-        "matchText": "1) 이투스247학원 일정"
+        "matchText": "1. 이투스247학원 운영 일정"
       },
       {
         "id": "st_2_1",
-        "title": "기본 인력 구성 및 직무 역할",
+        "title": "2. 기본 인력 구성 및 직무 역할",
         "blockIdx": 21,
-        "matchText": "2) 기본 인력 구성 및 주요 역할"
+        "matchText": "2. 기본 인력 구성 및 주요 역할"
       },
       {
         "id": "st_1794269325112",
@@ -3402,40 +3422,46 @@ window.ETOOS_CHAPTERS = [
         "matchText": "[이투스247학원 직영점 주요일과(직원/학생) 세부내역"
       },
       {
-        "id": "st_1794272021780",
-        "title": "학원관리 시스템(ERP)",
-        "blockIdx": 133,
-        "matchText": "(1) 학원관리 시스템(ERP)"
+        "id": "st_1795480083872",
+        "title": "3. 관리 시스템 및 학습기기",
+        "blockIdx": 132,
+        "matchText": "3. 관리 시스템 및 학습기기"
       },
       {
-        "id": "st_1794272206481",
-        "title": "학습관리 시스템(LMS, MY247 APP)",
+        "id": "st_1795480254388",
+        "title": "② 학습관리 시스템(LMS, MY247 APP)",
         "blockIdx": 137,
-        "matchText": "(2) 학습관리 시스템(LMS, MY247 APP)"
+        "matchText": "② 학습관리 시스템(LMS, MY247 APP)"
       },
       {
         "id": "st_1794272246607",
-        "title": "학습 콘텐츠 시스템(마켓ECI)",
-        "blockIdx": 140,
-        "matchText": "(3) 학습 콘텐츠 시스템(마켓ECI)"
+        "title": "③ 학습 콘텐츠 시스템(마켓ECI)",
+        "blockIdx": 141,
+        "matchText": "③ 학습 콘텐츠 시스템(마켓ECI)"
       },
       {
         "id": "st_1794272260722",
-        "title": "출결 프로그램",
-        "blockIdx": 161,
-        "matchText": "(4) 출결 프로그램"
+        "title": "④ 출결 프로그램",
+        "blockIdx": 162,
+        "matchText": "④ 출결 프로그램"
       },
       {
         "id": "st_1794272321786",
-        "title": "태블릿PC",
-        "blockIdx": 184,
-        "matchText": "(5) 태블릿PC"
+        "title": "⑤ 태블릿PC",
+        "blockIdx": 185,
+        "matchText": "⑤ 태블릿PC"
       },
       {
-        "id": "st_1794284507051",
-        "title": "비즈모아샷",
+        "id": "st_1795480682887",
+        "title": "[별첨1] 이투스247학원 시스템 환경설정",
+        "blockIdx": 193,
+        "matchText": "[별첨1] 이투스247학원 시스템 환경설정"
+      },
+      {
+        "id": "st_1795480719245",
+        "title": "[별첨2] 문자발송 서비스(비즈모야샷) 이용안내",
         "blockIdx": 231,
-        "matchText": "1) 비즈모아샷 가입 (https://biz.moash"
+        "matchText": "[별첨2] 문자발송 서비스(비즈모야샷) 이용안내"
       }
     ],
     "shortTitle": "2. 이투스247학원 시스템"
