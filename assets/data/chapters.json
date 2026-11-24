@@ -3470,6 +3470,740 @@
     "shortTitle": "2. 이투스247학원 시스템"
   },
   {
+    "id": 9,
+    "shortTitle": "3. 이투스247학원 SNS 마케팅",
+    "title": "3. 이투스247학원 SNS 마케팅",
+    "sub": "새 섹션 설명을 입력하세요",
+    "icon": "fa-bullhorn",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "1. MARKETING ROLES",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "본사와 지점, 무엇을 담당할까요?",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "본사는 초기 개설을 지원하고, 지점은 채널 홍보를 직접 운영합니다.",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_ab814bab214a.png"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "① 본사 지원\n- 지점 홈페이지 개설 \n- 네이버 플레이스 신규 등록 지원",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "② 지점 직접 운영\n- SNS:  네이버 플레이스 ·블로그·인스타그램·당근 등\n- 디지털 광고:  검색 광고 운영 등\n- 오프라인: 포스터·현수막 게시 등\n\n*SNS 계정 생성 후 , 본사에 홈페이지 연결 요청 시 페이지 상 / 하단에 첨부해 드려요. (LMS 업무요청 게시판 통해 요청 )\n",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "2. CHANNELS",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "채널별 역할은 다릅니다",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "특징을 알고 우리 지점에 맞는 채널을 선택하세요.",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_08d0e53ee1c6.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "① 오늘의 247\n- 학원 실생활 , 모집 정보 확인\n- 게시글 위주 업로드\n\n② 네이버 블로그\n- 학원 실생활 , 모집 정보 확인\n- 게시글 및 영상 업로드, 댓글 및 이웃 맺기 등으로 소통\n\n③ 인스타그램\n- 학원 실생활 , 모집 정보 확인\n- 카드뉴스 , 릴스 영상 업로드, 팔로우 및 DM 등으로 소통\n\n④ 네이버 플레이스\n- 학원 위치 , 부대 시설 확인\n- 위치 · 연락처 · 운영 시간 안내, 새소식 등으로 이벤트 홍보, 후기 관리\n\n⑤ 당근\n- 학원 위치 , 부대 시설 확인\n- 위치 · 연락처 · 운영 시간 안내, 새소식 등으로 이벤트 홍보, 단골맺기 및 채팅 등으로 소통",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": " ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "① 오늘의247",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "오늘의 247 게시글 등록 경로 : LMS 메인 > 홈페이지 관리 > 커뮤니티 > 오늘의 247 > 오른쪽 상단 ‘ 등록하기 ’ 버튼 클릭 후 게시글 작성",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_e1da54b44731.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 게시글 등록 \n- 지점용 LMS 계정 통해 자유롭게 지점 홍보 게시글 작성\n\n02 등록 확인\n- 작성한 게시글이 정상적으로 등록됐는지 홈페이지에서 확인",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "② 네이버 블로그",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "사전 준비 리스트 : 네이버 계정 ( 원장님 이름으로 회원가입 ), 학원 정보 ( 학원등록번호 , 교습과정 , 교습소 명칭 , 월 수강료 , 연락처 등 )",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_a246fe490919.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 블로그 개설\n- 지점 관리용 네이버 계정 준비\n\n02 기본 정보 입력\n- 프로필과 소개글 작성\n\n03 레이아웃 설정\n- 스킨·게시물 카테고리 설정",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "네이버 블로그 운영 TIP",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_5026a2cb2116.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 ‘ 모바일 화면 ‘ 기준으로 작성 추천 \n- 대부분 모바일 화면으로 블로그를 보는 방문자가 많아 모바일 기준으로 작성하는 것을 추천\n\n02 AI 를 이용해 원고 작성 시 시간 단축\n- ChatGPT 또는 제미나이 등을 이용해 작성하고자 하는 주제와 그에 맞게 제작한 이미지를 삽입하여 원고 작성을 요청하면 업로드 시간 단축 가능",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "* 블로그 주제 선정 TIP: 블랙키위 ( https://blackkiwi.net / ) 를 통해 최근 인기 검색어를 확인하거나, \n   블로그 통계 페이지에서 유입 키워드를 확인하는 것을 추천해요. \n\n*AI 를 이용해 원고 작성 또는 이미지 생성 시, 사실 여부를 꼭 확인해 주세요 .",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": " ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "③ 인스타그램",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "사전 준비 리스트 : 학원 정보 ( 학원등록번호 , 교습과정 , 교습소 명칭 , 월 수강료 , 연락처 등 )",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_6a86216be255.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 계정 생성 \n- 지점용 인스타그램 계정 만들기\n\n02 프로필 정보 설정\n-  프로필 > 프로필 편집 > 소개글에 학원 정보 입력 , 웹사이트 링크 등 등록\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "(* 학원 정보 미기재 시 , 학원 광고 가이드라인 법안에 의해 부당 광고로 취급 당할 수 있으니 주의 !)",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "인스타그램 부가기능",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_16aef8d6c6a4.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 스토리 \n- 사진 , 영상 , 게시글 등 24 시간 동안 메인 상단 노출\n\n02 하이라이트 \n- 과거에 올린 스토리를 하나의 주제로 엮어 프로필에 지속적으로 노출시키는 기능\n\n03 멀티 링크 페이지\n- 멀티 링크 페이지에 여러 페이지 링크 삽입하여 노출\n 예 ) 인포크링크 ( https://link.inpock.co.kr / ), 링크트리 ( https://linktr.ee / ) 등\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "* 인스타그램은 상시적으로 기능을 업데이트 하는 점 참고 & 다이렉트 메시지 (DM) 로 문의 남기는 학생이 많으니 알림 설정 권장",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "  ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "④ 네이버 플레이스",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "사전 준비 리스트 : 네이버 계정 ( 사업자등록증과 동일한 명의의 계정 ), 사업자등록증 (PDF 또는 이미지 파일 ), \n시설 가진 및 학원 정보 ( 운영 시간 , 수강료 등 )",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_748274521507.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 스마트 플레이스 업체 찾기 \n- 네이버 ‘ 스마트 플레이스 ‘ 접속 후 전화번호 , 업체명 또는 사업자등록번호 검색\n\n02 업체 정보 조회 \n- 업체 정보 맞는지 확인 후 ‘ 주인 변경 ‘ 신청\n\n03 주인 변경 신청\n- ARS 또는 사업자등록증 등 서류 파일을 통해 주인 인증 후 변경 신청 진행",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "네이버 플레이스 운영 TIP",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_e36b47bad18f.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 ' 지점 정보 수정 ‘ 통해 대표 키워드 수정 \n- 경로 : 네이버 스마트 플레이스 > 내 업체 > 업체정보\n- 아래 기존 사용하던 키워드를 삭제하고 새로 추가할 키워드를 입력하고 , 저장하기 !\n( 모집 키워드 예시 : 윈터스쿨 , 재수정규반 등 )\n\n02 새소식 기능 이용하여 모집 , 이벤트 홍보\n- 경로 : 네이버 스마트 플레이스 > 내 업체 > 새소식 쓰기\n-  모집 및 이벤트 진행 시 , 새소식 기능을 통해 네이버 플레이스로 홍보할 수 있어요 !",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "* 모집시기별로 핵심 키워드와 새소식을 업데이트 하면 노출이 더 잘 될 수 있어요 .",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "⑤ 당근",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "사전 준비 리스트 : 시설 사진 , 학원 정보 ( 학원등록번호 , 교습과정 , 교습소 명칭 , 월 수강료 , 연락처 등 )",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_8aa0132ba863.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 비즈프로필 관리 \n- 당근에서 비즈프로필 관리 이동\n\n02 학원명 입력 \n- 지점명과 소개 입력\n\n03 업종·정보 등록\n- 업종·위치·연락처 설정\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "3. OPERATING RULES",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "게시 전 이것만 확인하세요",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "학원 홍보에서 중요한 법정 표시사항·개인정보·저작권을 점검합니다.",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_c2e50f8cbfc5.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 학원 광고 정보 \n- 명칭·등록번호·교습비 등 필수 표시사항 확인\n\n02 초상권·개인정보\n- 학생 사진·후기·성적 게시 전 동의 확인\n- 노출 필요 시 모자이크 처리\n\n03 저작권 \n- 기사·이미지·타 지점 게시물 무단 복제 금지\n\n04 최신 정보·문의 관리\n- 모집 일정·혜택 최신화, 다이렉트 메시지 (DM)·댓글 정기 확인\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "4. CONTENT PLANNING",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "무엇을 올리면 좋을까요?",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "모집 정보 · 학원 소개 · 학원 일상 콘텐츠를 균형 있게 배치하세요.",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_45953f5cac9a.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 모집 정보 \n- 모집·혜택·개강 일정\n\n02 학원 소개 \n- 공간· 장학금 ·관리 프로그램\n\n03 학원 일상\n- 상담 FAQ·학원 운영 현장\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "5. CREATION TOOLS",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "디자인 사이트로 빠르게 제작하기",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "미리 만들어진 템플릿을 활용해 카드뉴스와 홍보물을 제작하세요.",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_b9aae48fe882.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "01 미리캔버스 \n- 카드뉴스 · 포스터 · 배너\n\n02 Canva \n- SNS 게시물 · 영상 표지\n\n03 망고보드\n- 이미지 · 홍보물 제작\n",
+        "images": [],
+        "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "  ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
+        "text": "6. MONTHLY CALENDAR",
+        "images": [],
+        "bold": false,
+        "style": "h1"
+      },
+      {
+        "type": "p",
+        "text": "12월 콘텐츠 업로드 계획표 | 작성 예시",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
+        "text": "2026년 12월 · 블로그 및 인스타 댓글 , 다이렉트 메시지 (DM, 채팅 ) 등은 상시 확인 권장 / 본사 SNS 주제 가이드 참고 추천",
+        "images": [],
+        "bold": false,
+        "style": "h3"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_c5e2da5996b0.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "작성 기준 | 무리하지 않는 업로드 빈도를 정하고 모집·시설·학원 일상 주제를 골고루 배치하세요.",
+        "images": [],
+        "bold": false,
+        "style": "callout"
+      }
+    ],
+    "subTopics": [
+      {
+        "id": "st_1795485293919",
+        "title": "1. MARKETING ROLES",
+        "blockIdx": 0,
+        "matchText": "1. MARKETING ROLES"
+      },
+      {
+        "id": "st_1795485535052",
+        "title": "2. CHANNELS",
+        "blockIdx": 10,
+        "matchText": "2. CHANNELS"
+      },
+      {
+        "id": "st_1795486010744",
+        "title": "① 오늘의247",
+        "blockIdx": 18,
+        "matchText": "① 오늘의247"
+      },
+      {
+        "id": "st_1795486556751",
+        "title": "② 네이버 블로그",
+        "blockIdx": 23,
+        "matchText": "② 네이버 블로그"
+      },
+      {
+        "id": "st_1795486869184",
+        "title": "③ 인스타그램",
+        "blockIdx": 34,
+        "matchText": "③ 인스타그램"
+      },
+      {
+        "id": "st_1795487100090",
+        "title": "④ 네이버 플레이스",
+        "blockIdx": 47,
+        "matchText": "④ 네이버 플레이스"
+      },
+      {
+        "id": "st_1795487475613",
+        "title": "⑤ 당근",
+        "blockIdx": 60,
+        "matchText": "⑤ 당근"
+      },
+      {
+        "id": "st_1795487580943",
+        "title": "3. OPERATING RULES",
+        "blockIdx": 66,
+        "matchText": "3. OPERATING RULES"
+      },
+      {
+        "id": "st_1795487692303",
+        "title": "4. CONTENT PLANNING",
+        "blockIdx": 75,
+        "matchText": "4. CONTENT PLANNING"
+      },
+      {
+        "id": "st_1795487815902",
+        "title": "5. CREATION TOOLS",
+        "blockIdx": 81,
+        "matchText": "5. CREATION TOOLS"
+      },
+      {
+        "id": "st_1795488095407",
+        "title": "6. MONTHLY CALENDAR",
+        "blockIdx": 87,
+        "matchText": "6. MONTHLY CALENDAR"
+      }
+    ]
+  },
+  {
     "id": 3,
     "title": "3. 신입생 모집 및 재원생 만족",
     "page": 42,
@@ -7674,7 +8408,8 @@
         "type": "p",
         "text": "- 게이트 페이지(상단) : 모집 요강 및 재원생 혜택 등의 주요 일정을 제공합니다.",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -7688,7 +8423,8 @@
         "type": "p",
         "text": "- 게이트 페이지(하단): 이투스247학원 위치 안내와 공지사항/설명회 안내/오늘의 247 등의 안내 글이 제공됩니다.",
         "images": [],
-        "bold": false
+        "bold": true,
+        "style": "bold"
       },
       {
         "type": "p",
@@ -15423,7 +16159,7 @@
         "matchText": "[별첨3] 입시센터 프로그램 등록 방법 안내"
       }
     ],
-    "shortTitle": "6. 이투스247학원 ERP",
+    "shortTitle": "8. 이투스247학원 ERP",
     "sub": ""
   }
 ]
