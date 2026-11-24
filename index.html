@@ -314,17 +314,68 @@
         break-inside: avoid;
       }
     }
+
+    /* Gate Page Entrance Stagger & Button Shimmer */
+    @keyframes gateFadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .gate-stagger-1 {
+      opacity: 0;
+      animation: gateFadeUp 0.72s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards;
+    }
+    .gate-stagger-2 {
+      opacity: 0;
+      animation: gateFadeUp 0.72s cubic-bezier(0.16, 1, 0.3, 1) 0.18s forwards;
+    }
+    .gate-stagger-3 {
+      opacity: 0;
+      animation: gateFadeUp 0.72s cubic-bezier(0.16, 1, 0.3, 1) 0.32s forwards;
+    }
+    .gate-cta-shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+    .gate-cta-shimmer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 65%;
+      height: 100%;
+      background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.34) 50%, transparent 80%);
+      transform: skewX(-20deg);
+      transition: left 0.65s ease;
+      pointer-events: none;
+    }
+    .gate-cta-shimmer:hover::after {
+      left: 140%;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .gate-stagger-1, .gate-stagger-2, .gate-stagger-3 {
+        opacity: 1;
+        animation: none;
+      }
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col h-screen overflow-hidden">
 
   <!-- ACCESS GATE PAGE (이투스247학원 임직원 전용 게이트 페이지) -->
   <div id="gateScreen" class="fixed inset-0 z-[80] bg-white overflow-y-auto flex flex-col justify-between print:hidden">
-    <!-- Subtle Teal-Emerald Ambient Background -->
+    <!-- Subtle Teal-Emerald Ambient Background + Interactive Canvas & Mouse Spotlight -->
     <div class="pointer-events-none fixed inset-0 overflow-hidden">
-      <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[780px] h-[420px] rounded-full bg-gradient-to-br from-brand-100/70 via-emerald-50/60 to-transparent blur-3xl"></div>
-      <div class="absolute -bottom-32 right-0 w-[460px] h-[320px] rounded-full bg-gradient-to-tl from-brand-50/80 to-transparent blur-3xl"></div>
+      <div id="gateGlowTop" class="absolute -top-40 left-1/2 -translate-x-1/2 w-[780px] h-[420px] rounded-full bg-gradient-to-br from-brand-100/75 via-emerald-50/65 to-transparent blur-3xl transition-transform duration-300 ease-out"></div>
+      <div id="gateGlowBottom" class="absolute -bottom-32 right-0 w-[480px] h-[340px] rounded-full bg-gradient-to-tl from-brand-100/70 to-transparent blur-3xl transition-transform duration-300 ease-out"></div>
     </div>
+    <canvas id="gateParticleCanvas" aria-hidden="true" class="pointer-events-none fixed inset-0 z-0"></canvas>
+    <div id="gateMouseSpotlight" aria-hidden="true" class="pointer-events-none fixed inset-0 z-0 opacity-0 transition-opacity duration-300"></div>
 
     <!-- Gate Header -->
     <div class="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-8 py-5 flex items-center justify-between">
@@ -339,19 +390,19 @@
     <div class="relative z-10 flex-1 flex items-center justify-center px-4 sm:px-8 py-10">
       <div class="w-full max-w-6xl text-center space-y-8 sm:space-y-10">
         <div class="space-y-5 sm:space-y-6">
-          <h1 class="text-5xl sm:text-7xl lg:text-[84px] xl:text-[96px] font-extrabold tracking-tight leading-[1.12] text-slate-950">
+          <h1 class="gate-stagger-1 text-5xl sm:text-7xl lg:text-[84px] xl:text-[96px] font-extrabold tracking-tight leading-[1.12] text-slate-950">
             이투스247학원<br />
             <span class="bg-gradient-to-r from-brand-700 via-emerald-600 to-teal-500 bg-clip-text text-transparent">신규 직원 매뉴얼</span>
           </h1>
-          <p class="text-base sm:text-xl lg:text-2xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p class="gate-stagger-2 text-base sm:text-xl lg:text-2xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-medium">
             학원 이해부터 LMS · MY247 APP · ERP · 마케팅 실무까지,<br class="hidden sm:inline" />
             지점 운영에 필요한 모든 매뉴얼을 확인하실 수 있습니다.
           </p>
         </div>
 
-        <div class="pt-1">
+        <div class="pt-1 gate-stagger-3">
           <button type="button" onclick="openGateLoginModal()"
-                  class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white px-9 py-4 text-base sm:text-lg font-bold shadow-lg shadow-brand-700/20 hover:-translate-y-0.5 transition duration-200 cursor-pointer">
+                  class="gate-cta-shimmer group inline-flex items-center justify-center gap-2.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white px-9 py-4 text-base sm:text-lg font-bold shadow-lg shadow-brand-700/20 hover:-translate-y-0.5 transition duration-200 cursor-pointer">
             <span>매뉴얼 입장하기</span>
             <i class="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-0.5"></i>
           </button>
@@ -1329,6 +1380,158 @@
       if (unlocked) {
         closeGateLoginModal();
       }
+      syncGateEffectsState(!unlocked);
+    }
+
+    // Interactive Gate Effects: Particle Network Canvas + Mouse Spotlight + Ambient Parallax
+    let _gateEffectsInitialized = false;
+    let _gateRafId = null;
+    let _gateEffectsActive = false;
+
+    function syncGateEffectsState(shouldRun) {
+      _gateEffectsActive = Boolean(shouldRun);
+      if (shouldRun) {
+        initGateInteractiveEffects();
+      } else if (_gateRafId) {
+        cancelAnimationFrame(_gateRafId);
+        _gateRafId = null;
+      }
+    }
+
+    function initGateInteractiveEffects() {
+      const gate = document.getElementById('gateScreen');
+      const canvas = document.getElementById('gateParticleCanvas');
+      const spotlight = document.getElementById('gateMouseSpotlight');
+      const glowTop = document.getElementById('gateGlowTop');
+      const glowBottom = document.getElementById('gateGlowBottom');
+      if (!gate || !canvas) return;
+
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      const mouse = { x: -9999, y: -9999, active: false };
+
+      if (!window._gateParticlesData) {
+        const count = width < 640 ? 28 : 54;
+        const colors = ['rgba(13, 123, 116, 0.38)', 'rgba(16, 185, 129, 0.34)', 'rgba(20, 184, 166, 0.32)'];
+        window._gateParticlesData = Array.from({ length: count }, () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.45,
+          vy: (Math.random() - 0.5) * 0.45,
+          r: 1.6 + Math.random() * 2.1,
+          color: colors[Math.floor(Math.random() * colors.length)]
+        }));
+      }
+
+      const resizeCanvas = () => {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        canvas.style.width = width + 'px';
+        canvas.style.height = height + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      };
+
+      if (!_gateEffectsInitialized) {
+        _gateEffectsInitialized = true;
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        gate.addEventListener('mousemove', (e) => {
+          mouse.x = e.clientX;
+          mouse.y = e.clientY;
+          mouse.active = true;
+          if (spotlight) {
+            spotlight.style.opacity = '1';
+            spotlight.style.background = `radial-gradient(540px circle at ${e.clientX}px ${e.clientY}px, rgba(13, 123, 116, 0.10), rgba(16, 185, 129, 0.045) 42%, transparent 72%)`;
+          }
+          const nx = (e.clientX / Math.max(width, 1) - 0.5);
+          const ny = (e.clientY / Math.max(height, 1) - 0.5);
+          if (glowTop) glowTop.style.transform = `translate(calc(-50% + ${Math.round(nx * -28)}px), ${Math.round(ny * -20)}px)`;
+          if (glowBottom) glowBottom.style.transform = `translate(${Math.round(nx * 24)}px, ${Math.round(ny * 18)}px)`;
+        });
+
+        gate.addEventListener('mouseleave', () => {
+          mouse.active = false;
+          if (spotlight) spotlight.style.opacity = '0';
+          if (glowTop) glowTop.style.transform = 'translate(-50%, 0px)';
+          if (glowBottom) glowBottom.style.transform = 'translate(0px, 0px)';
+        });
+      } else {
+        resizeCanvas();
+      }
+
+      if (_gateRafId) return;
+
+      const particles = window._gateParticlesData;
+      const tick = () => {
+        if (!_gateEffectsActive) {
+          _gateRafId = null;
+          return;
+        }
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.x < 0 || p.x > width) p.vx *= -1;
+          if (p.y < 0 || p.y > height) p.vy *= -1;
+          p.x = Math.max(0, Math.min(width, p.x));
+          p.y = Math.max(0, Math.min(height, p.y));
+
+          // Gentle mouse attraction/repulsion ripple
+          if (mouse.active) {
+            const dx = mouse.x - p.x;
+            const dy = mouse.y - p.y;
+            const dist = Math.hypot(dx, dy);
+            if (dist < 175 && dist > 1) {
+              const force = (175 - dist) / 175;
+              p.x -= (dx / dist) * force * 0.55;
+              p.y -= (dy / dist) * force * 0.55;
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.strokeStyle = `rgba(13, 123, 116, ${(force * 0.24).toFixed(3)})`;
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            }
+          }
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = p.color;
+          ctx.fill();
+
+          for (let j = i + 1; j < particles.length; j++) {
+            const q = particles[j];
+            const dist = Math.hypot(p.x - q.x, p.y - q.y);
+            if (dist < 135) {
+              const alpha = ((135 - dist) / 135) * 0.14;
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(q.x, q.y);
+              ctx.strokeStyle = `rgba(13, 123, 116, ${alpha.toFixed(3)})`;
+              ctx.lineWidth = 0.85;
+              ctx.stroke();
+            }
+          }
+        }
+
+        _gateRafId = requestAnimationFrame(tick);
+      };
+
+      _gateRafId = requestAnimationFrame(tick);
     }
 
     function openGateLoginModal() {
