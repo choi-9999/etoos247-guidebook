@@ -452,13 +452,6 @@
           <span>접속 코드가 올바르지 않습니다. 다시 확인해 주세요.</span>
         </div>
 
-        <div class="flex items-center justify-between pt-0.5">
-          <label class="inline-flex items-center gap-2 text-xs text-slate-600 font-medium cursor-pointer select-none">
-            <input type="checkbox" id="gateKeepLoginChk" checked class="accent-brand-600 rounded w-3.5 h-3.5" />
-            <span>이 브라우저에서 로그인 유지</span>
-          </label>
-        </div>
-
         <div class="flex items-center gap-2 pt-1">
           <button type="button" onclick="closeGateLoginModal()" class="px-4 py-2.5 bg-white hover:bg-slate-100 border border-slate-300 rounded-xl text-xs font-semibold text-slate-700 transition">
             취소
@@ -1359,10 +1352,10 @@
     let gateOverlayForced = false;
 
     function isGateAuthenticated() {
+      localStorage.removeItem('etoos247_gate_auth');
       if (gateOverlayForced) return false;
       if (isAdminLoggedIn) return true;
-      return localStorage.getItem('etoos247_gate_auth') === GATE_ACCESS_CODE
-        || sessionStorage.getItem('etoos247_gate_auth') === GATE_ACCESS_CODE;
+      return sessionStorage.getItem('etoos247_gate_auth') === GATE_ACCESS_CODE;
     }
 
     function goToGateScreen() {
@@ -1584,7 +1577,6 @@
     async function handleGateLogin() {
       const inp = document.getElementById('gatePasswordInput');
       const errEl = document.getElementById('gateErrorMsg');
-      const keepChk = document.getElementById('gateKeepLoginChk');
       const val = inp ? inp.value.trim() : '';
 
       const isUserCode = (val === GATE_ACCESS_CODE);
@@ -1593,12 +1585,8 @@
       if (isUserCode || isAdminCode) {
         gateOverlayForced = false;
         if (errEl) errEl.classList.add('hidden');
-        if (keepChk && keepChk.checked) {
-          localStorage.setItem('etoos247_gate_auth', GATE_ACCESS_CODE);
-        } else {
-          localStorage.removeItem('etoos247_gate_auth');
-          sessionStorage.setItem('etoos247_gate_auth', GATE_ACCESS_CODE);
-        }
+        localStorage.removeItem('etoos247_gate_auth');
+        sessionStorage.setItem('etoos247_gate_auth', GATE_ACCESS_CODE);
         if (inp) inp.value = '';
 
         if (isAdminCode) {
