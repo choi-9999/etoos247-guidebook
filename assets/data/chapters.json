@@ -10854,6 +10854,13 @@
       },
       {
         "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
         "text": "1.1 시스템 요구사항",
         "images": [],
         "bold": false,
@@ -10865,6 +10872,13 @@
         "images": [],
         "bold": false,
         "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
       },
       {
         "type": "p",
@@ -10894,6 +10908,13 @@
         "text": "- 사용자 아이디와 비밀번호를 입력하여 학원운영관리(ERP)에 접속합니다.\n- 로그인 성공 시 다음과 같이 일일 인원보고 메뉴로 접속 되며 \n가맹점의 경우 로열티 관련 결제 금액이 존재 할 경우 로열티 관리> 로열티 결제 화면으로 자동 이동됩니다.",
         "images": [],
         "bold": false,
+        "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
         "style": "normal"
       },
       {
@@ -10918,6 +10939,13 @@
         ],
         "bold": true,
         "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
       },
       {
         "type": "p",
@@ -11336,6 +11364,13 @@
       },
       {
         "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
         "text": "\n",
         "images": [],
         "bold": true,
@@ -11384,6 +11419,13 @@
         "images": [],
         "bold": false,
         "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
       },
       {
         "type": "p",
@@ -11452,6 +11494,13 @@
       },
       {
         "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
         "text": "\n",
         "images": [],
         "bold": false,
@@ -11500,6 +11549,13 @@
         "images": [],
         "bold": false,
         "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
       },
       {
         "type": "p",
@@ -11561,48 +11617,6 @@
       },
       {
         "type": "p",
-        "text": "A. 부모정보 : 부모정보는 신규입력 후 부가정보에서 수정하거나 추가등록 할 수 있습니다.\nB. 통합회원 고유번호 :\n- 학생이 홈페이지 또는 MY247 APP에서 재원생 인증 신청을 할 경우 인증 번호가 부여됩니다.※ 재원생 인증 신청은 원생상태가 [재원생]인 경우에만 가능합니다.\n- LMS에서 재원생 인증 승인을 할 경우 통합회원 고유번호 상태가 [Y]로 변경됩니다.\n- 통합회원 고유번호 [Y] + 원생상태 [재원생]인 학생들만 로열티가 부과되며, MY247 APP 이용이 가능합니다.",
-        "images": [],
-        "bold": false,
-        "style": "box-blue"
-      },
-      {
-        "type": "p",
-        "text": "\n",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "\n",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "\n",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "\n",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "\n",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
         "text": "",
         "images": [
           "upload_e16e53ff7f95.png"
@@ -11612,7 +11626,42 @@
       },
       {
         "type": "p",
-        "text": "C. 학생 계정 조회 : 학생 본인 명의의 ID를 모두 조회할 수 있습니다.\n- 학생 계정 목록 중, 학생 정보에 등록된 통합회원 고유번호와 동일한 번호가 부여된 ID로 로그인한 경우에만 MY247 APP 사용이 가능합니다.\n",
+        "text": "\n",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [],
+        "bold": true,
+        "style": "bold"
+      },
+      {
+        "type": "p",
+        "text": "A. 부모정보 : 부모정보는 신규입력 후 부가정보에서 수정하거나 추가등록 할 수 있습니다.\n\nB. 통합회원 고유번호 :\n- 학생이 홈페이지 또는 MY247 APP에서 재원생 인증 신청을 할 경우 인증 번호가 부여됩니다.※ 재원생 인증 신청은 원생상태가 [재원생]인 경우에만 가능합니다.\n- LMS에서 재원생 인증 승인을 할 경우 통합회원 고유번호 상태가 [Y]로 변경됩니다.\n- 통합회원 고유번호 [Y] + 원생상태 [재원생]인 학생들만 로열티가 부과되며, MY247 APP 이용이 가능합니다.\n\nC. 학생 계정 조회 : 학생 본인 명의의 ID를 모두 조회할 수 있습니다.\n- 학생 계정 목록 중, 학생 정보에 등록된 통합회원 고유번호와 동일한 번호가 부여된 ID로 로그인한 경우에만 MY247 APP 사용이 가능합니다.\n\nD. 학년 : 학생의 학년 정보를 선택합니다.\n- N수생 또는 재학생(고3 등) 여부에 따라서 로열티가 다르게 부과됩니다.\n- 중3이하로 설정하신 경우, 재원생 혜택 지급 대상에서 제외됩니다.\n\nE. 카드번호 : 출결카드 번호를 입력 또는 수정합니다.\n- 출결카드 등록 : 카드번호 칸 클릭 → PC에 연결한 카드리더기(출결카드 등록용)에 출결카드 태그 → 저장  (자세한 방법은 [별첨1] 참고)\n\nF. 수강반 : 윈터스쿨 등원생은 ‘윈터’, 썸머스쿨 등원생은 ‘썸머’, 그 외 등원생은 ‘정규’를 선택해야 합니다. 수강반 선택이 잘못될 경우 재원생 혜택 지급 대상에서 제외됩니다.\n\n기타 정보\n- 수강번호 : 회원 등록 시 회원의 고유번호인 수강번호(학생번호)가 자동으로 부여됩니다.\n- 회원자리 : 학생의 자리 번호를 기입합니다. LMS 학생정보 및 출결 정보에 표시됩니다.\n- 실제 등원일 : 달력은 상단의 날짜 클릭 시 다음과 같은 순서로 날짜를 선택할 수 있습니다.\n※ 등원일 이전에는 LMS 출결 관리 대상에 포함되지 않습니다.\n",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -11633,7 +11682,7 @@
       },
       {
         "type": "p",
-        "text": "D. 학년 : 학생의 학년 정보를 선택합니다.\nN수생 또는 재학생(고3 등) 여부에 따라서 로열티가 다르게 부과됩니다.\n중3이하로 설정하신 경우, 재원생 혜택 지급 대상에서 제외됩니다.\nE. 카드번호 : 출결카드 번호를 입력 또는 수정합니다.\n출결카드 등록 : 카드번호 칸 클릭 → PC에 연결한 카드리더기(출결카드 등록용)에 출결카드 태그 → 저장  (자세한 방법은 [별첨1] 참고)\nF. 수강반 : 윈터스쿨 등원생은 ‘윈터’, 썸머스쿨 등원생은 ‘썸머’, 그 외 등원생은 ‘정규’를 선택해야 합니다. 수강반 선택이 잘못될 경우 재원생 혜택 지급 대상에서 제외됩니다.\n",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -11675,7 +11724,7 @@
       },
       {
         "type": "p",
-        "text": "기타 정보\n- 수강번호 : 회원 등록 시 회원의 고유번호인 수강번호(학생번호)가 자동으로 부여됩니다.\n- 회원자리 : 학생의 자리 번호를 기입합니다. LMS 학생정보 및 출결 정보에 표시됩니다.\n- 실제 등원일 : 달력은 상단의 날짜 클릭 시 다음과 같은 순서로 날짜를 선택할 수 있습니다.\n※ 등원일 이전에는 LMS 출결 관리 대상에 포함되지 않습니다.\n",
+        "text": "\n",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -11725,6 +11774,13 @@
         "images": [],
         "bold": false,
         "style": "callout"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
       },
       {
         "type": "p",
@@ -16319,67 +16375,67 @@
       {
         "id": "st_1795407531713",
         "title": "2. ERP 메뉴",
-        "blockIdx": 15,
+        "blockIdx": 19,
         "matchText": "2. ERP 메뉴"
       },
       {
         "id": "st_1795407556295",
         "title": "3. 회원관리",
-        "blockIdx": 17,
+        "blockIdx": 21,
         "matchText": "3. 회원관리"
       },
       {
         "id": "st_1795409003697",
         "title": "4. 반 관리",
-        "blockIdx": 151,
+        "blockIdx": 159,
         "matchText": "4. 반 관리"
       },
       {
         "id": "st_1795415238996",
         "title": "5. 수납관리",
-        "blockIdx": 292,
+        "blockIdx": 300,
         "matchText": "5. 수납관리"
       },
       {
         "id": "st_1795417967135",
         "title": "6. 상품 관리",
-        "blockIdx": 439,
+        "blockIdx": 447,
         "matchText": "6. 상품 관리"
       },
       {
         "id": "st_1795418092399",
         "title": "7. 시스템 관리",
-        "blockIdx": 457,
+        "blockIdx": 465,
         "matchText": "7. 시스템 관리"
       },
       {
         "id": "st_1795418514947",
         "title": "8. 회계 현황",
-        "blockIdx": 503,
+        "blockIdx": 511,
         "matchText": "8. 회계 현황"
       },
       {
         "id": "st_1795418841685",
         "title": "9. 로열티 관리",
-        "blockIdx": 560,
+        "blockIdx": 568,
         "matchText": "9. 로열티 관리"
       },
       {
         "id": "st_1795419090069",
         "title": "[별첨1] 출결카드 학생 별 등록방법 안내",
-        "blockIdx": 591,
+        "blockIdx": 599,
         "matchText": "[별첨1] 출결카드 학생 별 등록방법 안내"
       },
       {
         "id": "st_1795419332650",
         "title": "[별첨2] 출결APP 설치 및 사용방법 안내",
-        "blockIdx": 609,
+        "blockIdx": 617,
         "matchText": "[별첨2] 출결APP 설치 및 사용방법 안내"
       },
       {
         "id": "st_1795419828696",
         "title": "[별첨3] 입시센터 프로그램 등록 방법 안내",
-        "blockIdx": 662,
+        "blockIdx": 670,
         "matchText": "[별첨3] 입시센터 프로그램 등록 방법 안내"
       }
     ],
