@@ -570,6 +570,9 @@
         <i class="fa-solid fa-image text-brand-600"></i> 새 이미지 추가
         <input type="file" accept="image/*" class="hidden" onchange="addNewImageToCurrentChapter(this)" />
       </label>
+      <button onclick="addNewYouTubeToCurrentChapter()" class="px-2.5 py-1 bg-white hover:bg-rose-50 text-amber-950 rounded-lg text-xs font-bold border border-amber-300 shadow-2xs flex items-center gap-1 transition" title="YouTube 동영상 미리보기 추가">
+        <i class="fa-brands fa-youtube text-rose-600"></i> 새 유튜브 추가
+      </button>
       <button onclick="saveCustomChapters()" class="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 transition" title="내 브라우저에 임시 저장">
         <i class="fa-solid fa-floppy-disk"></i> 임시 저장
       </button>
@@ -2470,6 +2473,9 @@
               <i class="fa-solid fa-plus text-[9px]"></i> 맨 위에 이미지
               <input type="file" accept="image/*" class="hidden" onchange="insertImageAt(currentChapterId, 0, this)" />
             </label>
+            <button type="button" onclick="insertYouTubeAt(currentChapterId, 0)" class="px-2.5 py-1 bg-white hover:bg-rose-600 text-rose-700 hover:text-white border border-rose-200 rounded-lg text-[11px] font-bold shadow-2xs transition flex items-center gap-1">
+              <i class="fa-brands fa-youtube text-[10px]"></i> 맨 위에 유튜브
+            </button>
           </div>
         `;
         container.appendChild(topInsertBar);
@@ -2753,6 +2759,65 @@
           tableContainer.innerHTML = tableToolbarHtml;
           tableContainer.appendChild(tableWrap);
           container.appendChild(tableContainer);
+        } else if (block.type === 'youtube') {
+          const videoId = block.videoId || extractYouTubeVideoId(block.url || '');
+          if (!videoId) return;
+          const videoUrl = block.url || `https://www.youtube.com/watch?v=${videoId}`;
+          const videoTitle = block.title || '참고 동영상';
+
+          const ytWrap = document.createElement('div');
+          ytWrap.className = 'my-6 p-3 sm:p-4 border border-slate-200/90 rounded-2xl bg-slate-50/70 shadow-2xs overflow-hidden';
+          ytWrap.id = `chap-${chap.id}-block-${idx}`;
+          ytWrap.setAttribute('data-block-idx', idx);
+
+          let ytEditBar = '';
+          if (isAdminLoggedIn && isEditMode) {
+            ytEditBar = `
+              <div class="flex flex-wrap items-center justify-between gap-2 p-2 mb-3 bg-gradient-to-r from-amber-50 to-orange-50/50 rounded-xl border border-amber-200 text-xs font-semibold text-amber-950 print:hidden">
+                <span class="flex items-center gap-1.5">
+                  <i class="fa-brands fa-youtube text-rose-600 text-sm"></i>
+                  <b>YouTube 동영상 블록</b>
+                </span>
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  ${buildBlockOrderInsertControlsHtml(chap, idx)}
+                  <button type="button" onclick="editYouTubeBlock(currentChapterId, ${idx})" class="px-2.5 py-1 bg-amber-600 hover:bg-amber-700 text-white rounded-lg text-[11px] font-bold shadow-2xs transition flex items-center gap-1">
+                    <i class="fa-solid fa-pen"></i> 링크/제목 수정
+                  </button>
+                  <button type="button" onclick="deleteYouTubeBlock(currentChapterId, ${idx})" class="px-2.5 py-1 bg-rose-600 hover:bg-rose-700 text-white rounded-lg text-[11px] font-bold shadow-2xs transition flex items-center gap-1">
+                    <i class="fa-solid fa-trash-can"></i> 삭제
+                  </button>
+                </div>
+              </div>
+            `;
+          }
+
+          ytWrap.innerHTML = `
+            ${ytEditBar}
+            <div class="flex items-center justify-between gap-2 mb-2.5 px-1">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="w-7 h-7 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center shrink-0">
+                  <i class="fa-brands fa-youtube text-sm"></i>
+                </span>
+                <span class="text-xs sm:text-sm font-bold text-slate-800 truncate">${escapeHtml(videoTitle)}</span>
+              </div>
+              <a href="${escapeHtml(videoUrl)}" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white hover:bg-rose-50 text-slate-600 hover:text-rose-700 border border-slate-200 text-[11px] font-semibold transition shrink-0 print:hidden">
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> YouTube에서 열기
+              </a>
+            </div>
+            <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-900 border border-slate-200 shadow-xs print:hidden">
+              <iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?rel=0"
+                      title="${escapeHtml(videoTitle)}"
+                      class="w-full h-full border-0"
+                      loading="${imgLoadingAttr}"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+            </div>
+            <div class="hidden print:block p-3 rounded-xl border border-slate-300 bg-white text-xs text-slate-700">
+              <strong>[참고 동영상]</strong> ${escapeHtml(videoTitle)} — ${escapeHtml(videoUrl)}
+            </div>
+          `;
+          container.appendChild(ytWrap);
         }
       });
 
@@ -2762,7 +2827,7 @@
         addBtnDiv.className = 'my-8 p-5 border-2 border-dashed border-amber-300 bg-amber-50/60 rounded-2xl text-center space-y-3 print:hidden';
         addBtnDiv.innerHTML = `
           <div class="text-xs font-bold text-amber-900"><i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 이 섹션 편집 및 추가 도구</div>
-          <p class="text-[11px] text-amber-700">이 챕터의 맨 끝에 지점별 특이사항 문단을 추가하거나 새 이미지를 등록할 수 있습니다.</p>
+          <p class="text-[11px] text-amber-700">이 챕터의 맨 끝에 지점별 특이사항 문단을 추가하거나 새 이미지·유튜브 동영상을 등록할 수 있습니다.</p>
           <div class="flex items-center justify-center gap-2 flex-wrap">
             <button onclick="addNewParagraphToCurrentChapter()" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs rounded-xl shadow-sm transition inline-flex items-center gap-1.5">
               <i class="fa-solid fa-plus"></i> 새 문단 추가
@@ -2774,6 +2839,9 @@
               <i class="fa-solid fa-image"></i> 새 이미지 추가
               <input type="file" accept="image/*" class="hidden" onchange="addNewImageToCurrentChapter(this)" />
             </label>
+            <button onclick="addNewYouTubeToCurrentChapter()" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow-sm transition inline-flex items-center gap-1.5">
+              <i class="fa-brands fa-youtube"></i> 새 유튜브 추가
+            </button>
           </div>
         `;
         container.appendChild(addBtnDiv);
@@ -4602,6 +4670,7 @@
     function isRenderableBlock(block) {
       if (!block) return false;
       if (block.type === 'tbl') return true;
+      if (block.type === 'youtube') return Boolean(block.videoId || block.url);
       if (block.type === 'p') {
         const text = block.text ? block.text.replace(/\s*p\.?\s*\d+\s*$/i, '').trim() : '';
         const hasImages = Array.isArray(block.images) && block.images.length > 0;
@@ -4673,6 +4742,10 @@
             <i class="fa-solid fa-plus text-[9px]"></i> 이미지
             <input type="file" accept="image/*" class="hidden" onchange="insertImageAt(currentChapterId, ${idx + 1}, this)" />
           </label>
+          <button type="button" onclick="event.stopPropagation(); insertYouTubeAt(currentChapterId, ${idx + 1})"
+                  class="px-1.5 py-0.5 bg-rose-50 hover:bg-rose-600 text-rose-700 hover:text-white border border-rose-200 rounded text-[11px] font-bold cursor-pointer transition flex items-center gap-0.5" title="바로 아래에 YouTube 동영상 삽입">
+            <i class="fa-brands fa-youtube text-[10px]"></i> 유튜브
+          </button>
         </div>
       `;
     }
@@ -4888,6 +4961,87 @@
       const chap = chaptersData.find(c => c.id === currentChapterId);
       if (!chap) return;
       insertImageAt(currentChapterId, chap.blocks.length, input);
+    }
+
+    // YouTube Embed Helpers
+    function extractYouTubeVideoId(rawUrl) {
+      if (!rawUrl || typeof rawUrl !== 'string') return null;
+      const trimmed = rawUrl.trim();
+      if (/^[a-zA-Z0-9_-]{11}$/.test(trimmed)) return trimmed;
+      try {
+        const u = new URL(trimmed.startsWith('http') ? trimmed : 'https://' + trimmed);
+        const host = u.hostname.replace(/^www\./, '').toLowerCase();
+        if (host === 'youtu.be') {
+          const id = u.pathname.replace(/^\/+/, '').split('/')[0];
+          return /^[a-zA-Z0-9_-]{11}$/.test(id) ? id : null;
+        }
+        if (host.endsWith('youtube.com') || host === 'youtube-nocookie.com') {
+          const v = u.searchParams.get('v');
+          if (v && /^[a-zA-Z0-9_-]{11}$/.test(v)) return v;
+          const m = u.pathname.match(/\/(?:embed|shorts|live|v)\/([a-zA-Z0-9_-]{11})/);
+          if (m) return m[1];
+        }
+      } catch (_) {}
+      return null;
+    }
+
+    async function createYouTubeBlockFromPrompt(defaultUrl = '', defaultTitle = '') {
+      const rawUrl = await showAppPrompt(
+        '삽입할 YouTube 영상 링크(URL)를 입력하세요:\n(일반 링크, 공유 링크 youtu.be, 쇼츠 URL 모두 지원)',
+        defaultUrl,
+        { title: 'YouTube 동영상 삽입', placeholder: 'https://www.youtube.com/watch?v=...' }
+      );
+      if (rawUrl === null) return null;
+      const videoId = extractYouTubeVideoId(rawUrl);
+      if (!videoId) {
+        await showAppAlert('올바른 YouTube 링크가 아닙니다. URL을 다시 확인해 주세요.', { tone: 'warning' });
+        return null;
+      }
+      const titleInput = await showAppPrompt(
+        '동영상 제목 또는 설명을 입력하세요 (선택 사항):',
+        defaultTitle,
+        { title: '영상 제목 입력', placeholder: '예: MY247 APP 사용법 안내 영상' }
+      );
+      return {
+        type: 'youtube',
+        videoId,
+        url: rawUrl.trim(),
+        title: (titleInput && titleInput.trim()) ? titleInput.trim() : '참고 동영상'
+      };
+    }
+
+    async function insertYouTubeAt(chapId, insertIdx) {
+      const block = await createYouTubeBlockFromPrompt();
+      if (!block) return;
+      insertBlockAt(chapId, insertIdx, block);
+    }
+
+    function addNewYouTubeToCurrentChapter() {
+      const chap = chaptersData.find(c => c.id === currentChapterId);
+      if (!chap) return;
+      insertYouTubeAt(currentChapterId, chap.blocks.length);
+    }
+
+    async function editYouTubeBlock(chapId, blockIdx) {
+      const chap = chaptersData.find(c => c.id === chapId);
+      const block = chap?.blocks?.[blockIdx];
+      if (!block || block.type !== 'youtube') return;
+      const updated = await createYouTubeBlockFromPrompt(block.url || `https://www.youtube.com/watch?v=${block.videoId}`, block.title || '');
+      if (!updated) return;
+      chap.blocks[blockIdx] = updated;
+      renderReaderContent(chap);
+      saveCustomChapters(false);
+    }
+
+    async function deleteYouTubeBlock(chapId, blockIdx) {
+      const chap = chaptersData.find(c => c.id === chapId);
+      if (!chap || !chap.blocks[blockIdx]) return;
+      if (!await showAppConfirm('정말 이 YouTube 동영상을 삭제하시겠습니까?', { danger: true })) return;
+      chap.blocks.splice(blockIdx, 1);
+      syncSubTopicsOnBlockChange(chap, 'delete', blockIdx);
+      renderReaderContent(chap);
+      renderQuickJumpNav(chapId);
+      saveCustomChapters(false);
     }
 
     // ==========================================
