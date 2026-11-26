@@ -2720,11 +2720,16 @@
                 // Header with column resize handle and column delete button
                 const deleteColBtn = (isAdminLoggedIn && isEditMode) ? `<button contenteditable="false" onclick="event.stopPropagation(); deleteSpecificTableCol(currentChapterId, ${idx}, ${cIdx})" class="opacity-0 group-hover/th:opacity-100 transition-opacity p-0.5 text-rose-500 hover:text-white hover:bg-rose-600 rounded text-[10px] absolute left-1 top-1 z-20 cursor-pointer print:hidden" title="이 열 삭제"><i class="fa-solid fa-xmark"></i></button>` : '';
                 const resizerHtml = (isAdminLoggedIn && isEditMode) ? `<div contenteditable="false" class="col-resizer print:hidden" onmousedown="initColResize(event, currentChapterId, ${idx}, ${cIdx})" title="드래그하여 열 너비 조절"></div>` : '';
-                const editableAttr = (isAdminLoggedIn && isEditMode) ? `class="editable-item relative group/th group/cell pl-4" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)"` : `class="relative"`;
-                tableHtml += `<th ${colWidthStyle} ${editableAttr}>${deleteColBtn}${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}${addCellImgBtn}${resizerHtml}</th>`;
+                if (isAdminLoggedIn && isEditMode) {
+                  const innerEd = `<div class="editable-item min-h-[1.5em] w-full outline-none cursor-text" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)">${textContent}</div>`;
+                  tableHtml += `<th ${colWidthStyle} class="relative group/th group/cell pl-4 cursor-text" onclick="if (event.target === this) { const ed = this.querySelector('[contenteditable=true]'); if (ed) ed.focus(); }">${deleteColBtn}${innerEd}${imagesHtml}${addCellImgBtn}${resizerHtml}</th>`;
+                } else {
+                  tableHtml += `<th ${colWidthStyle} class="relative">${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}</th>`;
+                }
               } else {
                 if (isAdminLoggedIn && isEditMode) {
-                  tableHtml += `<td ${colWidthStyle} class="editable-item group/cell" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)">${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}${addCellImgBtn}</td>`;
+                  const innerEd = `<div class="editable-item min-h-[1.5em] w-full outline-none cursor-text" contenteditable="true" oninput="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onblur="handleCellEdit(${idx}, ${rIdx}, ${cIdx}, this)" onkeydown="handleCellKeydown(event)">${textContent}</div>`;
+                  tableHtml += `<td ${colWidthStyle} class="group/cell cursor-text" onclick="if (event.target === this) { const ed = this.querySelector('[contenteditable=true]'); if (ed) ed.focus(); }">${innerEd}${imagesHtml}${addCellImgBtn}</td>`;
                 } else {
                   tableHtml += `<td ${colWidthStyle}>${textContent}${imagesHtml ? '<br/>' + imagesHtml : ''}</td>`;
                 }
