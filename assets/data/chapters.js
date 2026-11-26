@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795679920515;
+window.ETOOS_CHAPTERS_VERSION = 1795681090244;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -15,12 +15,10 @@ window.ETOOS_CHAPTERS = [
         "style": "h1"
       },
       {
-        "type": "p",
-        "text": "",
-        "images": [
-          "image1.png"
-        ],
-        "bold": false
+        "type": "youtube",
+        "videoId": "Ou_TN_-bPOA",
+        "url": "https://www.youtube.com/watch?v=Ou_TN_-bPOA",
+        "title": "이투스247학원 공식 홍보영상"
       },
       {
         "type": "p",
@@ -40,7 +38,7 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "image2.png"
+          "upload_88afcb7252bd.jpg"
         ],
         "bold": false
       },
@@ -53,17 +51,41 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "",
+        "text": "\n",
         "images": [
-          "image3.png"
+          "upload_4921b803f3fd.png"
         ],
         "bold": false
       },
       {
         "type": "p",
-        "text": "",
+        "text": "\n",
         "images": [
-          "image4.png"
+          "upload_2a92b1c093eb.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_514ce75287f6.png"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_e2ba6dc98a86.jpg"
+        ],
+        "bold": false
+      },
+      {
+        "type": "p",
+        "text": "\n",
+        "images": [
+          "upload_f4ccba578329.jpg"
         ],
         "bold": false
       },
@@ -184,7 +206,7 @@ window.ETOOS_CHAPTERS = [
       {
         "id": "st_1_3",
         "title": "4. 학습공간 구성 안내",
-        "blockIdx": 8,
+        "blockIdx": 11,
         "matchText": "4. 이투스247학원의 학습공간"
       }
     ],
@@ -7821,10 +7843,9 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "\n",
         "images": [
-          "upload_110a0a945c78.png"
+          "upload_1680d54e542c.png"
         ],
-        "bold": false,
-        "style": "normal"
+        "bold": false
       },
       {
         "type": "p",
@@ -9920,6 +9941,12 @@ window.ETOOS_CHAPTERS = [
         "style": "h1"
       },
       {
+        "type": "youtube",
+        "videoId": "Vsoad6clBFY",
+        "url": "https://www.youtube.com/watch?v=Vsoad6clBFY",
+        "title": "학습 관리의 기준, MY247 APP"
+      },
+      {
         "type": "p",
         "text": "1. MY247 APP 모바일",
         "images": [],
@@ -10748,61 +10775,61 @@ window.ETOOS_CHAPTERS = [
       {
         "id": "st_1795393236608",
         "title": "2. MY247 APP 학생 이용안내",
-        "blockIdx": 11,
+        "blockIdx": 12,
         "matchText": "2. MY247 APP 학생 이용안내"
       },
       {
         "id": "st_1795393293990",
         "title": "① 대시보드",
-        "blockIdx": 25,
+        "blockIdx": 26,
         "matchText": "① 대시보드"
       },
       {
         "id": "st_1795393418772",
         "title": "② 나만의 시간표",
-        "blockIdx": 32,
+        "blockIdx": 33,
         "matchText": "② 나만의 시간표"
       },
       {
         "id": "st_1795395500511",
         "title": "③ 리포트",
-        "blockIdx": 40,
+        "blockIdx": 41,
         "matchText": "③ 리포트"
       },
       {
         "id": "st_1795395678599",
         "title": "④ 인강/교재",
-        "blockIdx": 42,
+        "blockIdx": 43,
         "matchText": "④ 인강/교재"
       },
       {
         "id": "st_1795396361835",
         "title": "⑤ 내정보",
-        "blockIdx": 44,
+        "blockIdx": 45,
         "matchText": "⑤ 내정보"
       },
       {
         "id": "st_1795396426200",
         "title": "⑥ 질문 예약",
-        "blockIdx": 50,
+        "blockIdx": 51,
         "matchText": "⑥ 질문 예약"
       },
       {
         "id": "st_1795396503210",
         "title": "⑦ 매리트",
-        "blockIdx": 52,
+        "blockIdx": 53,
         "matchText": "⑦ 매리트"
       },
       {
         "id": "st_1795396808453",
         "title": "⑧ 메뉴 더보기",
-        "blockIdx": 54,
+        "blockIdx": 55,
         "matchText": "⑧ 메뉴 더보기"
       },
       {
         "id": "st_1795396850240",
         "title": "⑨ 설정",
-        "blockIdx": 56,
+        "blockIdx": 57,
         "matchText": "⑨ 설정"
       }
     ]
