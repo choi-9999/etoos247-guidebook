@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795738221424;
+window.ETOOS_CHAPTERS_VERSION = 1795740084355;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -107,7 +107,7 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "upload_628a458a873e.jpg"
+          "upload_2e493d2f0969.jpg"
         ],
         "bold": false
       },
@@ -129,7 +129,7 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "upload_2d37757ca9c4.jpg"
+          "upload_ff4563820ab9.jpg"
         ],
         "bold": false
       },
@@ -151,7 +151,7 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "upload_f24110f64f7f.jpg"
+          "upload_f50f1f67c7c3.jpg"
         ],
         "bold": false
       },
@@ -164,7 +164,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "[메디컬존]",
+        "text": "[렉쳐룸]",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -173,7 +173,7 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "",
         "images": [
-          "upload_a8437c880820.jpg"
+          "upload_baacd1186d95.jpg"
         ],
         "bold": false
       },
@@ -11323,8 +11323,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "회원의 기본 인적 사항 정보를 등록 및 수정할 수 있으며, 고지서 인쇄 및 상담 내용을 관리 합니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -11592,13 +11592,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -12185,13 +12178,6 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
         "text": "[회원정보 조회 화면]",
         "images": [],
         "bold": false,
@@ -12233,20 +12219,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "회원의 상담 내용을 관리 합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -12389,8 +12361,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "반 관련 정보 입력, 반 배정, 선발고사 정보를 관리 합니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -12405,20 +12377,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "반 정보를 생성 및 수정 합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -12438,7 +12396,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "A. 검색조건: \n- 수강년도, 지점, 강의 분류 조건을 입력 후 반정보를 조회 합니다.\nB. 반목록\n- 입력된 검색 조건에 해당되는 반목록을 조회 합니다.\nC. 반정보\n- 반의 상제정보를 설정하여 관리합니다.My 247 메뉴: My 247 메뉴의 모든 기능을 사용하시려면 전체 체크를 해주세요.\nD. 수강료\n- 선택된 반에 해당되는 수강료 목록을 조회하거나 설정할 수 있습니다.\n- 회차별 수강료 : 월별로 해당 반의 수강료를 설정합니다.\n- 수강료 및 교재비 : 수강료, 모의고사, 교재비, 기타비용 등 세부항목의 금액 및 월별 수강료 항목을 관리합니다.\nE. 반 정보 수정 버튼\n- 신규버튼 : 반의 표시된 모든 정보를 초기화 하고 새로이 입력할 준비를 합니다.\n- 저장버튼 : 입력한 반정보를 신규 등록하거나 선택한 반정보를 저장(수정) 합니다.\n- 삭제버튼 : 목록에서 선택된 반정보를 삭제 합니다.단 회원정보가 배정된 경우 삭제할 수 없습니다.",
+        "text": "A. 검색조건: \n- 수강년도, 지점, 강의 분류 조건을 입력 후 반정보를 조회 합니다.\n\nB. 반목록\n- 입력된 검색 조건에 해당되는 반목록을 조회 합니다.\n\nC. 반정보\n- 반의 상제정보를 설정하여 관리합니다.My 247 메뉴: My 247 메뉴의 모든 기능을 사용하시려면 전체 체크를 해주세요.\n\nD. 수강료\n- 선택된 반에 해당되는 수강료 목록을 조회하거나 설정할 수 있습니다.\n- 회차별 수강료 : 월별로 해당 반의 수강료를 설정합니다.\n- 수강료 및 교재비 : 수강료, 모의고사, 교재비, 기타비용 등 세부항목의 금액 및 월별 수강료 항목을 관리합니다.\n\nE. 반 정보 수정 버튼\n- 신규버튼 : 반의 표시된 모든 정보를 초기화 하고 새로이 입력할 준비를 합니다.\n- 저장버튼 : 입력한 반정보를 신규 등록하거나 선택한 반정보를 저장(수정) 합니다.\n- 삭제버튼 : 목록에서 선택된 반정보를 삭제 합니다.단 회원정보가 배정된 경우 삭제할 수 없습니다.",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -12601,7 +12559,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "2. 반 기본정보\n① 수강년도 : 수강년도는 수능이 아닌 반이 운영되는 실제 수강 년도를 선택합니다. (※ 한번 설정한 수강년도는 수정할 수 없습니다.)\n② 특강차수 : 미사용 기능\n③ 반명 : 생성할 반 이름을 설정합니다.\n④ 담임명 : 반의 담임을 설정합니다.\n⑤ 수강료 : 반에 대한 기본 수강료를 설정합니다.\n⑥ 기 간  : \n- 반의 수강기간을 설정합니다.\n- 회원의 반배정 시 회원의 수강기간은 반의 수강기간을 기본으로 설정되며,수강시작일 이후 배정 시 현재일자를 수강시작일로 설정됩니다.\n※ 수강기간 내에서만 회차별 수강료를 설정할 수 있습니다.\n⑦ 정 원  : 반의 정원을 설정하며, 반배정 시 정원초과인 경우 정원초과에 대한 경고메시지를 보여줍니다.\n⑧ 계 열  : 반의 계열을 선택 합니다.\n⑨ 엑셀다운로드 : 반에 배정되었던 학생의 목록을 다운로드 합니다.\n⑩ 비 고  : 반의 기타정보를 입력 합니다.\n⑪ 기 타  : 반에 지정된 학생들의 LMS 및 My 247 APP 노출 여부를 설정합니다.\n※ LMS 및 My 247 APP 사용을 위해서는 꼭 체크해주세요. [직원/ 학생] 메뉴 전체 선택 해주셔야 합니다.\n⑫ 수업시간설정 : 출결 관리를 설정하는 기준이 되므로 요일과 등원 / 하원(수업시작,수업종료) 시간을 정확히 설정합니다.",
+        "text": "2. 반 기본정보\n① 수강년도 : 수강년도는 수능이 아닌 반이 운영되는 실제 수강 년도를 선택합니다. (※ 한번 설정한 수강년도는 수정할 수 없습니다.)\n② 특강차수 : 미사용 기능\n③ 반명 : 생성할 반 이름을 설정합니다.\n④ 담임명 : 반의 담임을 설정합니다.\n⑤ 수강료 : 반에 대한 기본 수강료를 설정합니다.\n\n⑥ 기 간  : \n- 반의 수강기간을 설정합니다.\n- 회원의 반배정 시 회원의 수강기간은 반의 수강기간을 기본으로 설정되며,수강시작일 이후 배정 시 현재일자를 수강시작일로 설정됩니다.\n※ 수강기간 내에서만 회차별 수강료를 설정할 수 있습니다.\n\n⑦ 정 원  : 반의 정원을 설정하며, 반배정 시 정원초과인 경우 정원초과에 대한 경고메시지를 보여줍니다.\n⑧ 계 열  : 반의 계열을 선택 합니다.\n⑨ 엑셀다운로드 : 반에 배정되었던 학생의 목록을 다운로드 합니다.\n⑩ 비 고  : 반의 기타정보를 입력 합니다.\n\n⑪ 기 타  : 반에 지정된 학생들의 LMS 및 My 247 APP 노출 여부를 설정합니다.\n※ LMS 및 My 247 APP 사용을 위해서는 꼭 체크해주세요. [직원/ 학생] 메뉴 전체 선택 해주셔야 합니다.\n\n⑫ 수업시간설정 : 출결 관리를 설정하는 기준이 되므로 요일과 등원 / 하원(수업시작,수업종료) 시간을 정확히 설정합니다.",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -12743,8 +12701,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "*엑셀 다운로드 화면 (원장님 권한에 부여되어 있음)",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -13091,20 +13049,6 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "등록된 반으로 회원을 배정 합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
         "text": "[반 배정 화면]",
         "images": [],
         "bold": false,
@@ -13272,20 +13216,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "홈페이지의 모집요강을 관리하며 온라인 접수로 등록한 회원의 응시현황을 관리할 수 있습니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -13509,8 +13439,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "수납에 필요한 가상계좌 생성 및 수납처리를 관리 합니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -13525,20 +13455,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "회원에 대한 청구정보를 일괄 청구하여 가상계좌를 생성하거나 취소할 수 있습니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -13751,20 +13667,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "회원의 수납 및 환불 관련된 업무를 관리합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -14448,7 +14350,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "A. 납부정보 : 납부한 날짜 / 방법 금액이 표시됩니다. 분납의 경우 납부 금액별로 표시됩니다.\nB. 환불버튼\n- 카드취소 : 카드결제건의 경우 카드취소 버튼을 클릭하여 단말기 IC카드 취소처리 합니다.\n- ERP ARS 취소 : 카드분실이나 카드취소를 할 수 없는 경우 카드사에 직접 전화취소 후, 247erp 에 ERP ARS 취소로 등록하면 바로 환불로 반영됩니다.\n- 현금/무통장 환불 : 카드수납 후 현금이나,무통장으로 환불 처리할 경우 현금,무통장 을 선택하여 환불 처리합니다.",
+        "text": "A. 납부정보 : 납부한 날짜 / 방법 금액이 표시됩니다. 분납의 경우 납부 금액별로 표시됩니다.\n\nB. 환불버튼\n- 카드취소 : 카드결제건의 경우 카드취소 버튼을 클릭하여 단말기 IC카드 취소처리 합니다.\n- ERP ARS 취소 : 카드분실이나 카드취소를 할 수 없는 경우 카드사에 직접 전화취소 후, 247erp 에 ERP ARS 취소로 등록하면 바로 환불로 반영됩니다.\n- 현금/무통장 환불 : 카드수납 후 현금이나,무통장으로 환불 처리할 경우 현금,무통장 을 선택하여 환불 처리합니다.",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -14494,20 +14396,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "회원의 수강료 납입 안내문을 작성하여 발송할 고지서를 설정하여 인쇄합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -14687,8 +14575,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "학원에서 필요한 상품(간행물/플래너/출결카드 등) 신청 및 신청내역 관리합니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -14703,20 +14591,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "학원에서 필요한 상품 내역을 확인하여 신청기간 내에 상품을 신청할 수 있습니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -14736,7 +14610,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "A. 상품 조회 : 상품명, 기간 조건으로 본사에서 판매하고 있는 상품 내역을 조회합니다.\n- 목록에서 신청할 상품을 선택하면 하단 상품 정보보기에 상품 정보가 표시됩니다.\n\nB. 선택상품추가 : 선택한 상품을 상품 신청 목록에 추가합니다.\n\nC. 신청 수량 : 최소수량 / 판매단위에 맞게 신청 수량을 설정합니다.\n\nD. 상품 신청 : 추가된 상품과 총 금액을 확인한 후 [신청하기] 버튼을 클릭합니다.\n- 잘못 추가한 상품은 [삭제] 버튼으로 목록에서 제외할 수 있습니다.",
+        "text": "A. 상품 조회 : \n- 상품명, 기간 조건으로 본사에서 판매하고 있는 상품 내역을 조회합니다.\n- 목록에서 신청할 상품을 선택하면 하단 상품 정보보기에 상품 정보가 표시됩니다.\n\nB. 선택상품추가 : 선택한 상품을 상품 신청 목록에 추가합니다.\n\nC. 신청 수량 : 최소수량 / 판매단위에 맞게 신청 수량을 설정합니다.\n\nD. 상품 신청 : \n- 추가된 상품과 총 금액을 확인한 후 [신청하기] 버튼을 클릭합니다.\n- 잘못 추가한 상품은 [삭제] 버튼으로 목록에서 제외할 수 있습니다.",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -14792,20 +14666,6 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "신청 현황 내역을 확인하고, 신청기간 내에는 주문 수정 및 주문 취소를 할 수 있습니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
         "text": "[상품 신청 현황 화면]",
         "images": [],
         "bold": false,
@@ -14845,8 +14705,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "직원 및 강사 정보를 신규 등록하거나 관리 합니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -14861,20 +14721,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "시스템 관리 권한을 가진 원장님이 소속 직원 정보를 신규 추가 및 관리합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -14971,20 +14817,6 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "직원 관리에서 선생님 여부가 체크된 직원의 정보를 검색할 수 있습니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
         "text": "[선생님 조회 화면]",
         "images": [],
         "bold": false,
@@ -15033,20 +14865,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "수강료 할인에 필요한 할인율을 신규 등록하거나 관리합니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -15264,8 +15082,8 @@ window.ETOOS_CHAPTERS = [
         "type": "p",
         "text": "회원 수납내역 및 할인률, 미납금 내역을 조회할 수 있습니다.",
         "images": [],
-        "bold": true,
-        "style": "bold"
+        "bold": false,
+        "style": "h3"
       },
       {
         "type": "p",
@@ -15280,20 +15098,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "회원의 수납내역을 일/월별로 조회하여 매출을 집계할 수 있습니다.",
-        "images": [],
-        "bold": true,
-        "style": "bold"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -15317,6 +15121,13 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
       },
       {
         "type": "p",
@@ -15394,20 +15205,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "회원의 청구정보 중 미납건에 해당하는 미납내역을 조회하고, 미납 안내 문자를 발송할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "h3"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -15534,6 +15331,13 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
         "text": "\n",
         "images": [],
         "bold": false,
@@ -15594,20 +15398,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "회원의 할인내역을 기간 및 월, 년도별로 조회할 수 있습니다.",
-        "images": [],
-        "bold": false,
-        "style": "h3"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -15725,20 +15515,6 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "지점의 월별 로열티 청구 내역을 확인하고 결제합니다.",
-        "images": [],
-        "bold": false,
-        "style": "h3"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
-      },
-      {
-        "type": "p",
         "text": "[로열티 결제 화면]",
         "images": [],
         "bold": false,
@@ -15755,7 +15531,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "A. 조회 년월 : 년 / 월을 선택하거나 이전 / 다음 버튼으로 결제할 월을 선택합니다. 선택한 월에는 전월 로열티가 청구됩니다. (예: 2026년 05월 → 4월 로열티 청구)\n- 결제일 : 1차 매월 17일 / 2차 매월 25일\n※ 25일 이후에는 ERP 사용 및 수강생 서비스 이용이 제한되므로 기한 내 결제 부탁드립니다.\n\nB. 거래원장 인쇄 : 선택한 월의 로열티 청구 내역(거래원장)을 인쇄합니다.\n\nC. 로열티 목록 / 결제 선택\n- 재원생 로열티(N수생 / 재학생), 재원생 관리비(홈페이지), 재원생 시스템(출결관리 시스템), 이투스구독권 이용료(N수 / 고3 / 고2 / 고1) 항목별 인원(수량)과 결제 대상 금액이 표시됩니다.\n- 결제할 항목의 결제 선택을 체크하거나, [전체선택]을 체크합니다.\n- 총 결제 금액 : 선택한 항목의 합계 금액이 표시됩니다.\n- 결제하기 : 선택한 항목의 결제 화면으로 이동합니다.",
+        "text": "A. 조회 년월 : \n- 년 / 월을 선택하거나 이전 / 다음 버튼으로 결제할 월을 선택합니다. 선택한 월에는 전월 로열티가 청구됩니다. \n(예: 2026년 05월 → 4월 로열티 청구)\n- 결제일 : 1차 매월 17일 / 2차 매월 25일\n※ 25일 이후에는 ERP 사용 및 수강생 서비스 이용이 제한되므로 기한 내 결제 부탁드립니다.\n\nB. 거래원장 인쇄 : \n- 선택한 월의 로열티 청구 내역(거래원장)을 인쇄합니다.\n\nC. 로열티 목록 / 결제 선택\n- 재원생 로열티(N수생 / 재학생), 재원생 관리비(홈페이지), 재원생 시스템(출결관리 시스템), 이투스구독권 이용료(N수 / 고3 / 고2 / 고1) 항목별 인원(수량)과 결제 대상 금액이 표시됩니다.\n- 결제할 항목의 결제 선택을 체크하거나, [전체선택]을 체크합니다.\n- 총 결제 금액 : 선택한 항목의 합계 금액이 표시됩니다.\n- 결제하기 : 선택한 항목의 결제 화면으로 이동합니다.",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -15871,7 +15647,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "결제 내역을 확인한 후 [다음] 버튼을 클릭하여 결제를 진행합니다.",
+        "text": "- 결제 내역을 확인한 후 [다음] 버튼을 클릭하여 결제를 진행합니다.",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -15901,7 +15677,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "결제 완료 후 결제 정보를 확인합니다. 결제 내역은 [로열티 관리 > 결제 확인]에서 다시 확인할 수 있습니다.",
+        "text": "- 결제 완료 후 결제 정보를 확인합니다. \n- 결제 내역은 [로열티 관리 > 결제 확인]에서 다시 확인할 수 있습니다.",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -15919,20 +15695,6 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "h2"
-      },
-      {
-        "type": "p",
-        "text": "월별 로열티 결제 내역을 조회하고 영수증을 출력합니다.",
-        "images": [],
-        "bold": false,
-        "style": "h3"
-      },
-      {
-        "type": "p",
-        "text": "ㅤ",
-        "images": [],
-        "bold": false,
-        "style": "normal"
       },
       {
         "type": "p",
@@ -16047,7 +15809,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "- ERP 회원정보 관리, 카드번호 우측 빈 칸 마우스 클릭\n- 카드번호 칸이 활성화된 상태에서 PC에 연결한 카드리더기(출결카드 등록용)에 출결카드 태그\n- 카드번호 칸에 카드번호가 자동 입력되었는지 확인\n- 저장버튼을 클릭하여 카드 번호 저장\n- 자동 입력이 안 될 경우 메모장 실행 -> 메모장을 클릭 후 3번 진행 -> 메모장에 자동 입력된 카드번호를 복사 -> ERP 카드번호 칸에 붙여 넣기 -> 저장",
+        "text": "- ERP 회원정보 관리, 카드번호 우측 빈 칸 마우스 클릭\n- 카드번호 칸이 활성화된 상태에서 PC에 연결한 카드리더기(출결카드 등록용)에 출결카드 태그\n- 카드번호 칸에 카드번호가 자동 입력되었는지 확인\n- 저장버튼을 클릭하여 카드 번호 저장\n- 자동 입력이 안 될 경우: \n- 메모장 실행 -> 메모장을 클릭 후 3번 진행 -> 메모장에 자동 입력된 카드번호를 복사 -> ERP 카드번호 칸에 붙여 넣기 -> 저장",
         "images": [],
         "bold": false,
         "style": "callout"
@@ -16231,7 +15993,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "APP실행 중, 키보드가 생성되지 않는 오류 해결 방법:\n태블릿 설정 → 일반 → 하드웨어 키보드 → 스크린 키보드 표시",
+        "text": "APP실행 중, 키보드가 생성되지 않는 오류 해결 방법:\n- 태블릿 설정 → 일반 → 하드웨어 키보드 → 스크린 키보드 표시",
         "images": [],
         "bold": false,
         "style": "box-blue"
@@ -16976,55 +16738,55 @@ window.ETOOS_CHAPTERS = [
       {
         "id": "st_1795409003697",
         "title": "4. 반 관리",
-        "blockIdx": 169,
+        "blockIdx": 165,
         "matchText": "4. 반 관리"
       },
       {
         "id": "st_1795415238996",
         "title": "5. 수납관리",
-        "blockIdx": 325,
+        "blockIdx": 315,
         "matchText": "5. 수납관리"
       },
       {
         "id": "st_1795417967135",
         "title": "6. 상품 관리",
-        "blockIdx": 489,
+        "blockIdx": 473,
         "matchText": "6. 상품 관리"
       },
       {
         "id": "st_1795418092399",
         "title": "7. 시스템 관리",
-        "blockIdx": 511,
+        "blockIdx": 491,
         "matchText": "7. 시스템 관리"
       },
       {
         "id": "st_1795418514947",
         "title": "8. 회계 현황",
-        "blockIdx": 564,
+        "blockIdx": 538,
         "matchText": "8. 회계 현황"
       },
       {
         "id": "st_1795418841685",
         "title": "9. 로열티 관리",
-        "blockIdx": 626,
+        "blockIdx": 596,
         "matchText": "9. 로열티 관리"
       },
       {
         "id": "st_1795419090069",
         "title": "[별첨1] 출결카드 학생 별 등록방법 안내",
-        "blockIdx": 664,
+        "blockIdx": 630,
         "matchText": "[별첨1] 출결카드 학생 별 등록방법 안내"
       },
       {
         "id": "st_1795419332650",
         "title": "[별첨2] 출결APP 설치 및 사용방법 안내",
-        "blockIdx": 687,
+        "blockIdx": 653,
         "matchText": "[별첨2] 출결APP 설치 및 사용방법 안내"
       },
       {
         "id": "st_1795419828696",
         "title": "[별첨3] 입시센터 프로그램 등록 방법 안내",
-        "blockIdx": 748,
+        "blockIdx": 714,
         "matchText": "[별첨3] 입시센터 프로그램 등록 방법 안내"
       }
     ],
