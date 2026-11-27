@@ -1,4 +1,4 @@
-window.ETOOS_CHAPTERS_VERSION = 1795747676754;
+window.ETOOS_CHAPTERS_VERSION = 1795748128425;
 window.ETOOS_CHAPTERS = [
   {
     "id": 1,
@@ -256,7 +256,7 @@ window.ETOOS_CHAPTERS = [
               "images": []
             },
             {
-              "text": "•사업계획워크샵(12월)\n• 이투스 구독권(인강) 제공\n• 윈터스쿨 모집 및 개강\n• 재수조기선발반 모집 및 개강\n• 재수정규반 모집 및 개강\n• 윈터스쿨 전국 모의고사\n• 수시 / 정시 합격자데이터 취합(~2월)",
+              "text": "• 사업계획워크샵(12월)\n• 이투스 구독권(인강) 제공\n• 윈터스쿨 모집 및 개강\n• 재수조기선발반 모집 및 개강\n• 재수정규반 모집 및 개강\n• 윈터스쿨 전국 모의고사\n• 수시 / 정시 합격자데이터 취합(~2월)",
               "images": []
             },
             {
@@ -643,10 +643,17 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "- 학부모님 또는 학생 이름과 시간 확인 후 직접 상담실로 안내\n- 방문 상담일지 작성하는 동안에 원장님께 말씀드리기\n- 방문 상담일지 작성 완료 후 원장실로 안내드리기\n- 상담 끝난 후 접수 및 결제 진행\n- 주차 시 무료 주차 제공\n- 전화 상담 또는 방문 상담 예약 전화 중에 위치에 대한 질문 시 예시 답변\n\n- 직영점인 분당정자점의 경우, \n“정자역 4번 출구에서 김밥나라 방향으로 쭉 직진한 후, KFC를 지나서 제니스 아파트 옆 건물 2층에 있습니다. 지점을 찾지 못하시는 경우, 전화 주시면 내려가겠습니다.”라고 설명함\n\n- 대체로 주변 아파트 이름이나 큰 건물 이름을 이야기하면 위치를 파악하기 쉬움",
+        "text": "- 학부모님 또는 학생 이름과 시간 확인 후 직접 상담실로 안내\n- 방문 상담일지 작성하는 동안에 원장님께 말씀드리기\n- 방문 상담일지 작성 완료 후 원장실로 안내드리기\n- 상담 끝난 후 접수 및 결제 진행\n- 주차 시 무료 주차 제공\n",
         "images": [],
         "bold": false,
         "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "※ 전화 상담 또는 방문 상담 예약 전화 중에 위치에 대한 질문 시 예시 답변 \n• 직영점인 분당정자점의 경우,  \n“정자역 4번 출구에서 김밥나라 방향으로 쭉 직진한 후, KFC를 지나서 제니스 아파트 옆 건물 2층에 있습니다. \n지점을 찾지 못하시는 경우, 전화 주시면 내려가겠습니다.”라고 설명함 \n• 대체로 주변 아파트 이름이나 큰 건물 이름을 이야기하면 위치를 파악하기 쉬움",
+        "images": [],
+        "bold": false,
+        "style": "callout"
       },
       {
         "type": "p",
@@ -1042,6 +1049,13 @@ window.ETOOS_CHAPTERS = [
         "images": [],
         "bold": false,
         "style": "box-blue"
+      },
+      {
+        "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
       },
       {
         "type": "p",
@@ -2541,6 +2555,13 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "(2) 학습관리 시스템(LMS, MY247 APP)",
+        "images": [],
+        "bold": false,
+        "style": "h2"
+      },
+      {
+        "type": "p",
         "text": "\n",
         "images": [],
         "bold": false,
@@ -2548,7 +2569,7 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "(2) 학습관리 시스템(LMS, MY247 APP)",
+        "text": "\n",
         "images": [
           "upload_2a3d31b34858.png"
         ],
@@ -3834,6 +3855,13 @@ window.ETOOS_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "ㅤ",
+        "images": [],
+        "bold": false,
+        "style": "normal"
+      },
+      {
+        "type": "p",
         "text": "(2) 발신번호 인증하기",
         "images": [],
         "bold": false,
@@ -3920,61 +3948,61 @@ window.ETOOS_CHAPTERS = [
       {
         "id": "st_1795742764038",
         "title": "② 학습매니저",
-        "blockIdx": 91,
+        "blockIdx": 92,
         "matchText": "② 학습매니저"
       },
       {
         "id": "st_1795743612673",
         "title": "③ 이투스247학원 직원들 일과표 예시",
-        "blockIdx": 112,
+        "blockIdx": 114,
         "matchText": "[이투스247학원 직영점 주요일과(직원/학생) 세부내역"
       },
       {
         "id": "st_1795744396923",
         "title": "④ 이투스247학원 학생들 일과표 예시",
-        "blockIdx": 124,
+        "blockIdx": 126,
         "matchText": "❑ 이투스247학원 학생들 시간표(월~토)"
       },
       {
         "id": "st_1795744858376",
         "title": "3. 관리 시스템 및 학습기기",
-        "blockIdx": 142,
+        "blockIdx": 144,
         "matchText": "3. 관리 시스템 및 학습기기"
       },
       {
-        "id": "st_1795744949313",
+        "id": "st_1795747964957",
         "title": "② 학습관리 시스템(LMS, MY247 APP)",
-        "blockIdx": 147,
+        "blockIdx": 148,
         "matchText": "(2) 학습관리 시스템(LMS, MY247 APP)"
       },
       {
         "id": "st_1795744981699",
         "title": "③ 학습 콘텐츠 시스템(마켓ECI)",
-        "blockIdx": 150,
+        "blockIdx": 153,
         "matchText": "(3) 학습 콘텐츠 시스템(마켓ECI)"
       },
       {
         "id": "st_1795745772944",
         "title": "④ 출결 프로그램(출결APP)",
-        "blockIdx": 191,
+        "blockIdx": 194,
         "matchText": "(4) 출결 프로그램(출결APP)"
       },
       {
         "id": "st_1795746300089",
         "title": "⑤ 태블릿PC",
-        "blockIdx": 225,
+        "blockIdx": 228,
         "matchText": "(5) 태블릿PC"
       },
       {
         "id": "st_1795746350036",
         "title": "[별첨1] 이투스247학원 시스템 환경설정",
-        "blockIdx": 229,
+        "blockIdx": 232,
         "matchText": "[별첨1] 이투스247학원 시스템 환경설정"
       },
       {
         "id": "st_1795746412706",
         "title": "[별첨2] 문자발송 서비스 이용안내(비즈모아샷)",
-        "blockIdx": 278,
+        "blockIdx": 281,
         "matchText": "[별첨2] 문자발송 서비스 이용안내"
       }
     ],
